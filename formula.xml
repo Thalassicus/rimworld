@@ -1,0 +1,4 @@
+=if('Weapons-Mod'!B3='Weapons-Default'!B3,"","
+<Operation Class=""PatchOperationReplace"">
+<xpath>Defs/ThingDef[defName="""&$A3&"""]/"&B$1&"</xpath>
+<value><"&B$2&">"&'Weapons-Mod'!B3&"</"&B$2&"></value></Operation>")
