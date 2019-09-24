@@ -88,7 +88,9 @@
 <bodyPartGroups> Torso Neck Shoulders Arms
 <layers> Shell
 <tags> IndustrialAdvanced
-<defaultOutfitTags> Worker<defName>Apparel_PlateArmor
+<defaultOutfitTags> Worker
+
+<defName>Apparel_PlateArmor
 <unfinishedThingDef>UnfinishedMetallicTechArmor
 <researchPrerequisite>PlateArmor
 <skillRequirements>
@@ -127,6 +129,7 @@
 <layers> Middle
 <tags> IndustrialMilitaryBasic
 <defaultOutfitTags> Soldier
+
 <defName>Apparel_FlakPants
 <researchPrerequisite>FlakArmor
 <unfinishedThingDef>UnfinishedTechArmor
@@ -148,6 +151,7 @@
 <layers> OnSkin Middle
 <tags> IndustrialMilitaryBasic
 <defaultOutfitTags> Soldier
+
 <defName>Apparel_FlakJacket
 <researchPrerequisite>FlakArmor
 <unfinishedThingDef>UnfinishedTechArmor
