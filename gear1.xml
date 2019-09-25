@@ -1,6 +1,4 @@
 
-<!-- ====================================== Neolithic =========================================== -->
-
 <defName>Apparel_TribalA
 <techLevel>Neolithic
 <costStuffCount>60
@@ -26,7 +24,6 @@
 <layers> Shell
 <tags> IndustrialBasic Neolithic
 <defaultOutfitTags> Worker Soldier
-<!-- ====================================== Medieval =========================================== -->
 
 <defName>Apparel_Pants
 <researchPrerequisite>ComplexClothing
@@ -78,6 +75,7 @@
 <layers> Shell
 <tags> IndustrialAdvanced
 <defaultOutfitTags> Worker
+
 <defName>Apparel_Jacket
 <costStuffCount>70
 <stuffCategories> Fabric Leathery
@@ -88,7 +86,9 @@
 <bodyPartGroups> Torso Neck Shoulders Arms
 <layers> Shell
 <tags> IndustrialAdvanced
-<defaultOutfitTags> Worker<defName>Apparel_PlateArmor
+<defaultOutfitTags> Worker
+
+<defName>Apparel_PlateArmor
 <unfinishedThingDef>UnfinishedMetallicTechArmor
 <researchPrerequisite>PlateArmor
 <skillRequirements>
@@ -105,7 +105,7 @@
 <layers> Middle Shell
 <tags> MedievalMilitary
 <defaultOutfitTags> Soldier
-<!-- ======================================= Industrial =======================================-->
+
 <defName>Apparel_FlakVest
 <techLevel>Industrial
 <researchPrerequisite>FlakArmor
@@ -127,6 +127,7 @@
 <layers> Middle
 <tags> IndustrialMilitaryBasic
 <defaultOutfitTags> Soldier
+
 <defName>Apparel_FlakPants
 <researchPrerequisite>FlakArmor
 <unfinishedThingDef>UnfinishedTechArmor
@@ -148,15 +149,13 @@
 <layers> OnSkin Middle
 <tags> IndustrialMilitaryBasic
 <defaultOutfitTags> Soldier
+
 <defName>Apparel_FlakJacket
 <researchPrerequisite>FlakArmor
 <unfinishedThingDef>UnfinishedTechArmor
 <skillRequirements>
 <Crafting>5
 <costList>
-<Cloth>50
-<Steel>70
-<ComponentIndustrial>1
 <WorkToMake>14000
 <ArmorRating_Sharp>0.40
 <ArmorRating_Blunt>0.08
@@ -169,7 +168,6 @@
 <layers> Shell
 <tags> IndustrialAdvanced
 <defaultOutfitTags> Soldier
-<!-- ==================================== Spacer =====================================-->
 
 <defName>Apparel_PowerArmor
 <techLevel>Spacer
