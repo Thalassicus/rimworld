@@ -1,4 +1,2 @@
-=if('Weapons-Mod'!B3='Weapons-Default'!B3,"","
-<Operation Class=""PatchOperationReplace"">
-<xpath>Defs/ThingDef[defName="""&$A3&"""]/"&B$1&"</xpath>
-<value><"&B$2&">"&'Weapons-Mod'!B3&"</"&B$2&"></value></Operation>")
+=if('Weapons-Mod'!N3='Weapons-Default'!N3,"","<Operation Class=""PatchOperationAdd""><xpath>Defs/ThingDef[defName="""&$A4&"""]"&Q$2&"</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>"&'Weapons-Mod'!O3&"</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+")
