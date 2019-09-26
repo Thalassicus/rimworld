@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+<!-- Stun Bullet -->
+
+	<ThingDef Class="RimTaser.ThingDef_RimTaser_HediffBullet" ParentName="BaseBullet">
+		<defName>Stun_Bullet</defName>
+		<label>Stun Bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/StunBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+      		<damageDef>Stun</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		<AddHediffChance>1.0</AddHediffChance>
+		<HediffsToAdd>
+			<li>Neurostun</li>
+		</HediffsToAdd>
+		<thingClass>RimTaser.Projectile_RimTaser_Cartridge</thingClass>
+	</ThingDef>
+	
+<!-- Stun Gun -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>StunGun</defName>
+		<label>Stun Gun</label>
+		<description>A less-lethal pistol that disrupts neurological function in the target.</description>
+		<graphicData>
+			<texPath>Things/WeaponRanged/StunGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>1.4</Mass>
+			<AccuracyTouch>0.99</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Shield_Sidearm</li>
+		</weaponTags>
+		<tradeTags>
+			<li>StunGun</li>
+		</tradeTags>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<equippedStatOffsets>
+            <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Stun_Bullet</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>20.9</range>
+				<soundCast>StunGun</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>2</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+<!-- Stun Rifle -->
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>StunRifle</defName>
+		<label>Stun Rifle</label>
+		<description>A less-lethal rifle that disrupts neurological function in the target.</description>
+		<graphicData>
+			<texPath>Things/WeaponRanged/StunRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>4.0</Mass>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.7</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.9</AccuracyLong>
+      		<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<tradeTags>
+			<li>StunGun</li>
+		</tradeTags>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Stun_Bullet</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>35.9</range>
+				<soundCast>StunGun</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>2</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.3</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

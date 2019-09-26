@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ##### Neolithic ##### -->
+
+    <!-- +++++ Stone War Mask +++++ -->
+    <ThingDef ParentName="HatMakeableBase">
+		<defName>VAE_Headgear_StoneWarMask</defName>
+		<label>stone war mask</label>
+		<description>An artistically terrifying war mask. Hides the wearer's face and makes them more confident. Being made out of stone, it is very durable but also incredibly heavy.</description>
+		<graphicData>
+			<texPath>Things/Headgear/StoneWarMask/StoneWarMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+        <generateCommonality>0.5</generateCommonality>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>4500</WorkToMake>
+			<Mass>3.4</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<MoveSpeed>-0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Headgear/StoneWarMask/StoneWarMask</wornGraphicPath>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+    <!-- +++++ Wooden Vest +++++ -->
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>VAE_Apparel_WoodenVest</defName>
+		<label>wooden vest</label>
+		<description>A vest with wooden logs and planks covering the front and back. Quite effective against small calibre gunshots and sharp melee weapons, but completely useless against blunt hits and rifle shots.</description>
+		<graphicData>
+			<texPath>Things/Apparel/WoodenArmor/WoodenArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+        <generateCommonality>1</generateCommonality>
+		<costList>
+			<Cloth>30</Cloth>
+			<WoodLog>60</WoodLog>
+		</costList>
+		<statBases>
+			<WorkToMake>4200</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>6</Mass>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+            <EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/WoodenArmor/WoodenArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Neolithic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(0.6,0.45,0.18)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<only>(0.8,0.6,0.23)</only>
+				</li>
+			</options>
+		</colorGenerator>
+    </ThingDef>
+
+    <!-- +++++ Advanced Vest +++++ -->
+    <ThingDef ParentName="ApparelMakeableBase">
+		<defName>VAE_Apparel_AdvancedVest</defName>
+		<label>advanced vest</label>
+		<description>A lightweight combat vest with plasteel-mesh fibers. Does not protect the limbs.</description>
+		<graphicData>
+			<texPath>Things/Apparel/AdvancedVest/AdvancedVest</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+        <generateCommonality>0.15</generateCommonality>
+		<costList>
+      		<Cloth>30</Cloth>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>290</MaxHitPoints>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>2.8</Mass>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.34</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+            <EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>SpacerTech</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/AdvancedVest/AdvancedVest</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitary</li>
+				<li>IndustrialAdvanced</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+            </defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+	
+    <!-- ##### Medieval ##### -->
+    <!-- +++++ Gambeson +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VAE_Apparel_Gambeson</defName>
+		<label>gambeson</label>
+		<description>A padded defensive jacket made of overlapping, criscrossed layers of fibers.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Gambeson/Gambeson</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+        <generateCommonality>1</generateCommonality>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>3.6</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.12</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+        		<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Gambeson/Gambeson</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+    <!-- +++++ Mail +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VAE_Apparel_Mail</defName>
+		<label>mail</label>
+		<description>A coat of armor made out of small metal rings linked together forming a mesh. Lighter and more maneuverable than plate armor.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Chainmail/Chainmail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+        <generateCommonality>2</generateCommonality>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Chainmail/Chainmail</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+    <!-- +++++ Plate Helmet +++++ -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>VAE_Apparel_PlateHelmet</defName>
+		<label>plate helmet</label>
+		<description>A plate helmet which gives moderate protection against sharp attacks.</description>
+		<graphicData>
+			<texPath>Things/Headgear/PlateHelmet/PlateHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+        <generateCommonality>0.5</generateCommonality>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>6800</WorkToMake>
+			<Mass>2.8</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Headgear/PlateHelmet/PlateHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+
+
+
+
+    <!-- +++++ Heavy Marine Helmet +++++ -->
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>VAE_Headgear_HeavyMarineHelmet</defName>
+		<label>heavy marine helmet</label>
+		<description>A heavy marine armor helmet, with double-layered plasteel plating and a built-in camera with a display HUD to get rid of the weakpoints like visors.\n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
+		<techLevel>Spacer</techLevel>
+        <generateCommonality>1</generateCommonality>
+		<graphicData>
+			<texPath>Things/Headgear/HeavyMarineHelmet/HeavyMarineHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<drawSize>1.20</drawSize>
+		</graphicData>
+		<costList>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Mass>3.6</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.1</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>Headgear</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>SpacerTech</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Headgear/HeavyMarineHelmet/HeavyMarineHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options"> <!-- Vanilla Marine Helmet -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+    <!-- +++++ Heavy Marine Armor +++++ -->
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>VAE_Apparel_HeavyMarineArmor</defName>
+		<label>heavy marine armor</label>
+		<description>A suit of heavy powered armor. Double layers of plasteel-weave plates are incredibly effective at both projectiles and explosions. Neuro-memetic assistors allow a human to wear the armor and still move easily. A built in blast shield allows wearer to survive a direct rocket hit, upon which the shields require time to recharge.\n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
+		<thingClass>D9UsefulAI.ShieldMkII</thingClass>
+		<graphicData>
+			<texPath>Things/Apparel/HeavyMarineArmor/HeavyMarineArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.20</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+        <generateCommonality>0.1</generateCommonality>
+		<costList>
+			<ComponentSpacer>6</ComponentSpacer>
+			<Plasteel>160</Plasteel>
+			<Uranium>40</Uranium>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>340</MaxHitPoints>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>25</Mass>
+			<Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.34</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<Insulation_Cold>46</Insulation_Cold>
+			<Insulation_Heat>12</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+			<EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>0.4</EnergyShieldEnergyMax>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>SpacerTech</li>
+		</tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Waist</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/HeavyMarineArmor/HeavyMarineArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+		</apparel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options"> <!-- Vanilla Power Armor -->
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

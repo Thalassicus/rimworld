@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+<!-- Grenade Launcher -->
+<ThingDef ParentName="BaseBullet">
+    <defName>VWE_Bullet_GrenadeLauncher</defName>
+    <label>frag grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/ExplosiveCannonShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>40</speed>
+      <damageDef>Bomb</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>2.66</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_RubbleRock</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+	    <explosionDelay>30</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+	<defName>VWE_Gun_GrenadeLauncher</defName>
+	<label>grenade launcher</label>
+    <description>A military issue grenade launcher intended for anti-infantry use.</description>
+	<graphicData>
+		<texPath>Things/WeaponRanged/GrenadeLauncher</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<generateCommonality>0.3</generateCommonality>
+	<statBases>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>3.4</Mass>
+		<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>75</Steel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+	</costList>
+    <recipeMaker>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWE_Bullet_GrenadeLauncher</defaultProjectile>
+			<warmupTime>3.5</warmupTime>
+			<range>31.1</range>
+			<forcedMissRadius>1.9</forcedMissRadius>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>VWE_Shot_GrenadeLauncher</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</li>
+	</verbs>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+    <!-- Flamethrower -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+	<defName>VWE_Gun_Flamethrower</defName>
+	<label>flamethrower</label>
+    <description>Mechanical incendiary device designed to release a controllable stream of burning chemfuel.</description>
+	<graphicData>
+		<texPath>Things/WeaponRanged/Flamethrower</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.12</drawSize>
+    </graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<tickerType>Normal</tickerType>
+	<generateCommonality>0.1</generateCommonality>
+	<statBases>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>5.4</Mass>
+		<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>75</Steel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<Chemfuel>40</Chemfuel>
+	</costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+		<li>TableMachining</li>
+		</recipeUsers>
+	  <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWE_Bullet_Flamethrower</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>12.9</range>
+			<forcedMissRadius>2.9</forcedMissRadius>
+			<burstShotCount>20</burstShotCount>
+			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+			<soundCast>VWE_Shot_Flamethrower</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="CompProperties_Explosive">
+				<explosiveRadius>4.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+		</li>
+		<li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		</li>
+	</comps>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWE_Bullet_Flamethrower</defName>
+    <label>flamethrower fuel</label>
+    <graphicData>
+      <texPath>Things/Projectile/Proj_Flamethrower</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>ExplosiveTrailsEffect.Projectile_FlameThrower</thingClass>
+    <projectile>
+      <speed>30</speed>
+      <damageDef>VWE_HauntingFlame</damageDef>
+      <explosionRadius>0.9</explosionRadius>
+	  <soundExplode>VWE_Explosion_Flamethrower</soundExplode>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <explosionChanceToStartFire>1.0</explosionChanceToStartFire>
+    </projectile>
+  </ThingDef>
+  
+  <!-- Fire Extinguisher -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+	<defName>VWE_Gun_FireExtinguisher</defName>
+	<label>fire extinguisher</label>
+    <description>Filled with a multi-purpose flame supressant, this item can be used to extinguish any kind of fire encountered in the field.</description>
+	<graphicData>
+		<texPath>Things/WeaponRanged/FireExtinguisher</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Metal_Drop</soundInteract>
+	<tickerType>Normal</tickerType>
+    <generateCommonality>0.005</generateCommonality>
+	<statBases>
+		<WorkToMake>10000</WorkToMake>
+		<Mass>4.6</Mass>
+		<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>75</Steel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+	</costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+		<li>TableMachining</li>
+		</recipeUsers>
+	  <researchPrerequisite>Firefoam</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>VWE_Bullet_FireExtinguisher</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>12.9</range>
+			<forcedMissRadius>2.9</forcedMissRadius>
+			<burstShotCount>20</burstShotCount>
+			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+			<soundCast>VWE_Shot_FireExtinguisher</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>14</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="CompProperties_Explosive">
+				<explosiveRadius>6.66</explosiveRadius>
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+		</li>
+	</comps>
+    <tools>
+      <li>
+        <label>canister</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<weaponTags>
+      <li>ToolDecent</li>
+    </weaponTags>
+	</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWE_Bullet_FireExtinguisher</defName>
+    <label>flame suppresant</label>
+    <graphicData>
+      <texPath>Things/Projectile/Proj_FireExtinguisher</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>ExplosiveTrailsEffect.SmokeGrenade</thingClass>
+    <projectile>
+      <speed>30</speed>
+      <damageDef>VWE_Extinguish</damageDef>
+      <explosionRadius>0.9</explosionRadius>
+	  <soundExplode>VWE_Explosion_FireExtinguisher</soundExplode>
+      <preExplosionSpawnThingDef>Filth_FireFoam</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>
+
+</Defs>
