@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Beer"]/statBases/Nutrition</xpath>
+	</Operation>
+	<!--
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Beer"]/equipmentType</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Beer"]/tools</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Beer"]/equippedAngleOffset</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Beer"]/techLevel</xpath>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName="Beer"]/comps</xpath>
+    	<value><comps><li Class="CompProperties_Forbiddable"/></comps></value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName="Beer"]/comps/li[1]</xpath>
+	</Operation>
+	-->
+</Patch>

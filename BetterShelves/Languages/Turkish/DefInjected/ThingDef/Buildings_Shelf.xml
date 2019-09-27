@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmallShelf.label>Küçük raf</SmallShelf.label>
+  <SmallShelf.description>İçinde depolanan eşyalar dışarda olsa bile bozulmaz.</SmallShelf.description>
+  <Blueprint_SmallShelf.label>Küçük raf (Tasarım çizim)</Blueprint_SmallShelf.label>
+  <Blueprint_Install_SmallShelf.label>Küçük raf (Tasarım çizim)</Blueprint_Install_SmallShelf.label>
+  <Frame_SmallShelf.label>Küçük raf (Inşa etmek)</Frame_SmallShelf.label>
+  <Frame_SmallShelf.description>İçinde depolanan eşyalar dışarda olsa bile bozulmaz.</Frame_SmallShelf.description>
+
+
+</LanguageData>

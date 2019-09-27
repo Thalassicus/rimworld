@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- 
+        RESEARCH 
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/label</xpath><value>
+        <label>Heavy Weapons</label>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="MultibarrelWeapons"]/description</xpath><value>
+        <description>Build heavy weapons for dealing with large groups, including rocket launchers, flamethrowers, and miniguns.</description>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Greatbow"]/label</xpath><value>
+        <label>Armaments</label>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Greatbow"]/description</xpath><value>
+        <description>Build medieval armaments, including crossbows and flintlock weapons.</description>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/label</xpath><value>
+        <label>Bows</label>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/description</xpath><value>
+        <description>Build advanced recurve and great bows.</description>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/label</xpath><value>
+        <label>Charge Pistols</label>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath><value>
+        <description>Build simple civilian-grade pulse charged pistols.\n\nMore advanced military weapons require manufacturing infrastructure found only on glitterworlds. Buying them is highly illegal, but you may find black-market merchants willing to sell them.</description>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bow_Great"]/recipeMaker/researchPrerequisite</xpath><value>
+        <researchPrerequisite>RecurveBow</researchPrerequisite>
+    </value></Operation>
+
+
+    <!-- 
+        MELEE 
+    -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/description</xpath><value>
+        <description>Longswords can parry and deflect melee attacks, providing an excellent defensive upgrade over spears or ikwas for a skilled fighter.</description></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]</xpath><value>
+        <equippedStatOffsets><MeleeDodgeChance>10</MeleeDodgeChance></equippedStatOffsets>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/description</xpath><value>
+        <description>Swords can parry and deflect melee attacks, providing an excellent defensive upgrade over ikwas for a skilled fighter.</description></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath><value>
+        <equippedStatOffsets><MeleeDodgeChance>10</MeleeDodgeChance></equippedStatOffsets>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/description</xpath><value>
+        <description>Stick them with the pointy end. In the hands of a novice, spears are more deadly than swords or halberds.</description></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]</xpath><value>
+        <equippedStatOffsets><MeleeHitChance>10</MeleeHitChance></equippedStatOffsets>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/description</xpath><value>
+        <description>Stick them with the pointy end. In the hands of a novice, ikwas are more deadly than swords.</description></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]</xpath><value>
+        <equippedStatOffsets><MeleeHitChance>10</MeleeHitChance></equippedStatOffsets>
+    </value></Operation>
+
+    
+    <!-- 
+        RANGED 
+    -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Bullet_HeavySMG"]/projectile</xpath>
+        <value><stoppingPower>1</stoppingPower></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/description</xpath><value>
+        <description>Stick them with the pointy end. In the hands of a novice, ikwas are more deadly than swords.</description>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/recipeMaker</xpath><value>
+        <recipeMaker><recipeUsers Inherit="False"/></recipeMaker>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/WorkToMake</xpath><value>
+        <WorkToMake>60000</WorkToMake>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/costList</xpath><value>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>7</ComponentSpacer>
+        </costList>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/recipeMaker</xpath><value>
+        <recipeMaker><recipeUsers Inherit="False"/></recipeMaker>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/WorkToMake</xpath><value>
+        <WorkToMake>67500</WorkToMake>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/costList</xpath><value>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+    </value></Operation>
+
+
+    <!--
+        START IMPORT FROM SPREADSHEET 
+    -->
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/description</xpath><value><description>Pump shotguns are simple and easy to use, with a lot of stopping power. This has the least chance of friendly fire in the hands of a novice shooter.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>1</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_Shotgun"]/projectile/damageAmountBase</xpath><value><damageAmountBase>15</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_Shotgun"]/projectile/stoppingPower</xpath><value><stoppingPower>5</stoppingPower></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.99</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.95</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.8</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.6</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>20.9</range></value></Operation>
+<Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>10</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/description</xpath><value><description>Chain shotguns provide veteran fighters with good accuracy and stopping power at close range.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>1</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/verbs//li[verbClass="Verb_Shoot"]/ticksBetweenBurstShots</xpath><value><ticksBetweenBurstShots>20</ticksBetweenBurstShots></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_Shotgun"]/projectile/damageAmountBase</xpath><value><damageAmountBase>15</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_Shotgun"]/projectile/stoppingPower</xpath><value><stoppingPower>5</stoppingPower></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.95</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.9</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.75</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.55</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>20.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Revolver"]/description</xpath><value><description>The simple design of a revolver provides an excellent choice for novice shooters.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Revolver"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>0.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_Revolver"]/projectile/damageAmountBase</xpath><value><damageAmountBase>10</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.7</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.6</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.5</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="Gun_Revolver"]</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>10</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Autopistol"]/description</xpath><value><description>A pistol lacks stopping power or range, but is quick to fire and easy to use, making an excellent choice for novice shooters.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Autopistol"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>0.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Autopistol"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_Autopistol"]/projectile/damageAmountBase</xpath><value><damageAmountBase>5</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Autopistol"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.6</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Autopistol"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.5</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="Gun_Autopistol"]</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>10</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/description</xpath><value><description>Veterans can use machine pistols for massive damage at very close range.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/verbs//li[verbClass="Verb_Shoot"]/burstShotCount</xpath><value><burstShotCount>5</burstShotCount></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/verbs//li[verbClass="Verb_Shoot"]/ticksBetweenBurstShots</xpath><value><ticksBetweenBurstShots>2</ticksBetweenBurstShots></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_MachinePistol"]/projectile/damageAmountBase</xpath><value><damageAmountBase>5</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.5</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.4</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.3</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.2</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_MachinePistol"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>15.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/description</xpath><value><description>Veterans can use submachine guns to put out quick bursts of bullets and move, staying out of enemy melee range.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>0.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/verbs//li[verbClass="Verb_Shoot"]/ticksBetweenBurstShots</xpath><value><ticksBetweenBurstShots>4</ticksBetweenBurstShots></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_HeavySMG"]/projectile/damageAmountBase</xpath><value><damageAmountBase>5</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_HeavySMG"]/projectile/stoppingPower</xpath><value><stoppingPower>1</stoppingPower></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.4</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.4</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.4</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.4</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_HeavySMG"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>25.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Minigun"]/description</xpath><value><description>Good for dealing with large groups of enemies, miniguns fire three times as many bullets as assault rifles, with much lower accuracy.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Minigun"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Minigun"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.25</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_Minigun"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.25</AccuracyLong></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/description</xpath><value><description>Good for dealing with large groups of enemies, light machine guns fire twice as many bullets as assault rifles, with lower accuracy.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>1.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_LMG"]/projectile/damageAmountBase</xpath><value><damageAmountBase>10</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.4</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.4</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.4</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_LMG"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>30.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/description</xpath><value><description>Assault rifles provide a versatile battlefield option for veteran fighters, with average effectiveness in most situations.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>1.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_AssaultRifle"]/projectile/damageAmountBase</xpath><value><damageAmountBase>10</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.7</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.7</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_AssaultRifle"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.7</AccuracyLong></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/description</xpath><value><description>The simple design and low recoil of a bolt-action rifle provides a long-range option for novice shooters.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>2</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_BoltActionRifle"]/projectile/damageAmountBase</xpath><value><damageAmountBase>15</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.6</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.7</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.8</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.9</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>35.9</range></value></Operation>
+<Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="Gun_BoltActionRifle"]</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>10</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>2</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_SniperRifle"]/projectile/damageAmountBase</xpath><value><damageAmountBase>30</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.6</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.8</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.9</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_SniperRifle"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>45.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>1.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>1</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/verbs//li[verbClass="Verb_Shoot"]/ticksBetweenBurstShots</xpath><value><ticksBetweenBurstShots>10</ticksBetweenBurstShots></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.7</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.7</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.7</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.7</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>5</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>3.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>2</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bullet_ChargeLance"]/projectile/damageAmountBase</xpath><value><damageAmountBase>45</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.6</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.7</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.8</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.9</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>45.9</range></value></Operation>
+<Operation Class="PatchOperationAdd"><xpath>Defs/ThingDef[defName="Gun_ChargeLance"]</xpath><value><equippedStatOffsets><ShootingAccuracyPawn>5</ShootingAccuracyPawn></equippedStatOffsets></value></Operation>
+
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/description</xpath><value><description>Pila are effective and accurate at close range, and provide good stopping power.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>2</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pilum_Thrown"]/projectile/damageAmountBase</xpath><value><damageAmountBase>10</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pilum_Thrown"]/projectile/stoppingPower</xpath><value><stoppingPower>3</stoppingPower></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.9</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.8</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.6</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.4</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Pila"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>15.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/description</xpath><value><description>Shortbows are effective at close range.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>1.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Arrow_Short"]/projectile/damageAmountBase</xpath><value><damageAmountBase>10</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.7</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.6</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.5</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.4</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Short"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>20.9</range></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Recurve"]/description</xpath><value><description>Recurve bows are decently effective at all ranges.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Recurve"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>2</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Recurve"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Arrow_Recurve"]/projectile/damageAmountBase</xpath><value><damageAmountBase>10</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Recurve"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.7</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Recurve"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.7</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Recurve"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.7</AccuracyLong></value></Operation>
+
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/description</xpath><value><description>Greatbows are effective at long range.</description></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/verbs//li[verbClass="Verb_Shoot"]/warmupTime</xpath><value><warmupTime>3.5</warmupTime></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/statBases/RangedWeapon_Cooldown</xpath><value><RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Arrow_Great"]/projectile/damageAmountBase</xpath><value><damageAmountBase>15</damageAmountBase></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Arrow_Great"]/projectile/stoppingPower</xpath><value><stoppingPower>1</stoppingPower></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/statBases/AccuracyTouch</xpath><value><AccuracyTouch>0.5</AccuracyTouch></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/statBases/AccuracyShort</xpath><value><AccuracyShort>0.6</AccuracyShort></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/statBases/AccuracyMedium</xpath><value><AccuracyMedium>0.7</AccuracyMedium></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/statBases/AccuracyLong</xpath><value><AccuracyLong>0.8</AccuracyLong></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/ThingDef[defName="Bow_Great"]/verbs//li[verbClass="Verb_Shoot"]/range</xpath><value><range>30.9</range></value></Operation>
+
+    
+    <!--
+        END IMPORT FROM SPREADSHEET 
+    -->
+
+
+</Patch>

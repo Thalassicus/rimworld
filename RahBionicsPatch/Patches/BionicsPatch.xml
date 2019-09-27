@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/RecipeDef[researchPrerequisite="Bionics"]/researchPrerequisite</xpath>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName="DoBillsBionicWorkbench"]/label</xpath>
+        <value><label>Make bionics</label></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[defName="DoBillsAdvancedMedicalStation"]/label</xpath>
+        <value><label>Make advanced bionics</label></value>
+    </Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsBionicWorkbench"]/label</xpath><value><label>Make bionics</label></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsBionicWorkbench"]/workType</xpath><value><workType>Tailoring</workType></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsBionicWorkbench"]/priorityInType</xpath><value><priorityInType>130</priorityInType></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsAdvancedMedicalStation"]/label</xpath><value><label>Make advanced bionics</label></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsAdvancedMedicalStation"]/workType</xpath><value><workType>Tailoring</workType></value></Operation>
+<Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsAdvancedMedicalStation"]/priorityInType</xpath><value><priorityInType>120</priorityInType></value></Operation>
+</Patch>

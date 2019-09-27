@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkTypeDef>
+    <defName>Surgeon</defName>
+    <labelShort>Surgeon</labelShort>
+    <pawnLabel>Surgeon</pawnLabel>
+    <gerundLabel>operating</gerundLabel>
+    <description>Perform operations on patients and animals.</description>
+    <verb>operate</verb>
+    <naturalPriority>1300</naturalPriority>
+    <alwaysStartActive>true</alwaysStartActive>
+    <requireCapableColonist>true</requireCapableColonist>
+    <relevantSkills>
+      <li>Medicine</li>
+    </relevantSkills>
+    <workTags>
+      <li>Caring</li>
+    </workTags>
+  </WorkTypeDef>
+  <WorkTypeDef>
+    <defName>Delivering</defName>
+    <labelShort>Deliver</labelShort>
+    <pawnLabel>Delivery</pawnLabel>
+    <gerundLabel>delivering</gerundLabel>
+    <description>Delivery jobs too complex for animals.</description>
+    <verb>Deliver</verb>
+    <naturalPriority>1075</naturalPriority>
+    <alwaysStartActive>true</alwaysStartActive>
+    <requireCapableColonist>true</requireCapableColonist>
+    <workTags>
+      <li>ManualDumb</li>
+      <li>Hauling</li>
+    </workTags>
+  </WorkTypeDef>
+  <WorkTypeDef>
+    <defName>Chemist</defName>
+    <labelShort>Chemist</labelShort>
+    <pawnLabel>Chemist</pawnLabel>
+    <gerundLabel>Chemistry</gerundLabel>
+    <description>Make chemicals, such as drugs.</description>
+    <verb>Synthesize</verb>
+    <naturalPriority>500</naturalPriority>
+    <alwaysStartActive>true</alwaysStartActive>
+    <requireCapableColonist>true</requireCapableColonist>
+    <relevantSkills>
+      <li>Intellectual</li>
+    </relevantSkills>
+    <workTags>
+      <li>Crafting</li>
+      <li>ManualSkilled</li>
+    </workTags>
+  </WorkTypeDef>
+</Defs>

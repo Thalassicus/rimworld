@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- 
+        SPACER TECH 
+        With trade of spacer military-grade equipment highly illegal, black-market arms dealers are the best source.
+    -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_ChargeLance"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <!-- can't use AND operators?
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[techLevel="Spacer" and thingClass="Apparel"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OrbitalTargeterBombardment"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OrbitalTargeterPowerBeam"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="TornadoGenerator"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_TripleRocket"]/tradeTags</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_DoomsdayRocket"]/tradeTags</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Orbital_PirateMerchant"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>SpacerTech</tradeTag>
+            <thingDefCountRange>
+                <min>10</min>
+                <max>14</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>SpacerTech</tradeTag>
+            <thingDefCountRange>
+                <min>4</min>
+                <max>5</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>SpacerTech</tradeTag>
+            <thingDefCountRange>
+                <min>2</min>
+                <max>3</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>SpacerTech</tradeTag>
+            <thingDefCountRange>
+                <min>2</min>
+                <max>3</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+
+    
+    <!-- 
+        STUN GUNS
+        Slave traders will happily sell stun guns to get more slaves.
+     -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Orbital_PirateMerchant"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>StunGun</tradeTag>
+            <thingDefCountRange>
+                <min>3</min>
+                <max>5</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>StunGun</tradeTag>
+            <thingDefCountRange>
+                <min>2</min>
+                <max>3</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>StunGun</tradeTag>
+            <thingDefCountRange>
+                <min>2</min>
+                <max>2</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath><value>
+        <li Class="StockGenerator_Tag">
+            <tradeTag>StunGun</tradeTag>
+            <thingDefCountRange>
+                <min>1</min>
+                <max>2</max>
+            </thingDefCountRange>
+            <countRange>
+                <min>1</min>
+                <max>1</max>
+            </countRange>
+        </li>
+    </value></Operation>
+</Patch>

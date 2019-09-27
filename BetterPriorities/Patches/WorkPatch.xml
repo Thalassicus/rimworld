@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName="Growing"]/naturalPriority</xpath>
+        <value><naturalPriority>1010</naturalPriority></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName="PlantCutting"]/naturalPriority</xpath>
+        <value><naturalPriority>1020</naturalPriority></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName="Smithing"]/naturalPriority</xpath>
+        <value><naturalPriority>700</naturalPriority></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[workType="Smithing"]/workType</xpath>
+        <value><workType>Tailoring</workType></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName="Smithing"]/relevantSkills</xpath>
+        <value><relevantSkills><li>Construction</li></relevantSkills></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName="Smithing"]/workTags</xpath>
+        <value><workTags><li>ManualSkilled</li></workTags></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkGiverDef[workType="Hauling"]/workType</xpath>
+        <value><workType>Delivering</workType></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/WorkGiverDef[defName="PlantsCut"]</xpath>
+        <value><priorityInType>50</priorityInType></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">    
+        <xpath>Defs/ThingDef[defName="SmokeleafJoint"]/recipeMaker/workSpeedStat</xpath><value>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">    
+        <xpath>Defs/ThingDef[defName="SmokeleafJoint"]/recipeMaker/workSkill</xpath><value>
+        <workSkill>Intellectual</workSkill>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SmokeleafJoint"]/statBases/WorkToMake</xpath><value>
+        <WorkToMake>200</WorkToMake>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Yayo"]/statBases/WorkToMake</xpath><value>
+        <WorkToMake>1000</WorkToMake>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Yayo"]/statBases/MarketValue</xpath><value>
+        <MarketValue>35</MarketValue>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Flake"]/statBases/MarketValue</xpath><value>
+        <MarketValue>16</MarketValue>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MedicineIndustrial"]/recipeMaker/skillRequirements</xpath><value>
+        <skillRequirements><Intellectual>4</Intellectual></skillRequirements>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="GoJuice"]/recipeMaker</xpath><value>
+        <skillRequirements><Intellectual>4</Intellectual></skillRequirements>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Yayo"]/recipeMaker</xpath><value>
+        <skillRequirements><Intellectual>4</Intellectual></skillRequirements>
+    </value></Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WakeUp"]/recipeMaker</xpath><value>
+        <skillRequirements><Intellectual>4</Intellectual></skillRequirements>
+    </value></Operation>  
+
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Doctor"]/labelShort</xpath><value><labelShort>Medic</labelShort></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Doctor"]/pawnLabel</xpath><value><pawnLabel>Medic</pawnLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Doctor"]/gerundLabel</xpath><value><gerundLabel>treating</gerundLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Doctor"]/description</xpath><value><description>Provide medical care to injured colonists, prisoners, and animals.</description></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Doctor"]/naturalPriority</xpath><value><naturalPriority>1325</naturalPriority></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Tailoring"]/labelShort</xpath><value><labelShort>Craft</labelShort></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Tailoring"]/pawnLabel</xpath><value><pawnLabel>Craft</pawnLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Tailoring"]/gerundLabel</xpath><value><gerundLabel>crafting</gerundLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Tailoring"]/description</xpath><value><description>Perform skilled crafting tasks, including smithing, machining, and tailoring.</description></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Tailoring"]/verb</xpath><value><verb>Craft at</verb></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Crafting"]/labelShort</xpath><value><labelShort>Labor</labelShort></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Crafting"]/pawnLabel</xpath><value><pawnLabel>Laborer</pawnLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Crafting"]/gerundLabel</xpath><value><gerundLabel>laboring</gerundLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Crafting"]/verb</xpath><value><verb>Labor at</verb></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Smithing"]/labelShort</xpath><value><labelShort>Repair</labelShort></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Smithing"]/pawnLabel</xpath><value><pawnLabel>Repair</pawnLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Smithing"]/gerundLabel</xpath><value><gerundLabel>repairing</gerundLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Smithing"]/description</xpath><value><description>Repair damaged structures.</description></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Smithing"]/verb</xpath><value><verb>Repair</verb></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Growing"]/labelShort</xpath><value><labelShort>Plant</labelShort></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Growing"]/pawnLabel</xpath><value><pawnLabel>Planter</pawnLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Growing"]/gerundLabel</xpath><value><gerundLabel>planting</gerundLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="Growing"]/description</xpath><value><description>Plant seeds.</description></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="PlantCutting"]/labelShort</xpath><value><labelShort>Harvest</labelShort></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="PlantCutting"]/pawnLabel</xpath><value><pawnLabel>Harvester</pawnLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="PlantCutting"]/gerundLabel</xpath><value><gerundLabel>harvesting</gerundLabel></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkTypeDef[defName="PlantCutting"]/description</xpath><value><description>Harvest crops or wild plants, and cut down trees.</description></value></Operation>
+
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsMedicalHumanOperation"]/workType</xpath><value><workType>Surgeon</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsMedicalHumanOperation"]/priorityInType</xpath><value><priorityInType>20</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsMedicalAnimalOperation"]/workType</xpath><value><workType>Surgeon</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsMedicalAnimalOperation"]/priorityInType</xpath><value><priorityInType>10</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoctorRescue"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoctorRescue"]/priorityInType</xpath><value><priorityInType>150</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="TakeToBedToOperate"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="TakeToBedToOperate"]/priorityInType</xpath><value><priorityInType>140</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Flick"]/priorityInType</xpath><value><priorityInType>130</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="BasicReleasePrisoner"]/priorityInType</xpath><value><priorityInType>120</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoctorFeedHumanlikes"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoctorFeedHumanlikes"]/priorityInType</xpath><value><priorityInType>110</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoctorFeedAnimals"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoctorFeedAnimals"]/priorityInType</xpath><value><priorityInType>100</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="VisitSickPawn"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="VisitSickPawn"]/priorityInType</xpath><value><priorityInType>90</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Strip"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Strip"]/priorityInType</xpath><value><priorityInType>80</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Uninstall"]/workType</xpath><value><workType>BasicWorker</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Uninstall"]/priorityInType</xpath><value><priorityInType>70</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="FixBrokenDownBuilding"]/workType</xpath><value><workType>Smithing</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="FixBrokenDownBuilding"]/priorityInType</xpath><value><priorityInType>100</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Repair"]/workType</xpath><value><workType>Smithing</workType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Repair"]/priorityInType</xpath><value><priorityInType>75</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/priorityInType</xpath><value><priorityInType>60</priorityInType></value></Operation>
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsProduceDrugs"]/workType</xpath><value><workType>Chemist</workType></value></Operation>	
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="HaulToInventory"]/workType</xpath><value><workType>Hauling</workType></value></Operation>	
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="HaulGeneral"]/workType</xpath><value><workType>Hauling</workType></value></Operation>	
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="HaulMerge"]/workType</xpath><value><workType>Hauling</workType></value></Operation>	
+    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="GrowerHarvest"]/workType</xpath><value><workType>PlantCutting</workType></value></Operation>
+
+</Patch>
