@@ -28,8 +28,8 @@
     </Operation>
     
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
-		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+        <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
+		<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
     </value></Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/costStuffCount</xpath><value>

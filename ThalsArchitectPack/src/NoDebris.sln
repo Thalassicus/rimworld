@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoDebris", "NoDebris.csproj", "{5F744854-B300-4303-99EB-2C7BB3F17A89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F744854-B300-4303-99EB-2C7BB3F17A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F744854-B300-4303-99EB-2C7BB3F17A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F744854-B300-4303-99EB-2C7BB3F17A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F744854-B300-4303-99EB-2C7BB3F17A89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06329651-C498-442F-B8C6-DD40CE18CEB2}
+	EndGlobalSection
+EndGlobal

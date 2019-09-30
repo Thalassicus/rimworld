@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Vanilla stones -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bulk Stonecutting</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkAny"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bulk Stonecutting</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkSandstone"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bulk Stonecutting</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkGranite"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bulk Stonecutting</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkLimestone"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bulk Stonecutting</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkSlate"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Bulk Stonecutting</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeStoneBlocksBulkMarble"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+</Patch>

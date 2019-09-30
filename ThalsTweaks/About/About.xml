@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ModMetaData>
+	<name>Thal's Tweaks</name>
+	<author>Thalassicuis</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<description>Adjusts the height of trees in Realistic Planets.</description>
+</ModMetaData>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeConcrete"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeConcrete5"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeConcreteOneStep"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeConcreteBlocks"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeCrushedRocksSlow"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeCrushedRocksSlowBlock"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RF] Concrete [1.0]</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeSandSlow"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

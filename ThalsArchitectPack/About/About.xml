@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ModMetaData>
+	<name>Thal's Architect Pack</name>
+	<author>Thalassicuis</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<description>Multiplayer-compatible mod that adds a variety of minor things to the build menu, such as lights, floor mats, roof supports, etc.</description>
+</ModMetaData>

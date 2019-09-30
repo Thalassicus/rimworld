@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="Make_TrebuchetShells"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="Make_TrebuchetShellsA"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="Make_CatapultShells"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Arrow Please</li>
+		</mods>	
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[@Name="Make_CatapultShellsA"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>	
+	
+</Patch>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/ThingDef[defName="Cooler"]</xpath>
+		<attribute>Name</attribute>
+		<value>Cooler</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>Defs/ThingDef[defName="Vent"]</xpath>
+		<attribute>Name</attribute>
+		<value>Vent</value>
+	</Operation>
+	
+</Patch>

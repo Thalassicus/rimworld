@@ -111,7 +111,7 @@
     <!-- +++++ Chefs Toque +++++ -->
     <ThingDef ParentName="HatMakeableBase">
 		<defName>VAE_Headgear_PoofyHat</defName>
-		<label>Chef's Toque</label>
+		<label>Poofy Hat</label>
 		<description>An extravagantly large and poofy hat.</description>
 		<graphicData>
 			<texPath>Things/Headgear/PoofyHat/PoofyHat</texPath>
@@ -119,7 +119,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
         <generateCommonality>0.05</generateCommonality>
-		<costStuffCount>20</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>

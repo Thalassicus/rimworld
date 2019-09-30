@@ -195,7 +195,7 @@
 			<texPath>Things/Apparel/Apron/Apron</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Industrial</techLevel>
         <generateCommonality>0.5</generateCommonality>
 		<costStuffCount>55</costStuffCount>
 		<stuffCategories>
@@ -235,7 +235,7 @@
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -250,8 +250,8 @@
     <!-- +++++ Chefs Uniform +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
 		<defName>VAE_Apparel_ChefsUniform</defName>
-		<label>Chef's Uniform</label>
-		<description>A thick cloth coat protects from the heat of stoves and splattering of boiling liquids.</description>
+		<label>Buttoned Uniform</label>
+		<description>A fancy button-down shirt.</description>
 		<graphicData>
 			<texPath>Things/Apparel/ChefsUniform/ChefsUniform</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -271,12 +271,6 @@
             <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2.5</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<CookSpeed>0.15</CookSpeed>
-			<Cleanliness>0.10</Cleanliness>
-			<ButcheryFleshSpeed>0.10</ButcheryFleshSpeed>
-			<ButcheryFleshEfficiency>0.05</ButcheryFleshEfficiency>
-		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Apparel</li>
 		</thingCategories>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <TableLinkable.label>составной стол</TableLinkable.label>
+  <TableLinkable.description>Составному столу можно придать любую форму.</TableLinkable.description>
+
+  <StoolLinkable.label>составная скамья</StoolLinkable.label>
+  <StoolLinkable.description>Составной скамье можно придать любую форму.</StoolLinkable.description>
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Shelf"]/costStuffCount</xpath>
+    <value><costStuffCount>10</costStuffCount></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Shelf"]/building/defaultStorageSettings</xpath>
+    <value><defaultStorageSettings>
+      <priority>Important</priority>
+      <filter/>
+    </defaultStorageSettings></value>
+  </Operation>
+
+</Patch>

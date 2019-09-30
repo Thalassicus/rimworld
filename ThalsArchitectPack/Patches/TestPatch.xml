@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!--BaseFilth Patch for Realistic Rooms-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Realistic Rooms</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="BaseFilth"]/statBases/Beauty</xpath>
+                    <value>
+                        <Beauty>-4</Beauty>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
+
