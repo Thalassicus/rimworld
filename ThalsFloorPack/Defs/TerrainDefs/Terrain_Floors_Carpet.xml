@@ -2,19 +2,25 @@
 <Defs>
  
   <!-- ================= Carpets ================= -->
+
+	<DesignatorDropdownGroupDef>
+		<defName>ThalBasicCarpetFloor</defName>
+	</DesignatorDropdownGroupDef>
   
   <TerrainDef Name="CarpetBase" ParentName="FloorBase" Abstract="True">
     <texturePath>Terrain/Surfaces/Carpet</texturePath>
     <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
     <burnedDef>BurnedCarpet</burnedDef>
     <costList>
-      <Cloth>8</Cloth>
+      <Cloth>10</Cloth>
     </costList>
-    <statBases>
-      <Beauty>2</Beauty>
-      <Flammability>0.5</Flammability>
-      <WorkToBuild>800</WorkToBuild>
-    </statBases>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0.25</Flammability>
+		</statBases>
+		<designatorDropdown>ThalBasicCarpetFloor</designatorDropdown>
+    <designationHotKey>Misc11</designationHotKey>
   </TerrainDef>  
 
   <TerrainDef ParentName="CarpetBase">
@@ -23,11 +29,10 @@
     <renderPrecedence>195</renderPrecedence>
     <description>Inviting cream-colored carpet.</description>
     <color>(195,192,176)</color>
-    <designationHotKey>Misc11</designationHotKey>
   </TerrainDef>  
   
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetYellow</defName>
+    <defName>ThalCarpetYellow</defName>
     <label>yellow carpet</label>
     <renderPrecedence>194</renderPrecedence>
     <description>Yellow carpet.</description>
@@ -35,7 +40,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetOrange</defName>
+    <defName>ThalCarpetOrange</defName>
     <label>orange carpet</label>
     <renderPrecedence>193</renderPrecedence>
     <description>Orange carpet.</description>
@@ -43,7 +48,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetBrown</defName>
+    <defName>ThalCarpetBrown</defName>
     <label>brown carpet</label>
     <renderPrecedence>192</renderPrecedence>
     <description>Brown carpet.</description>
@@ -51,7 +56,7 @@
   </TerrainDef>  
   
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetPink</defName>
+    <defName>ThalCarpetPink</defName>
     <label>pink carpet</label>
     <renderPrecedence>190</renderPrecedence>
     <description>Pink carpet.</description>
@@ -68,7 +73,7 @@
   </TerrainDef>  
   
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetPurple</defName>
+    <defName>ThalCarpetPurple</defName>
     <label>purple carpet</label>
     <renderPrecedence>188</renderPrecedence>
     <description>Purple carpet.</description>
@@ -81,11 +86,10 @@
     <renderPrecedence>187</renderPrecedence>
     <description>Toe-hugging plush carpet in a cool blue color.</description>
     <color>(24,65,121)</color>
-    <designationHotKey>Misc10</designationHotKey>
   </TerrainDef>
   
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetSkyBlue</defName>
+    <defName>ThalCarpetSkyBlue</defName>
     <label>sky blue carpet</label>
     <renderPrecedence>186</renderPrecedence>	
     <description>Sky blue carpet.</description>	
@@ -93,7 +97,7 @@
   </TerrainDef>   
  
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetLightGreen</defName>
+    <defName>ThalCarpetLightGreen</defName>
     <label>light green carpet</label>
     <renderPrecedence>185</renderPrecedence>	
     <description>Light green carpet.</description>	
@@ -106,11 +110,10 @@
     <renderPrecedence>184</renderPrecedence>
     <description>Naturalistic-feeling green carpet. Earth tones, dude.</description>
     <color>(89,105,62)</color>
-    <designationHotKey>Misc9</designationHotKey>
   </TerrainDef>  
   
   <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetWhite</defName>
+    <defName>ThalCarpetWhite</defName>
     <label>white carpet</label>
     <renderPrecedence>183</renderPrecedence>
     <description>White carpet.</description>	
@@ -118,7 +121,7 @@
   </TerrainDef>  
   
     <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetGrey</defName>
+    <defName>ThalCarpetGrey</defName>
     <label>grey carpet</label>
     <renderPrecedence>182</renderPrecedence>
     <description>Grey carpet.</description>	
@@ -131,35 +134,40 @@
     <renderPrecedence>181</renderPrecedence>
     <description>Professional-looking dark gray carpet.</description>
     <color>(81,81,81)</color>
-    <designationHotKey>Misc12</designationHotKey>
   </TerrainDef>   
   
     <TerrainDef ParentName="CarpetBase">
-    <defName>WDCarpetBlack</defName>
+    <defName>ThalCarpetBlack</defName>
     <label>black carpet</label>
     <renderPrecedence>180</renderPrecedence>
     <description>Black carpet.</description>	
     <color>(52,52,52)</color>
   </TerrainDef>  
 
-  <!-- ================= Check Carpets ================= -->    
+  <!-- ================= Check Carpets ================= --> 
+
+	<DesignatorDropdownGroupDef>
+		<defName>ThalCheckCarpetFloor</defName>
+	</DesignatorDropdownGroupDef> 
 	
   <TerrainDef Name="WDCheckCarpetBase" ParentName="FloorBase" Abstract="True">
     <texturePath>Terrain/Surfaces/Carpet/CheckCarpet</texturePath>
     <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
     <burnedDef>BurnedCarpet</burnedDef>
     <costList>
-      <Cloth>12</Cloth>
+      <Cloth>10</Cloth>
     </costList>
-    <statBases>
-      <Beauty>3</Beauty>
-      <Flammability>0.32</Flammability>
-      <WorkToBuild>1080</WorkToBuild>
-    </statBases>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>0.25</Flammability>
+		</statBases>
+		<designatorDropdown>ThalCheckCarpetFloor</designatorDropdown>
+    <designationHotKey>Misc10</designationHotKey>
   </TerrainDef>	
  
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetCream</defName>
+    <defName>ThalCheckCarpetFloorCream</defName>
     <label>check cream carpet</label>
     <renderPrecedence>179</renderPrecedence>	
     <description>Check cream carpet.</description>		
@@ -167,7 +175,7 @@
   </TerrainDef>
 
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetYellow</defName>
+    <defName>ThalCheckCarpetFloorYellow</defName>
     <label>check yellow carpet</label>
     <renderPrecedence>178</renderPrecedence>	
     <description>Check yellow carpet.</description>		
@@ -175,7 +183,7 @@
   </TerrainDef>  
   
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetOrange</defName>
+    <defName>ThalCheckCarpetFloorOrange</defName>
     <label>check orange carpet</label>
     <renderPrecedence>177</renderPrecedence>	
     <description>Check orange carpet.</description>		
@@ -183,7 +191,7 @@
   </TerrainDef>
   
     <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetBrown</defName>
+    <defName>ThalCheckCarpetFloorBrown</defName>
     <label>check brown carpet</label>
     <renderPrecedence>176</renderPrecedence>	
     <description>Check brown carpet.</description>		
@@ -191,7 +199,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetPink</defName>
+    <defName>ThalCheckCarpetFloorPink</defName>
     <label>check pink carpet</label>
     <renderPrecedence>175</renderPrecedence>	
     <description>Check pink carpet.</description>		
@@ -199,7 +207,7 @@
   </TerrainDef>       
   
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetRed</defName>
+    <defName>ThalCheckCarpetFloorRed</defName>
     <label>check red carpet</label>
     <renderPrecedence>174</renderPrecedence>	
     <description>Check red carpet.</description>		
@@ -207,7 +215,7 @@
   </TerrainDef>  
   
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetPurple</defName>
+    <defName>ThalCheckCarpetFloorPurple</defName>
     <label>check purple carpet</label>
     <renderPrecedence>173</renderPrecedence>	
     <description>Check purple carpet.</description>		
@@ -215,7 +223,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetBlue</defName>
+    <defName>ThalCheckCarpetFloorBlue</defName>
     <label>check blue carpet</label>
     <renderPrecedence>172</renderPrecedence>	
     <description>Check blue carpet.</description>		
@@ -223,7 +231,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetSkyBlue</defName>
+    <defName>ThalCheckCarpetFloorSkyBlue</defName>
     <label>check sky blue carpet</label>
     <renderPrecedence>171</renderPrecedence>	
     <description>Black carpet.</description>		
@@ -231,7 +239,7 @@
   </TerrainDef>   
   
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetLightGreen</defName>
+    <defName>ThalCheckCarpetFloorLightGreen</defName>
     <label>check light green carpet</label>
     <renderPrecedence>170</renderPrecedence>	
     <description>Check light green carpet.</description>		
@@ -239,7 +247,7 @@
   </TerrainDef>    
 
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetGreen</defName>
+    <defName>ThalCheckCarpetFloorGreen</defName>
     <label>check green carpet</label>
     <renderPrecedence>169</renderPrecedence>	
     <description>Check green carpet.</description>		
@@ -247,7 +255,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetWhite</defName>
+    <defName>ThalCheckCarpetFloorWhite</defName>
     <label>check white carpet</label>
     <renderPrecedence>168</renderPrecedence>	
     <description>Check white carpet.</description>		
@@ -255,7 +263,7 @@
   </TerrainDef>  
  
     <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetGrey</defName>
+    <defName>ThalCheckCarpetFloorGrey</defName>
     <label>check grey carpet</label>
     <renderPrecedence>167</renderPrecedence>	
     <description>Check grey carpet.</description>		
@@ -263,7 +271,7 @@
   </TerrainDef> 
  
   <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetDark</defName>
+    <defName>ThalCheckCarpetFloorDark</defName>
     <label>check dark carpet</label>
     <renderPrecedence>166</renderPrecedence>
     <description>Check dark carpet.</description>		
@@ -271,7 +279,7 @@
   </TerrainDef>  
  
     <TerrainDef ParentName="WDCheckCarpetBase">
-    <defName>WDCheckCarpetBlack</defName>
+    <defName>ThalCheckCarpetFloorBlack</defName>
     <label>check black carpet</label>
     <renderPrecedence>165</renderPrecedence>	
     <description>Check black carpet.</description>		

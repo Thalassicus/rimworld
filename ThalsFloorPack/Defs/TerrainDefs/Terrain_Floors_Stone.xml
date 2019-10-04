@@ -74,7 +74,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDRoughStoneTileBase">
-    <defName>WDRoughSandstoneTile</defName>
+    <defName>ThalRoughSandstoneTile</defName>
     <label>rough sandstone tile</label>
 	<color>(126,104,94)</color>	
     <costList>
@@ -83,7 +83,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDRoughStoneTileBase">
-    <defName>WDRoughGraniteTile</defName>
+    <defName>ThalRoughGraniteTile</defName>
     <label>rough granite tile</label>
 	<color>(105,95,97)</color>
     <costList>
@@ -92,7 +92,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDRoughStoneTileBase">
-    <defName>WDRoughLimestoneTile</defName>
+    <defName>ThalRoughLimestoneTile</defName>
     <label>rough limestone tile</label>
 	<color>(158,153,135)</color>
     <costList>
@@ -101,7 +101,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDRoughStoneTileBase">
-    <defName>WDRoughSlateTile</defName>
+    <defName>ThalRoughSlateTile</defName>
     <label>rough slate tile</label>
     <color>(100,100,100)</color>
     <costList>
@@ -110,7 +110,7 @@
   </TerrainDef> 
   
   <TerrainDef ParentName="WDRoughStoneTileBase">
-    <defName>WDRoughMarbleTile</defName>
+    <defName>ThalRoughMarbleTile</defName>
     <label>rough marble tile</label>
     <color>(132,135,132)</color>
     <costList>
@@ -196,7 +196,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDStoneTileBase">
-    <defName>WDSandstoneTile</defName>
+    <defName>ThalSandstoneTile</defName>
     <label>sandstone tile</label>
 	<color>(126,104,94)</color>	
     <costList>
@@ -205,7 +205,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDStoneTileBase">
-    <defName>WDGraniteTile</defName>
+    <defName>ThalGraniteTile</defName>
     <label>granite tile</label>
 	<color>(105,95,97)</color>
     <costList>
@@ -214,7 +214,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDStoneTileBase">
-    <defName>WDLimestoneTile</defName>
+    <defName>ThalLimestoneTile</defName>
     <label>limestone tile</label>
 	<color>(158,153,135)</color>
     <costList>
@@ -223,7 +223,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDStoneTileBase">
-    <defName>WDSlateTile</defName>
+    <defName>ThalSlateTile</defName>
     <label>slate tile</label>
     <color>(100,100,100)</color>
     <costList>
@@ -232,7 +232,7 @@
   </TerrainDef> 
   
   <TerrainDef ParentName="WDStoneTileBase">
-    <defName>WDMarbleTile</defName>
+    <defName>ThalMarbleTile</defName>
     <label>marble tile</label>
     <color>(132,135,132)</color>
     <costList>
@@ -257,7 +257,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDCheckStoneTileBase">
-    <defName>WDCheckSandstoneTile</defName>
+    <defName>ThalCheckSandstoneTile</defName>
     <label>check sandstone tile</label>
 	<color>(126,104,94)</color>	
     <costList>
@@ -266,7 +266,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDCheckStoneTileBase">
-    <defName>WDCheckGraniteTile</defName>
+    <defName>ThalCheckGraniteTile</defName>
     <label>check granite tile</label>
 	<color>(105,95,97)</color>
     <costList>
@@ -275,7 +275,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDCheckStoneTileBase">
-    <defName>WDCheckLimestoneTile</defName>
+    <defName>ThalCheckLimestoneTile</defName>
     <label>check limestone tile</label>
 	<color>(158,153,135)</color>
     <costList>
@@ -284,7 +284,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDCheckStoneTileBase">
-    <defName>WDCheckSlateTile</defName>
+    <defName>ThalCheckSlateTile</defName>
     <label>check slate tile</label>
     <color>(100,100,100)</color>
     <costList>
@@ -293,7 +293,7 @@
   </TerrainDef> 
   
   <TerrainDef ParentName="WDCheckStoneTileBase">
-    <defName>WDCheckMarbleTile</defName>
+    <defName>ThalCheckMarbleTile</defName>
     <label>check marble tile</label>
     <color>(132,135,132)</color>
     <costList>
@@ -318,7 +318,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDMosaicStoneFloorBase">
-    <defName>WDMosaicSandstoneFloor</defName>
+    <defName>ThalMosaicSandstoneFloor</defName>
     <label>mosaic sandstone floor</label>
 	<color>(126,104,94)</color>	
     <costList>
@@ -327,7 +327,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDMosaicStoneFloorBase">
-    <defName>WDMosaicGraniteFloor</defName>
+    <defName>ThalMosaicGraniteFloor</defName>
     <label>mosaic granite floor</label>
 	<color>(105,95,97)</color>
     <costList>
@@ -336,7 +336,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDMosaicStoneFloorBase">
-    <defName>WDMosaicLimestoneFloor</defName>
+    <defName>ThalMosaicLimestoneFloor</defName>
     <label>mosaic limestone floor</label>
 	<color>(158,153,135)</color>
     <costList>
@@ -345,7 +345,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDMosaicStoneFloorBase">
-    <defName>WDMosaicSlateFloor</defName>
+    <defName>ThalMosaicSlateFloor</defName>
     <label>mosaic slate floor</label>
     <color>(100,100,100)</color>
     <costList>
@@ -354,7 +354,7 @@
   </TerrainDef> 
   
   <TerrainDef ParentName="WDMosaicStoneFloorBase">
-    <defName>WDMosaicMarbleFloor</defName>
+    <defName>ThalMosaicMarbleFloor</defName>
     <label>mosaic marble floor</label>
     <color>(132,135,132)</color>
     <costList>
@@ -379,7 +379,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDCheckStoneFloorBase">
-    <defName>WDCheckSandstoneFloor</defName>
+    <defName>ThalCheckSandstoneFloor</defName>
     <label>check sandstone floor</label>
 	<color>(126,104,94)</color>	
     <costList>
@@ -388,7 +388,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDCheckStoneFloorBase">
-    <defName>WDCheckGraniteFloor</defName>
+    <defName>ThalCheckGraniteFloor</defName>
     <label>check granite floor</label>
 	<color>(105,95,97)</color>
     <costList>
@@ -397,7 +397,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDCheckStoneFloorBase">
-    <defName>WDCheckLimestoneFloor</defName>
+    <defName>ThalCheckLimestoneFloor</defName>
     <label>check limestone floor</label>
 	<color>(158,153,135)</color>
     <costList>
@@ -406,7 +406,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDCheckStoneFloorBase">
-    <defName>WDCheckSlateFloor</defName>
+    <defName>ThalCheckSlateFloor</defName>
     <label>check slate floor</label>
     <color>(100,100,100)</color>
     <costList>
@@ -415,7 +415,7 @@
   </TerrainDef> 
   
   <TerrainDef ParentName="WDCheckStoneFloorBase">
-    <defName>WDCheckMarbleFloor</defName>
+    <defName>ThalCheckMarbleFloor</defName>
     <label>check marble floor</label>
     <color>(132,135,132)</color>
     <costList>
@@ -441,7 +441,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDPolishedStoneFloorBase">
-    <defName>WDPolishedSandstoneFloor</defName>
+    <defName>ThalPolishedSandstoneFloor</defName>
     <label>polished sandstone floor</label>
 	<color>(126,104,94)</color>	
     <costList>
@@ -450,7 +450,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDPolishedStoneFloorBase">
-    <defName>WDPolishedGraniteFloor</defName>
+    <defName>ThalPolishedGraniteFloor</defName>
     <label>polished granite floor</label>
 	<color>(105,95,97)</color>
     <costList>
@@ -459,7 +459,7 @@
   </TerrainDef>   
 
   <TerrainDef ParentName="WDPolishedStoneFloorBase">
-    <defName>WDPolishedLimestoneFloor</defName>
+    <defName>ThalPolishedLimestoneFloor</defName>
     <label>polished limestone floor</label>
 	<color>(158,153,135)</color>
     <costList>
@@ -468,7 +468,7 @@
   </TerrainDef>  
 
   <TerrainDef ParentName="WDPolishedStoneFloorBase">
-    <defName>WDPolishedSlateFloor</defName>
+    <defName>ThalPolishedSlateFloor</defName>
     <label>polished slate floor</label>
     <color>(100,100,100)</color>
     <costList>
@@ -477,7 +477,7 @@
   </TerrainDef> 
   
   <TerrainDef ParentName="WDPolishedStoneFloorBase">
-    <defName>WDPolishedMarbleFloor</defName>
+    <defName>ThalPolishedMarbleFloor</defName>
     <label>polished marble floor</label>
     <color>(132,135,132)</color>
     <costList>

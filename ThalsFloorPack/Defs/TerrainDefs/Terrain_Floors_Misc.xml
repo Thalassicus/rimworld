@@ -2,7 +2,7 @@
 <Defs>
 
   <TerrainDef ParentName="FloorBase">
-    <defName>WDStrawFloor</defName>
+    <defName>ThalStrawFloor</defName>
     <label>straw floor</label>
     <renderPrecedence>360</renderPrecedence>
     <description>Ground covered with straw</description>
@@ -20,7 +20,7 @@
   </TerrainDef>   
   
   <TerrainDef>
-    <defName>WDPackedDirtFloor</defName>
+    <defName>ThalPackedDirtFloor</defName>
     <label>packed dirt</label>
     <layerable>true</layerable>	
     <description>Simple smoothened dirt. Looks better and less dirty than normal soil.</description>		
@@ -82,7 +82,7 @@
   </TerrainDef> 
   
 	<TerrainDef ParentName="WDJadeFloorBase">
-    <defName>WDJadeTile</defName>
+    <defName>ThalJadeTile</defName>
     <label>jade tile</label>
     <description>Simple tiles made of jade.</description>
     <texturePath>Terrain/Surfaces/Misc/JadeTile</texturePath>
@@ -97,7 +97,7 @@
   </TerrainDef>
   
   <TerrainDef ParentName="WDJadeFloorBase">
-    <defName>WDJadeFloor</defName>
+    <defName>ThalJadeFloor</defName>
     <label>jade floor</label>
     <description>Floor made of jade plates. Beautiful, but hard to build.</description>
     <texturePath>Terrain/Surfaces/Misc/JadeFloor</texturePath>	
@@ -112,7 +112,7 @@
   </TerrainDef>  
   
   <TerrainDef ParentName="WDJadeFloorBase">
-    <defName>WDSmoothJadeFloor</defName>
+    <defName>ThalSmoothJadeFloor</defName>
     <label>smooth jade floor</label>
     <description>Beautiful floor made of polished jade plates. Looks great, but very expensive and hard to build</description>
     <texturePath>Terrain/Surfaces/Misc/SmoothJadeFloor</texturePath>
