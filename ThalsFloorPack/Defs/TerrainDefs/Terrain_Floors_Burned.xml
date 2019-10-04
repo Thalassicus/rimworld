@@ -2,7 +2,7 @@
 <Defs>
 
   <TerrainDef ParentName="BurnedFloorBase">
-    <defName>WDBurnedWidePlanks</defName>
+    <defName>ThalBurnedWidePlanks</defName>
     <label>burned wide planks</label>
     <renderPrecedence>251</renderPrecedence>
     <description>Burned-out wood plank flooring.</description>
@@ -11,7 +11,7 @@
 	</TerrainDef>  
 	
   <TerrainDef ParentName="BurnedFloorBase">
-    <defName>WDBurnedCheckWoodenFloor</defName>
+    <defName>ThalBurnedCheckWoodenFloor</defName>
     <label>burned check wooden floor</label>
     <renderPrecedence>251</renderPrecedence>
     <description>Burned-out wood plank flooring.</description>
@@ -20,7 +20,7 @@
 	</TerrainDef>  
 	
   <TerrainDef ParentName="BurnedFloorBase">
-    <defName>WDBurnedParquet</defName>
+    <defName>ThalBurnedParquet</defName>
     <label>burned parquet</label>
     <renderPrecedence>251</renderPrecedence>
     <description>Burned-out wood plank flooring.</description>
@@ -29,7 +29,7 @@
 	</TerrainDef>		
 	
   <TerrainDef ParentName="BurnedFloorBase">
-    <defName>WDBurnedMosaicWoodenFloor</defName>
+    <defName>ThalBurnedMosaicWoodenFloor</defName>
     <label>burned mosaic wooden floor</label>
     <renderPrecedence>251</renderPrecedence>
     <description>Burned-out wood plank flooring.</description>
@@ -38,7 +38,7 @@
 	</TerrainDef>
 	
   <TerrainDef ParentName="BurnedFloorBase">
-    <defName>WDBurnedPlywoodFloor</defName>
+    <defName>ThalBurnedPlywoodFloor</defName>
     <label>burned plywood floor</label>
     <renderPrecedence>251</renderPrecedence>
     <description>Burned-out wood flooring.</description>
@@ -47,7 +47,7 @@
 	</TerrainDef>
 	
   <TerrainDef ParentName="BurnedFloorBase">
-    <defName>WDBurnedStrawFloor</defName>
+    <defName>ThalBurnedStrawFloor</defName>
     <label>burned straw floor</label>
     <renderPrecedence>400</renderPrecedence>
     <description>Burned-out straw flooring.</description>
