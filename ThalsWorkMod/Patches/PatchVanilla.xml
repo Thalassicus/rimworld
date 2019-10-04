@@ -128,7 +128,6 @@
     <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="Repair"]/priorityInType</xpath><value><priorityInType>75</priorityInType></value></Operation>
     <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/priorityInType</xpath><value><priorityInType>60</priorityInType></value></Operation>
     <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="DoBillsProduceDrugs"]/workType</xpath><value><workType>Chemist</workType></value></Operation>	
-    <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="HaulToInventory"]/workType</xpath><value><workType>Hauling</workType></value></Operation>	
     <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="HaulGeneral"]/workType</xpath><value><workType>Hauling</workType></value></Operation>	
     <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="HaulMerge"]/workType</xpath><value><workType>Hauling</workType></value></Operation>	
     <Operation Class="PatchOperationReplace"><xpath>Defs/WorkGiverDef[defName="GrowerHarvest"]/workType</xpath><value><workType>PlantCutting</workType></value></Operation>
