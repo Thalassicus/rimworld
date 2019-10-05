@@ -16,7 +16,7 @@
 		</costList>
 		<statBases>
 			<WorkToBuild>200</WorkToBuild>
-      <Cleanliness>0.2</Cleanliness>
+			<Cleanliness>0.2</Cleanliness>
 		</statBases>
 		<designationHotKey>Misc6</designationHotKey>
 		<researchPrerequisites>
@@ -66,7 +66,7 @@
 			<Steel>5</Steel>
 		</costList>
 		<statBases>
-			<WorkToBuild>400</WorkToBuild>
+			<WorkToBuild>800</WorkToBuild>
       <Beauty>5</Beauty>
       <Cleanliness>0.2</Cleanliness>
 		</statBases>
@@ -78,28 +78,28 @@
     <constructEffect>ConstructMetal</constructEffect>	
 	</TerrainDef>
 	
-	<TerrainDef ParentName="ThalBasicMetalFloor">
+	<TerrainDef ParentName="ThalFancyMetalFloor">
 		<defName>ThalPatternedMetalTile</defName>
 		<label>patterned metal tile</label>
 		<texturePath>Terrain/Surfaces/Metal/PatternedMetalTile</texturePath>
 		<color>(0.369, 0.369, 0.369)</color>
 	</TerrainDef>
 	
-	<TerrainDef ParentName="ThalBasicMetalFloor">
+	<TerrainDef ParentName="ThalFancyMetalFloor">
 		<defName>ThalHexMetalFloor</defName>
 		<label>hexagonal metal floor</label>
 		<texturePath>Terrain/Surfaces/Metal/HexMetalFloor</texturePath>
     <color>(0.369, 0.369, 0.369)</color>
 	</TerrainDef>
 	
-	<TerrainDef ParentName="ThalBasicMetalFloor">
+	<TerrainDef ParentName="ThalFancyMetalFloor">
 		<defName>MetalTile</defName>
 		<label>metal tile</label>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
     <color>(0.369, 0.369, 0.369)</color>
 	</TerrainDef>
 	
-	<TerrainDef ParentName="ThalBasicMetalFloor">
+	<TerrainDef ParentName="ThalFancyMetalFloor">
 		<defName>ThalMetalCheckTile</defName>
 		<label>metal check tile</label>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
@@ -107,6 +107,10 @@
 	</TerrainDef>
 	
 	<!-- ================= Silver ================= -->	
+
+	<DesignatorDropdownGroupDef>
+		<defName>ThalRichMetalFloor</defName>
+	</DesignatorDropdownGroupDef>
  
 	<TerrainDef ParentName="FloorBase">
 		<defName>SilverTile</defName>
@@ -116,12 +120,12 @@
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(130,130,130)</color>
 		<statBases>
-			<Beauty>4</Beauty>
-			<WorkToBuild>840</WorkToBuild>
-			<Cleanliness>0.3</Cleanliness>
+			<Beauty>50</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Cleanliness>0.6</Cleanliness>
 		</statBases>
 		<costList>
-			<Silver>75</Silver>
+			<Silver>100</Silver>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationHotKey>Misc2</designationHotKey>
@@ -129,6 +133,7 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designatorDropdown>ThalRichMetalFloor</designatorDropdown>
 	</TerrainDef> 
  
 	<TerrainDef ParentName="FloorBase">
@@ -139,18 +144,19 @@
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
 		<color>(130,130,130)</color>
 		<statBases>
-			<Beauty>4</Beauty>
-			<WorkToBuild>960</WorkToBuild>
-			<Cleanliness>0.3</Cleanliness>
+			<Beauty>50</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Cleanliness>0.6</Cleanliness>
 		</statBases>
 		<costList>
-			<Silver>75</Silver>
+			<Silver>100</Silver>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designatorDropdown>ThalRichMetalFloor</designatorDropdown>
 	</TerrainDef> 
 	
 	<!-- ================= Gold ================= -->
@@ -163,12 +169,12 @@
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(213,168,92)</color>	 
 		<statBases>
-			<Beauty>12</Beauty>
-			<WorkToBuild>1020</WorkToBuild>
-			<Cleanliness>0.3</Cleanliness>
+			<Beauty>200</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
 		</statBases>
 		<costList>
-			<Gold>50</Gold>
+			<Gold>25</Gold>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationHotKey>Misc3</designationHotKey>
@@ -176,6 +182,7 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designatorDropdown>ThalRichMetalFloor</designatorDropdown>
 	</TerrainDef>	
 	
 	<TerrainDef ParentName="FloorBase">
@@ -186,18 +193,19 @@
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
 		<color>(213,168,92)</color>	 
 		<statBases>
-			<Beauty>12</Beauty>
-			<WorkToBuild>1140</WorkToBuild>
-			<Cleanliness>0.3</Cleanliness>
+			<Beauty>200</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
 		</statBases>
 		<costList>
-			<Gold>50</Gold>
+			<Gold>25</Gold>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designatorDropdown>ThalRichMetalFloor</designatorDropdown>
 	</TerrainDef>	
 
 	<!-- ================= Plasteel ================= -->	
@@ -210,18 +218,19 @@
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(135, 172, 175)</color> 
 		<statBases>
-			<WorkToBuild>1020</WorkToBuild>
-		<Beauty>4</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Beauty>5</Beauty>
 			<Cleanliness>0.4</Cleanliness>
 		</statBases>
 		<costList>
-			<Plasteel>6</Plasteel>
+			<Plasteel>1</Plasteel>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designatorDropdown>ThalRichMetalFloor</designatorDropdown>
 	</TerrainDef> 
 
 	<TerrainDef ParentName="FloorBase">
@@ -232,18 +241,19 @@
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
 		<color>(146, 174, 176)</color>
 		<statBases>
-			<WorkToBuild>1140</WorkToBuild>
-		<Beauty>4</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Beauty>5</Beauty>
 			<Cleanliness>0.4</Cleanliness>
 		</statBases>
 		<costList>
-			<Plasteel>6</Plasteel>
+			<Plasteel>1</Plasteel>
 		</costList>
 		<constructEffect>ConstructMetal</constructEffect>
 		<researchPrerequisites>
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designatorDropdown>ThalRichMetalFloor</designatorDropdown>
 	</TerrainDef>
  
 	<!-- ================= Sterile ================= --> 
@@ -257,7 +267,7 @@
 		<color>(0.71, 0.71, 0.71)</color>
 		<statBases>
 			<WorkToBuild>1600</WorkToBuild>
-		<Beauty>2</Beauty>		
+			<Beauty>5</Beauty>		
 			<Cleanliness>0.6</Cleanliness>
 		</statBases>
 		<costList>
@@ -280,8 +290,8 @@
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
 		<color>(0.71, 0.71, 0.71)</color>
 		<statBases>
-			<WorkToBuild>1720</WorkToBuild>
-		<Beauty>2</Beauty>		
+			<WorkToBuild>1600</WorkToBuild>
+			<Beauty>5</Beauty>		
 			<Cleanliness>0.6</Cleanliness>
 		</statBases>
 		<costList>

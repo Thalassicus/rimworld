@@ -462,8 +462,7 @@
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>VAE_Apparel_HeavyMarineArmor</defName>
 		<label>heavy marine armor</label>
-		<description>A suit of heavy powered armor. Double layers of plasteel-weave plates are incredibly effective at both projectiles and explosions. Neuro-memetic assistors allow a human to wear the armor and still move easily. A built in blast shield allows wearer to survive a direct rocket hit, upon which the shields require time to recharge.\n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
-		<thingClass>D9UsefulAI.ShieldMkII</thingClass>
+		<description>A suit of heavy powered armor. Double layers of plasteel-weave plates are incredibly effective at both projectiles and explosions. Neuro-memetic assistors allow a human to wear the armor and still move easily. \n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
 		<graphicData>
 			<texPath>Things/Apparel/HeavyMarineArmor/HeavyMarineArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -488,8 +487,6 @@
 			<Insulation_Cold>46</Insulation_Cold>
 			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>15</EquipDelay>
-			<EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>0.4</EnergyShieldEnergyMax>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.5</MoveSpeed>

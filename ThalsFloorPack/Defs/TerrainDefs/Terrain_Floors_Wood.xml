@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<DesignatorDropdownGroupDef>
-		<defName>ThalWoodFloors</defName>
+		<defName>ThalBasicWoodFloors</defName>
 	</DesignatorDropdownGroupDef>
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalPlywoodFloor</defName>
 		<label>plywood floor</label>
 		<renderPrecedence>250</renderPrecedence>
-		<description>Plywood floor. Doesn't look great, but cheap. Perfect to cover big areas fast.</description>
+		<description>- Flammable\n- No beauty\n- Low cost\n- Very fast build speed</description>
 		<texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
 		<burnedDef>ThalBurnedPlywoodFloor</burnedDef>
 		<statBases>
@@ -19,14 +19,14 @@
 			<WoodLog>1</WoodLog>
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
-		<designatorDropdown>ThalWoodFloors</designatorDropdown>
+		<designatorDropdown>ThalBasicWoodFloors</designatorDropdown>
 	</TerrainDef>	
 	
 	<TerrainDef  ParentName="FloorBase">
 		<defName>WoodPlankFloor</defName>
 		<label>wood floor</label>
 		<renderPrecedence>250</renderPrecedence>
-		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<description>- Flammable\n- Medium beauty\n- Low cost\n- Fast build speed</description>
 		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
 		<burnedDef>BurnedWoodPlankFloor</burnedDef>
 		<color>(108,78,55)</color>
@@ -40,15 +40,18 @@
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
 		<designationHotKey>Misc7</designationHotKey>
-		<designatorDropdown>ThalWoodFloors</designatorDropdown>
+		<designatorDropdown>ThalBasicWoodFloors</designatorDropdown>
 	</TerrainDef>
 
   <!-- ================= Fancy Wooden Floors ================= --> 
+	<DesignatorDropdownGroupDef>
+		<defName>ThalWoodFloors</defName>
+	</DesignatorDropdownGroupDef>
   
 	<TerrainDef Name="ThalWoodFloorBase" ParentName="FloorBase" Abstract="True">
 		<renderPrecedence>250</renderPrecedence>
 		<costList>
-			<WoodLog>10</WoodLog>
+			<WoodLog>6</WoodLog>
 		</costList>
 		<statBases>
 			<Beauty>10</Beauty>

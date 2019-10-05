@@ -8,7 +8,7 @@
     <description>Ground covered with straw</description>
     <texturePath>Terrain/Surfaces/Misc/StrawFloor</texturePath>
     <edgeType>FadeRough</edgeType>		
-	<burnedDef>WDBurnedStrawFloor</burnedDef>	
+	  <burnedDef>ThalBurnedStrawFloor</burnedDef>	
     <statBases>
       <WorkToBuild>60</WorkToBuild>
 	  <Flammability>1</Flammability>	  
