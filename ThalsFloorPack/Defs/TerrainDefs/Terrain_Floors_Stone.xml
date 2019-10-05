@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <!-- ================= Flagstone ================= -->     
+  <!-- ================= Flagstone ================= -->
+	<DesignatorDropdownGroupDef>
+		<defName>ThalFlagStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
 
-	<TerrainDef Abstract="True" ParentName="FloorBase" Name="FlagstoneBase">
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="ThalFlagStoneBase">
 		<renderPrecedence>266</renderPrecedence>
-		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways.</description>
+		<description>- Easy to clean\n- No beauty\n- Low cost\n- Fast build speed</description>
 		<texturePath>Terrain/Surfaces/Flagstone</texturePath>
 		<statBases>
 			<WorkToBuild>120</WorkToBuild>
@@ -14,9 +17,10 @@
     <tags>
       <li>Road</li>
     </tags>
+		<designatorDropdown>ThalFlagStoneFloor</designatorDropdown>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FlagstoneBase">
+	<TerrainDef ParentName="ThalFlagStoneBase">
 		<defName>FlagstoneSandstone</defName>
 		<label>sandstone flagstone</label>
 		<color>(126,104,94)</color>
@@ -25,7 +29,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FlagstoneBase">
+	<TerrainDef ParentName="ThalFlagStoneBase">
 		<defName>FlagstoneGranite</defName>
 		<label>granite flagstone</label>
 		<color>(105,95,97)</color>
@@ -34,7 +38,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FlagstoneBase">
+	<TerrainDef ParentName="ThalFlagStoneBase">
 		<defName>FlagstoneLimestone</defName>
 		<label>limestone flagstone</label>
 		<color>(158,153,135)</color>
@@ -43,7 +47,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FlagstoneBase">
+	<TerrainDef ParentName="ThalFlagStoneBase">
 		<defName>FlagstoneSlate</defName>
 		<label>slate flagstone</label>
 		<color>(105,105,105)</color>
@@ -52,7 +56,7 @@
 		</costList>
 	</TerrainDef>
 
-	<TerrainDef ParentName="FlagstoneBase">
+	<TerrainDef ParentName="ThalFlagStoneBase">
 		<defName>FlagstoneMarble</defName>
 		<label>marble flagstone</label>
 		<color>(132,135,132)</color>
@@ -62,11 +66,10 @@
 	</TerrainDef>
   
   <!-- ================= Fancy Stone ================= -->     
-  
-  <TerrainDef Name="WDRoughStoneTileBase" ParentName="FloorBase" Abstract="True" >
+
+  <TerrainDef Name="ThalFancyStoneBase" ParentName="FloorBase" Abstract="True" >
+		<description>- Easy to clean\n- Medium beauty\n- Medium cost\n- Medium build speed</description>
     <renderPrecedence>267</renderPrecedence> 
-    <description>Simple stone tiles. Fast and cheap to build</description>
-    <texturePath>Terrain/Surfaces/Stone/RoughStoneTile</texturePath>
     <statBases>
       <WorkToBuild>400</WorkToBuild>
       <Beauty>5</Beauty>
@@ -74,422 +77,391 @@
     </statBases>
     <researchPrerequisites>
       <li>Stonecutting</li>
-    </researchPrerequisites>	
-  </TerrainDef>   
+    </researchPrerequisites>
+  </TerrainDef>
+  
+  <!-- ================= Rough Tiles ================= -->     
+	<DesignatorDropdownGroupDef>
+		<defName>ThalRoughStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
+  
+  <TerrainDef Name="ThalRoughStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
+    <texturePath>Terrain/Surfaces/Stone/RoughStoneTile</texturePath>
+		<designatorDropdown>ThalRoughStoneFloor</designatorDropdown>	
+  </TerrainDef>
 
-  <TerrainDef ParentName="WDRoughStoneTileBase">
+  <TerrainDef ParentName="ThalRoughStoneBase">
     <defName>ThalRoughSandstoneTile</defName>
     <label>rough sandstone tile</label>
-	<color>(126,104,94)</color>	
+	  <color>(126,104,94)</color>	
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
   
-  <TerrainDef ParentName="WDRoughStoneTileBase">
+  <TerrainDef ParentName="ThalRoughStoneBase">
     <defName>ThalRoughGraniteTile</defName>
     <label>rough granite tile</label>
-	<color>(105,95,97)</color>
+	  <color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>   
 
-  <TerrainDef ParentName="WDRoughStoneTileBase">
+  <TerrainDef ParentName="ThalRoughStoneBase">
     <defName>ThalRoughLimestoneTile</defName>
     <label>rough limestone tile</label>
-	<color>(158,153,135)</color>
+	  <color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>  
 
-  <TerrainDef ParentName="WDRoughStoneTileBase">
+  <TerrainDef ParentName="ThalRoughStoneBase">
     <defName>ThalRoughSlateTile</defName>
     <label>rough slate tile</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
     </costList>
   </TerrainDef> 
   
-  <TerrainDef ParentName="WDRoughStoneTileBase">
+  <TerrainDef ParentName="ThalRoughStoneBase">
     <defName>ThalRoughMarbleTile</defName>
     <label>rough marble tile</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>  
  
-  <!-- ================= Stone Tile ================= -->     
+  <!-- ================= Brick Tile ================= -->     
+	<DesignatorDropdownGroupDef>
+		<defName>ThalBrickStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
   
-  <TerrainDef Abstract="True" ParentName="FloorBase" Name="TileStoneBase">
-    <renderPrecedence>265</renderPrecedence>
-    <description>Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay.</description>
-    <texturePath>Terrain/Surfaces/TileStone</texturePath>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-      <Beauty>5</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>
-    <researchPrerequisites>
-      <li>Stonecutting</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  <TerrainDef Name="ThalBrickStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
+    <texturePath>Terrain/Surfaces/Stone/TileStone</texturePath>
+		<designatorDropdown>ThalBrickStoneFloor</designatorDropdown>	
   </TerrainDef>
   
-  <TerrainDef ParentName="TileStoneBase">
+  <TerrainDef ParentName="ThalBrickStoneBase">
     <defName>TileSandstone</defName>
-    <label>sandstone tile</label>
+    <label>sandstone bricks</label>
     <color>(126,104,94)</color>
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="TileStoneBase">
+  <TerrainDef ParentName="ThalBrickStoneBase">
     <defName>TileGranite</defName>
-    <label>granite tile</label>
+    <label>granite bricks</label>
     <color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="TileStoneBase">
+  <TerrainDef ParentName="ThalBrickStoneBase">
     <defName>TileLimestone</defName>
-    <label>limestone tile</label>
+    <label>limestone bricks</label>
     <color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="TileStoneBase">
+  <TerrainDef ParentName="ThalBrickStoneBase">
     <defName>TileSlate</defName>
-    <label>slate tile</label>
+    <label>slate bricks</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
   </costList>
   </TerrainDef>
 
-  <TerrainDef ParentName="TileStoneBase">
+  <TerrainDef ParentName="ThalBrickStoneBase">
     <defName>TileMarble</defName>
-    <label>marble tile</label>
+    <label>marble bricks</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>   
  
-  <!-- ================= Stone tile ================= --> 
+  <!-- ================= Tiled Stone ================= --> 
+	<DesignatorDropdownGroupDef>
+		<defName>ThalTiledStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
   
-  <TerrainDef Name="WDStoneTileBase" ParentName="FloorBase"  Abstract="True">
-    <renderPrecedence>268</renderPrecedence> 
-    <description>Floor made of smooth stone tiles.</description>
+  <TerrainDef Name="ThalTiledStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
     <texturePath>Terrain/Surfaces/Stone/StoneTile</texturePath>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-      <Beauty>5</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>	
-    <researchPrerequisites>
-      <li>Stonecutting</li>
-    </researchPrerequisites>
-  </TerrainDef>   
+		<designatorDropdown>ThalTiledStoneFloor</designatorDropdown>	
+  </TerrainDef>
 
-  <TerrainDef ParentName="WDStoneTileBase">
+  <TerrainDef ParentName="ThalTiledStoneBase">
     <defName>ThalSandstoneTile</defName>
     <label>sandstone tile</label>
-	<color>(126,104,94)</color>	
+	  <color>(126,104,94)</color>	
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
   
-  <TerrainDef ParentName="WDStoneTileBase">
+  <TerrainDef ParentName="ThalTiledStoneBase">
     <defName>ThalGraniteTile</defName>
     <label>granite tile</label>
-	<color>(105,95,97)</color>
+	  <color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>   
 
-  <TerrainDef ParentName="WDStoneTileBase">
+  <TerrainDef ParentName="ThalTiledStoneBase">
     <defName>ThalLimestoneTile</defName>
     <label>limestone tile</label>
-	<color>(158,153,135)</color>
+	  <color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>  
 
-  <TerrainDef ParentName="WDStoneTileBase">
+  <TerrainDef ParentName="ThalTiledStoneBase">
     <defName>ThalSlateTile</defName>
     <label>slate tile</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
     </costList>
   </TerrainDef> 
   
-  <TerrainDef ParentName="WDStoneTileBase">
+  <TerrainDef ParentName="ThalTiledStoneBase">
     <defName>ThalMarbleTile</defName>
     <label>marble tile</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>    
   
-  <!-- ================= Check stone tile ================= --> 
+  <!-- ================= Small Tiled Stone ================= --> 
+	<DesignatorDropdownGroupDef>
+		<defName>ThalSmallTileStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
   
-  <TerrainDef Name="WDCheckStoneTileBase" ParentName="FloorBase" Abstract="True" >
-    <renderPrecedence>269</renderPrecedence> 
-    <description>Checked smooth stone tiles.</description>
+  <TerrainDef Name="ThalSmallTileStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
     <texturePath>Terrain/Surfaces/Stone/CheckStoneTile</texturePath>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-      <Beauty>5</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>	
-    <researchPrerequisites>
-      <li>Stonecutting</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </TerrainDef>   
+		<designatorDropdown>ThalSmallTileStoneFloor</designatorDropdown>	
+  </TerrainDef>
 
-  <TerrainDef ParentName="WDCheckStoneTileBase">
+  <TerrainDef ParentName="ThalSmallTileStoneBase">
     <defName>ThalCheckSandstoneTile</defName>
-    <label>check sandstone tile</label>
+    <label>small sandstone tile</label>
 	<color>(126,104,94)</color>	
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
   
-  <TerrainDef ParentName="WDCheckStoneTileBase">
+  <TerrainDef ParentName="ThalSmallTileStoneBase">
     <defName>ThalCheckGraniteTile</defName>
-    <label>check granite tile</label>
+    <label>small granite tile</label>
 	<color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>   
 
-  <TerrainDef ParentName="WDCheckStoneTileBase">
+  <TerrainDef ParentName="ThalSmallTileStoneBase">
     <defName>ThalCheckLimestoneTile</defName>
-    <label>check limestone tile</label>
+    <label>small limestone tile</label>
 	<color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>  
 
-  <TerrainDef ParentName="WDCheckStoneTileBase">
+  <TerrainDef ParentName="ThalSmallTileStoneBase">
     <defName>ThalCheckSlateTile</defName>
-    <label>check slate tile</label>
+    <label>small slate tile</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
     </costList>
   </TerrainDef> 
   
-  <TerrainDef ParentName="WDCheckStoneTileBase">
+  <TerrainDef ParentName="ThalSmallTileStoneBase">
     <defName>ThalCheckMarbleTile</defName>
-    <label>check marble tile</label>
+    <label>small marble tile</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>
    
-<!-- ================= Mosaic Stone Floor ================= --> 
+  <!-- ================= Mosaic Stone Floor ================= --> 
+	<DesignatorDropdownGroupDef>
+		<defName>ThalMosaicStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
   
-  <TerrainDef Name="WDMosaicStoneFloorBase" ParentName="FloorBase" Abstract="True" >
-    <renderPrecedence>270</renderPrecedence> 
-    <description>Beautiful mosaic floor made of stone bricks.</description>
+  <TerrainDef Name="ThalMosaicStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
     <texturePath>Terrain/Surfaces/Stone/MosaicStoneFloor</texturePath>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-      <Beauty>5</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>	
-    <researchPrerequisites>
-      <li>Stonecutting</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </TerrainDef>   
+		<designatorDropdown>ThalMosaicStoneFloor</designatorDropdown>	
+  </TerrainDef>
 
-  <TerrainDef ParentName="WDMosaicStoneFloorBase">
+  <TerrainDef ParentName="ThalMosaicStoneBase">
     <defName>ThalMosaicSandstoneFloor</defName>
     <label>mosaic sandstone floor</label>
 	<color>(126,104,94)</color>	
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
   
-  <TerrainDef ParentName="WDMosaicStoneFloorBase">
+  <TerrainDef ParentName="ThalMosaicStoneBase">
     <defName>ThalMosaicGraniteFloor</defName>
     <label>mosaic granite floor</label>
 	<color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>   
 
-  <TerrainDef ParentName="WDMosaicStoneFloorBase">
+  <TerrainDef ParentName="ThalMosaicStoneBase">
     <defName>ThalMosaicLimestoneFloor</defName>
     <label>mosaic limestone floor</label>
 	<color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>  
 
-  <TerrainDef ParentName="WDMosaicStoneFloorBase">
+  <TerrainDef ParentName="ThalMosaicStoneBase">
     <defName>ThalMosaicSlateFloor</defName>
     <label>mosaic slate floor</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
     </costList>
   </TerrainDef> 
   
-  <TerrainDef ParentName="WDMosaicStoneFloorBase">
+  <TerrainDef ParentName="ThalMosaicStoneBase">
     <defName>ThalMosaicMarbleFloor</defName>
     <label>mosaic marble floor</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>
   
   <!-- ================= Check Stone Floor ================= --> 
+	<DesignatorDropdownGroupDef>
+		<defName>ThalCheckStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
   
-  <TerrainDef Name="WDCheckStoneFloorBase" ParentName="FloorBase" Abstract="True" >
-    <renderPrecedence>270</renderPrecedence> 
-    <description>Beautiful check floor made of stone bricks.</description>
+  <TerrainDef Name="ThalCheckStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
     <texturePath>Terrain/Surfaces/Stone/CheckStoneFloor</texturePath>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-      <Beauty>5</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>	
-    <researchPrerequisites>
-      <li>Stonecutting</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </TerrainDef>   
+		<designatorDropdown>ThalCheckStoneFloor</designatorDropdown>	
+  </TerrainDef>
 
-  <TerrainDef ParentName="WDCheckStoneFloorBase">
+  <TerrainDef ParentName="ThalCheckStoneBase">
     <defName>ThalCheckSandstoneFloor</defName>
     <label>check sandstone floor</label>
-	<color>(126,104,94)</color>	
+	  <color>(126,104,94)</color>	
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
   
-  <TerrainDef ParentName="WDCheckStoneFloorBase">
+  <TerrainDef ParentName="ThalCheckStoneBase">
     <defName>ThalCheckGraniteFloor</defName>
     <label>check granite floor</label>
-	<color>(105,95,97)</color>
+	  <color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>   
 
-  <TerrainDef ParentName="WDCheckStoneFloorBase">
+  <TerrainDef ParentName="ThalCheckStoneBase">
     <defName>ThalCheckLimestoneFloor</defName>
     <label>check limestone floor</label>
-	<color>(158,153,135)</color>
+	  <color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>  
 
-  <TerrainDef ParentName="WDCheckStoneFloorBase">
+  <TerrainDef ParentName="ThalCheckStoneBase">
     <defName>ThalCheckSlateFloor</defName>
     <label>check slate floor</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
     </costList>
   </TerrainDef> 
   
-  <TerrainDef ParentName="WDCheckStoneFloorBase">
+  <TerrainDef ParentName="ThalCheckStoneBase">
     <defName>ThalCheckMarbleFloor</defName>
     <label>check marble floor</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>
   
   <!-- ================= Polished Stone Floor ================= --> 
+	<DesignatorDropdownGroupDef>
+		<defName>ThalPolishedStoneFloor</defName>
+	</DesignatorDropdownGroupDef>
   
-  <TerrainDef Name="WDPolishedStoneFloorBase" ParentName="FloorBase" Abstract="True" >
-    <renderPrecedence>271</renderPrecedence> 
-    <description>Very clean and beautiful floor made of polished stone.</description>
+  <TerrainDef Name="ThalStonePolishedBase" ParentName="ThalFancyStoneBase" Abstract="True" >
     <texturePath>Terrain/Surfaces/Stone/PolishedStoneFloor</texturePath>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-      <Beauty>5</Beauty>
-      <Cleanliness>0.2</Cleanliness>
-    </statBases>	
-    <researchPrerequisites>
-      <li>Stonecutting</li>
-    </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </TerrainDef>   
+		<designatorDropdown>ThalPolishedStoneFloor</designatorDropdown>	
+  </TerrainDef>
 
-  <TerrainDef ParentName="WDPolishedStoneFloorBase">
+  <TerrainDef ParentName="ThalStonePolishedBase">
     <defName>ThalPolishedSandstoneFloor</defName>
     <label>polished sandstone floor</label>
-	<color>(126,104,94)</color>	
+	  <color>(126,104,94)</color>	
     <costList>
-      <BlocksSandstone>5</BlocksSandstone>
+      <BlocksSandstone>10</BlocksSandstone>
     </costList>
   </TerrainDef>
   
-  <TerrainDef ParentName="WDPolishedStoneFloorBase">
+  <TerrainDef ParentName="ThalStonePolishedBase">
     <defName>ThalPolishedGraniteFloor</defName>
     <label>polished granite floor</label>
-	<color>(105,95,97)</color>
+	  <color>(105,95,97)</color>
     <costList>
-      <BlocksGranite>5</BlocksGranite>
+      <BlocksGranite>10</BlocksGranite>
     </costList>
   </TerrainDef>   
 
-  <TerrainDef ParentName="WDPolishedStoneFloorBase">
+  <TerrainDef ParentName="ThalStonePolishedBase">
     <defName>ThalPolishedLimestoneFloor</defName>
     <label>polished limestone floor</label>
-	<color>(158,153,135)</color>
+	  <color>(158,153,135)</color>
     <costList>
-      <BlocksLimestone>5</BlocksLimestone>
+      <BlocksLimestone>10</BlocksLimestone>
     </costList>
   </TerrainDef>  
 
-  <TerrainDef ParentName="WDPolishedStoneFloorBase">
+  <TerrainDef ParentName="ThalStonePolishedBase">
     <defName>ThalPolishedSlateFloor</defName>
     <label>polished slate floor</label>
     <color>(100,100,100)</color>
     <costList>
-      <BlocksSlate>5</BlocksSlate>
+      <BlocksSlate>10</BlocksSlate>
     </costList>
   </TerrainDef> 
   
-  <TerrainDef ParentName="WDPolishedStoneFloorBase">
+  <TerrainDef ParentName="ThalStonePolishedBase">
     <defName>ThalPolishedMarbleFloor</defName>
     <label>polished marble floor</label>
     <color>(132,135,132)</color>
     <costList>
-      <BlocksMarble>5</BlocksMarble>
+      <BlocksMarble>10</BlocksMarble>
     </costList>
   </TerrainDef>
     

@@ -1,14 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<DesignatorDropdownGroupDef>
-		<defName>ThalBasicWoodFloors</defName>
-	</DesignatorDropdownGroupDef>
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalPlywoodFloor</defName>
 		<label>plywood floor</label>
 		<renderPrecedence>250</renderPrecedence>
-		<description>- Flammable\n- No beauty\n- Low cost\n- Very fast build speed</description>
+		<description>- Flammable\n- No beauty\n- Low cost\n- Fast build speed</description>
 		<texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
 		<burnedDef>ThalBurnedPlywoodFloor</burnedDef>
 		<statBases>
@@ -19,7 +16,7 @@
 			<WoodLog>1</WoodLog>
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
-		<designatorDropdown>ThalBasicWoodFloors</designatorDropdown>
+		<designatorDropdown>ThalFloorBasic1</designatorDropdown>
 	</TerrainDef>	
 	
 	<TerrainDef  ParentName="FloorBase">
@@ -40,15 +37,13 @@
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
 		<designationHotKey>Misc7</designationHotKey>
-		<designatorDropdown>ThalBasicWoodFloors</designatorDropdown>
+		<designatorDropdown>ThalFloorBasic2</designatorDropdown>
 	</TerrainDef>
 
   <!-- ================= Fancy Wooden Floors ================= --> 
-	<DesignatorDropdownGroupDef>
-		<defName>ThalWoodFloors</defName>
-	</DesignatorDropdownGroupDef>
   
 	<TerrainDef Name="ThalWoodFloorBase" ParentName="FloorBase" Abstract="True">
+		<description>- Flammable\n- High beauty\n- Medium cost\n- Medium build speed</description>
 		<renderPrecedence>250</renderPrecedence>
 		<costList>
 			<WoodLog>6</WoodLog>
@@ -58,41 +53,38 @@
 			<WorkToBuild>800</WorkToBuild>
 			<Flammability>0.25</Flammability>
 		</statBases>
-		<constructEffect>ConstructWood</constructEffect>	
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>	
-		<designatorDropdown>ThalWoodFloors</designatorDropdown>
+		<constructEffect>ConstructWood</constructEffect>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalWidePlanksFloor</defName>
-		<label>wide planks</label>
-		<description>Floor made of smooth wide wooden planks.</description>
-		<texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
+		<label>wide-planked wooden floor</label>
 		<burnedDef>ThalBurnedWidePlanks</burnedDef>
+		<designatorDropdown>ThalFloorPattern1</designatorDropdown>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalCheckWoodenFloor</defName>
 		<label>checkered wooden floor</label>
-		<description>Nice looking checkered floor made of small wooden planks.</description>
 		<texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
 		<burnedDef>ThalBurnedCheckWoodenFloor</burnedDef>
+		<designatorDropdown>ThalFloorCheck</designatorDropdown>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalParquet</defName>
-		<label>parquet</label>
-		<description>Floor made of fine smooth wooden planks.</description>
+		<label>parquet wooden floor</label>
 		<texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
 		<burnedDef>ThalBurnedParquet</burnedDef>
+		<designatorDropdown>ThalFloorPattern2</designatorDropdown>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalMosaicWoodenFloor</defName>
 		<label>mosaic wooden floor</label>
-		<description>Polished wooden floor made of small planks fitted to each other.</description>
 		<texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
 		<burnedDef>ThalBurnedMosaicWoodenFloor</burnedDef>
+		<designatorDropdown>ThalFloorTile</designatorDropdown>
 	</TerrainDef>
 	
 </Defs>

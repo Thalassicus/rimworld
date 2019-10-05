@@ -77,53 +77,39 @@
   <!-- ================= Jade ================= -->   
   
   <TerrainDef Name="WDJadeFloorBase" ParentName="FloorBase" Abstract="True">
+		<description>- Easy to clean\n- Extreme beauty\n- Extreme cost\n- High build speed</description>
     <renderPrecedence>271</renderPrecedence>
-    <color>(100,147,80)</color>	
+    <color>(100,147,80)</color>	 
+		<statBases>
+			<Beauty>200</Beauty>
+			<WorkToBuild>1600</WorkToBuild>
+			<Cleanliness>0.2</Cleanliness>
+		</statBases>
+    <costList>
+      <Jade>50</Jade>
+    </costList>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>	
   </TerrainDef> 
   
 	<TerrainDef ParentName="WDJadeFloorBase">
     <defName>ThalJadeTile</defName>
     <label>jade tile</label>
-    <description>Simple tiles made of jade.</description>
     <texturePath>Terrain/Surfaces/Misc/JadeTile</texturePath>
-    <statBases>
-      <WorkToBuild>720</WorkToBuild>
-      <Beauty>3</Beauty>	  
-    </statBases>
-    <costList>
-      <Jade>4</Jade>
-    </costList>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>	
+		<designatorDropdown>ThalFloorTile</designatorDropdown>
   </TerrainDef>
   
   <TerrainDef ParentName="WDJadeFloorBase">
     <defName>ThalJadeFloor</defName>
     <label>jade floor</label>
-    <description>Floor made of jade plates. Beautiful, but hard to build.</description>
-    <texturePath>Terrain/Surfaces/Misc/JadeFloor</texturePath>	
-    <statBases>
-      <WorkToBuild>1200</WorkToBuild>
-      <Beauty>6</Beauty>	  
-    </statBases>
-    <costList>
-      <Jade>8</Jade>
-    </costList>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>	
+    <texturePath>Terrain/Surfaces/Misc/JadeFloor</texturePath>
+		<designatorDropdown>ThalFloorPattern1</designatorDropdown>
   </TerrainDef>  
   
   <TerrainDef ParentName="WDJadeFloorBase">
     <defName>ThalSmoothJadeFloor</defName>
     <label>smooth jade floor</label>
-    <description>Beautiful floor made of polished jade plates. Looks great, but very expensive and hard to build</description>
     <texturePath>Terrain/Surfaces/Misc/SmoothJadeFloor</texturePath>
-    <statBases>
-      <WorkToBuild>1800</WorkToBuild>
-      <Beauty>8</Beauty>		  
-    </statBases>
-    <costList>
-      <Jade>12</Jade>
-    </costList>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>	
+		<designatorDropdown>ThalFloorPattern2</designatorDropdown>
   </TerrainDef>   
     
 </Defs>
