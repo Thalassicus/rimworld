@@ -98,7 +98,7 @@
 	
 	<TerrainDef ParentName="ThalFancyMetalFloor">
 		<defName>ThalMetalCheckTile</defName>
-		<label>metal check tile</label>
+		<label>metal small tile</label>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
 		<color>(0.369, 0.369, 0.369)</color>
 		<designatorDropdown>ThalFloorCheck</designatorDropdown>
@@ -132,7 +132,7 @@
 	
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalGoldCheckTile</defName>
-		<label>gold check tile</label>
+		<label>gold small tile</label>
 		<renderPrecedence>261</renderPrecedence>
 		<description>For overbearing extravagance, nothing beats check gold tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
@@ -180,7 +180,7 @@
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalPlasteelCheckTile</defName>
-		<label>plasteel check tile</label>
+		<label>plasteel small tile</label>
 		<renderPrecedence>263</renderPrecedence>
 		<description>- Very clean\n- Medium beauty\n- High cost\n- Medium build speed</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
@@ -229,7 +229,7 @@
  
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalSilverCheckTile</defName>
-		<label>silver check tile</label>
+		<label>silver small tile</label>
 		<renderPrecedence>260</renderPrecedence>
 		<description>- Antiseptic\n- Very high beauty\n- Very high cost\n- Slow build speed\n\nExtra-clean rooms improve outcomes in hospitals and research labs.</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>

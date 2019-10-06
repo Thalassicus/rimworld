@@ -5,11 +5,7 @@
 		<label>edible</label>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingCategoryDef[defName="CorpsesHumanlike"]/parent</xpath><value>
-		<parent>Foods</parent>
-	</value></Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingCategoryDef[defName="CorpsesAnimal"]/parent</xpath><value>
+		<xpath>Defs/ThingCategoryDef[defName="Corpses"]/parent</xpath><value>
 		<parent>Foods</parent>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">

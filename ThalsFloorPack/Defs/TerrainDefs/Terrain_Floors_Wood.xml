@@ -66,7 +66,7 @@
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalCheckWoodenFloor</defName>
-		<label>checkered wooden floor</label>
+		<label>wood small boards</label>
 		<texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
 		<burnedDef>ThalBurnedCheckWoodenFloor</burnedDef>
 		<designatorDropdown>ThalFloorCheck</designatorDropdown>
@@ -82,7 +82,7 @@
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalMosaicWoodenFloor</defName>
-		<label>mosaic wooden floor</label>
+		<label>wood tile</label>
 		<texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
 		<burnedDef>ThalBurnedMosaicWoodenFloor</burnedDef>
 		<designatorDropdown>ThalFloorTile</designatorDropdown>

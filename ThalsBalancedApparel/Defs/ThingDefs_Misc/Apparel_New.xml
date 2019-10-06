@@ -401,6 +401,10 @@
 			<Cooking>5</Cooking>
 			<Intelligence>5</Intelligence>
 			-->
+			<MedicalTendQuality>0.1</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+			<ResearchSpeed>0.1</ResearchSpeed>
+			<FoodPoisonChance>-0.02</FoodPoisonChance>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Thal_SpecialApparel</li>

@@ -141,7 +141,7 @@
 	</DesignatorDropdownGroupDef>
   
   <TerrainDef Name="ThalBrickStoneBase" ParentName="ThalFancyStoneBase" Abstract="True" >
-    <texturePath>Terrain/Surfaces/Stone/StoneTile</texturePath>
+    <texturePath>Terrain/Surfaces/TileStone</texturePath>
 		<designatorDropdown>ThalBrickStoneFloor</designatorDropdown>	
   </TerrainDef>
   
