@@ -59,6 +59,7 @@
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalWidePlanksFloor</defName>
 		<label>wide-planked wooden floor</label>
+		<texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
 		<burnedDef>ThalBurnedWidePlanks</burnedDef>
 		<designatorDropdown>ThalFloorPattern1</designatorDropdown>
 	</TerrainDef>

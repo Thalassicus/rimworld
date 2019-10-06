@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/visualSizeRange</xpath><value>
-			<visualSizeRange>
-				<min>2.6</min>
-				<max>4.8</max>
-			</visualSizeRange>
-    </value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant/visualSizeRange</xpath><value>
+		<visualSizeRange>
+			<min>2.6</min>
+			<max>4.8</max>
+		</visualSizeRange>
+	</value></Operation>
 </Patch>

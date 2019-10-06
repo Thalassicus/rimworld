@@ -24,7 +24,7 @@
       <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -82,7 +82,7 @@
             <EquipDelay>0.75</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -147,7 +147,7 @@
             <EquipDelay>0.75</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -272,7 +272,7 @@
             <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -336,7 +336,7 @@
 			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -458,7 +458,7 @@
             <EquipDelay>2.4</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -521,7 +521,7 @@
 			<MoveSpeed>0.05</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -572,7 +572,7 @@
             <EquipDelay>2.4</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>

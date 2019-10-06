@@ -31,7 +31,7 @@
 			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>

@@ -28,7 +28,7 @@
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -197,7 +197,7 @@
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -249,9 +249,6 @@
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
-		</thingCategories>
-		<thingCategories Inherit="False">
 			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
@@ -299,7 +296,7 @@
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -535,7 +532,7 @@
             <EquipDelay>0.2</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<equippedStatOffsets>
 			<!-- poor design prevents the ideal solution

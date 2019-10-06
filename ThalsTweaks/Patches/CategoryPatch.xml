@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingCategoryDef[defName="Foods"]/label</xpath><value>
-			<label>biological</label>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingCategoryDef[defName="Drugs"]/parent</xpath><value>
-			<parent>Foods</parent>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/parent</xpath><value>
-			<parent>Foods</parent>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingCategoryDef[defName="MortarShells"]/parent</xpath><value>
-			<parent>Weapons</parent>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingCategoryDef[defName="StoneChunks"]/parent</xpath><value>
-			<parent>ResourcesRaw</parent>
-    </value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="Foods"]/label</xpath><value>
+		<label>edible</label>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="CorpsesHumanlike"]/parent</xpath><value>
+		<parent>Foods</parent>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="CorpsesAnimal"]/parent</xpath><value>
+		<parent>Foods</parent>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="CorpsesMechanoid"]/parent</xpath><value>
+		<parent>ResourcesRaw</parent>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="Drugs"]/parent</xpath><value>
+		<parent>Foods</parent>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/parent</xpath><value>
+		<parent>Foods</parent>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/label</xpath><value>
+		<label>drug ingredients</label>
+	</value></Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="ResourcesRaw"]/label</xpath><value>
+		<label>outdoor storage</label>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="Manufactured"]/label</xpath><value>
+		<label>indoor storage</label>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="MortarShells"]/parent</xpath><value>
+		<parent>Weapons</parent>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingCategoryDef[defName="StoneChunks"]/parent</xpath><value>
+		<parent>ResourcesRaw</parent>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath><value>
+		<thingCategories><li>Manufactured</li></thingCategories>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ChunkSlagSteel"]/thingCategories</xpath><value>
+		<thingCategories><li>ResourcesRaw</li></thingCategories>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Wort"]/thingCategories</xpath><value>
+		<thingCategories><li>PlantMatter</li></thingCategories>
+	</value></Operation>
 </Patch>

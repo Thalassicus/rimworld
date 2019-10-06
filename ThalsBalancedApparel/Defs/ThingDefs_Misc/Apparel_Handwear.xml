@@ -32,7 +32,7 @@
 			<ComfyTemperatureMin>-2</ComfyTemperatureMin> 
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Thal_ClothingApparel</li>
+			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
