@@ -124,7 +124,6 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1800</WorkToMake>

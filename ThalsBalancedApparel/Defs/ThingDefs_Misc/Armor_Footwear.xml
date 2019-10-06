@@ -3,7 +3,7 @@
     <!-- ##### Medieval ##### -->
     <!-- +++++ Plate Boots +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Footwear_PlateBoots</defName>
+		<defName>Thal_Footwear_PlateBoots</defName>
 		<label>plate boots</label>
 		<description>A pair of simple plate boots. Due to their weight, they slow down the wearer.</description>
 		<graphicData>
@@ -31,7 +31,7 @@
 			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -63,7 +63,7 @@
     <!-- ##### Spacer ##### -->
     <!-- +++++ Marine Boots +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Footwear_MarineBoots</defName>
+		<defName>Thal_Footwear_MarineBoots</defName>
 		<label>marine boots</label>
 		<description>A pair of marine boots with layered plasteel plates and enhanced servomotors.</description>
 		<graphicData>
@@ -94,7 +94,7 @@
 			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>

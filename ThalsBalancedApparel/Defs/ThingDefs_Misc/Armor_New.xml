@@ -4,7 +4,7 @@
 
     <!-- +++++ Stone War Mask +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_StoneWarMask</defName>
+		<defName>Thal_Headgear_StoneWarMask</defName>
 		<label>stone war mask</label>
 		<description>An artistically terrifying war mask. Hides the wearer's face and makes them more confident. Being made out of stone, it is very durable but also incredibly heavy.</description>
 		<graphicData>
@@ -31,7 +31,7 @@
 			<MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Headgear</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -59,7 +59,7 @@
 
     <!-- +++++ Wooden Vest +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Apparel_WoodenVest</defName>
+		<defName>Thal_Apparel_WoodenVest</defName>
 		<label>wooden vest</label>
 		<description>A vest with wooden logs and planks covering the front and back. Quite effective against small calibre gunshots and sharp melee weapons, but completely useless against blunt hits and rifle shots.</description>
 		<graphicData>
@@ -67,7 +67,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
-        <generateCommonality>1</generateCommonality>
+			<generateCommonality>1</generateCommonality>
 		<costList>
 			<Cloth>30</Cloth>
 			<WoodLog>60</WoodLog>
@@ -79,18 +79,18 @@
 			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
-            <EquipDelay>5</EquipDelay>
+			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Apparel</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-                <li>Neck</li>
+				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/WoodenArmor/WoodenArmor</wornGraphicPath>
@@ -124,7 +124,7 @@
 
     <!-- +++++ Advanced Vest +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Apparel_AdvancedVest</defName>
+		<defName>Thal_Apparel_AdvancedVest</defName>
 		<label>advanced vest</label>
 		<description>A lightweight combat vest with plasteel-mesh fibers. Does not protect the limbs.</description>
 		<graphicData>
@@ -152,7 +152,7 @@
             <EquipDelay>5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Apparel</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<tradeTags>
 			<li>SpacerTech</li>
@@ -190,7 +190,7 @@
     <!-- ##### Medieval ##### -->
     <!-- +++++ Gambeson +++++ -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Apparel_Gambeson</defName>
+		<defName>Thal_Apparel_Gambeson</defName>
 		<label>gambeson</label>
 		<description>A padded defensive jacket made of overlapping, criscrossed layers of fibers.</description>
 		<graphicData>
@@ -216,7 +216,7 @@
 			<MoveSpeed>-0.12</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>
-			<li>Apparel</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -252,7 +252,7 @@
 
     <!-- +++++ Mail +++++ -->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Apparel_Mail</defName>
+		<defName>Thal_Apparel_Mail</defName>
 		<label>mail</label>
 		<description>A coat of armor made out of small metal rings linked together forming a mesh. Lighter and more maneuverable than plate armor.</description>
 		<graphicData>
@@ -278,7 +278,7 @@
 			<MoveSpeed>-0.2</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>
-			<li>Apparel</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -316,7 +316,7 @@
 
     <!-- +++++ Plate Helmet +++++ -->
 	<ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Apparel_PlateHelmet</defName>
+		<defName>Thal_Apparel_PlateHelmet</defName>
 		<label>plate helmet</label>
 		<description>A plate helmet which gives moderate protection against sharp attacks.</description>
 		<graphicData>
@@ -339,7 +339,7 @@
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Headgear</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -376,7 +376,7 @@
 
     <!-- +++++ Heavy Marine Helmet +++++ -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
-		<defName>VAE_Headgear_HeavyMarineHelmet</defName>
+		<defName>Thal_Headgear_HeavyMarineHelmet</defName>
 		<label>heavy marine helmet</label>
 		<description>A heavy marine armor helmet, with double-layered plasteel plating and a built-in camera with a display HUD to get rid of the weakpoints like visors.\n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
 		<techLevel>Spacer</techLevel>
@@ -403,7 +403,7 @@
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
-			<li>Headgear</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>
@@ -460,7 +460,7 @@
 
     <!-- +++++ Heavy Marine Armor +++++ -->
 	<ThingDef ParentName="ArmorMachineableBase">
-		<defName>VAE_Apparel_HeavyMarineArmor</defName>
+		<defName>Thal_Apparel_HeavyMarineArmor</defName>
 		<label>heavy marine armor</label>
 		<description>A suit of heavy powered armor. Double layers of plasteel-weave plates are incredibly effective at both projectiles and explosions. Neuro-memetic assistors allow a human to wear the armor and still move easily. \n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
 		<graphicData>
@@ -492,7 +492,7 @@
 			<MoveSpeed>-0.5</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Apparel</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<thingSetMakerTags>
 			<li>RewardSpecial</li>

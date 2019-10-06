@@ -4,7 +4,7 @@
     <!-- ##### Medieval ##### -->
     <!-- +++++ Plate Gloves +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Handwear_PlateGloves</defName>
+		<defName>Thal_Handwear_PlateGloves</defName>
 		<label>plate gloves</label>
 		<description>A pair of simple metal gloves. Due to the thickness of the material, they reduce general work speed of the wearer.</description>
 		<graphicData>
@@ -32,7 +32,7 @@
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal> 
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -64,7 +64,7 @@
     <!-- ##### Spacer ##### -->
     <!-- +++++ Marine Gloves +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Handwear_MarineGloves</defName>
+		<defName>Thal_Handwear_MarineGloves</defName>
 		<label>marine gloves</label>
 		<description>A pair of marine gloves with enhanced grip assistance and set of embedded recoil stabilisers.</description>
 		<graphicData>
@@ -94,7 +94,7 @@
 			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_ArmorApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>

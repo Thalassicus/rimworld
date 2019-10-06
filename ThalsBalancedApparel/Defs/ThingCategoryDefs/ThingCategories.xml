@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!-- Boots and Gloves -->
-    <ThingCategoryDef>
-      <defName>VAE_BootsAndGloves</defName>
-      <label>handwear and footwear</label>
-      <parent>Apparel</parent>
-	  </ThingCategoryDef>
-
+  <ThingCategoryDef>
+    <defName>Thal_ClothingApparel</defName>
+    <label>Clothing</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>Thal_ArmorApparel</defName>
+    <label>Armor</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>Thal_SpecialApparel</defName>
+    <label>Special</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
 </Defs>

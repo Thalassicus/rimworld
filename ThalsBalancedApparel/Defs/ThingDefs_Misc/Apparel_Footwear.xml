@@ -4,7 +4,7 @@
     <!-- ##### Medieval ##### -->
     <!-- +++++ Boots +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Footwear_Boots</defName>
+		<defName>Thal_Footwear_Boots</defName>
 		<label>boots</label>
 		<description>A simple pair of leather boots.</description>
 		<graphicData>
@@ -31,7 +31,7 @@
 			<MoveSpeed>0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_ClothingApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -62,7 +62,7 @@
     <!-- +++++ Shoes +++++ -->
 	
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Footwear_Shoes</defName>
+		<defName>Thal_Footwear_Shoes</defName>
 		<label>shoes</label>
 		<description>A fancy pair of leather shoes.</description>
 		<graphicData>
@@ -83,13 +83,15 @@
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.0</EquipDelay>
+			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_SpecialApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -104,7 +106,7 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+      </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>

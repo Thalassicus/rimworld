@@ -4,7 +4,7 @@
     <!-- ##### Industrial ##### -->
     <!-- +++++ Gloves +++++ -->
     <ThingDef ParentName="ApparelMakeableBase">
-		<defName>VAE_Handwear_Gloves</defName>
+		<defName>Thal_Handwear_Gloves</defName>
 		<label>gloves</label>
 		<description>A simple pair of gloves.</description>
 		<graphicData>
@@ -32,7 +32,7 @@
 			<ComfyTemperatureMin>-2</ComfyTemperatureMin> 
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>VAE_BootsAndGloves</li>
+			<li>Thal_ClothingApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>

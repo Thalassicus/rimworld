@@ -1,55 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/PawnKindDef[defName = "Tribal_ChiefMelee"]/apparelRequired</xpath><value>
-        <apparelTags>
-            <li>MedievalArmorDecent</li>
-            <li>MedievalMilitary</li>
-        </apparelTags>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress"]/equippedStatOffsets</xpath><value>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName = "Tribal_ChiefMelee"]/apparelRequired</xpath><value>
+		<apparelTags>
+			<li>MedievalArmorDecent</li>
+			<li>MedievalMilitary</li>
+		</apparelTags>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress"]/equippedStatOffsets</xpath><value>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<NegotiationAbility>0.1</NegotiationAbility>
-			<TradePriceImprovement>0.1</TradePriceImprovement>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
 		</equippedStatOffsets>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/equippedStatOffsets</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/equippedStatOffsets</xpath><value>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<NegotiationAbility>0.1</NegotiationAbility>
-			<TradePriceImprovement>0.1</TradePriceImprovement>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
 		</equippedStatOffsets>
-    </value></Operation>
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/equippedStatOffsets</xpath>
-    </Operation>
-    
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_FlakPants"]/apparel/layers</xpath><value>
+		<layers>
+			<li>Shell</li>
+		</layers>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_TribalA" or defName="Apparel_Parka" or defName="Apparel_Pants" or defName="Apparel_BasicShirt" or defName="Apparel_CollarShirt" or defName="Apparel_Duster" or defName="Apparel_Jacket" or defName="Apparel_CowboyHat" or defName="Apparel_Tuque"]/thingCategories</xpath><value>
+		<thingCategories>
+			<li>Thal_ClothingApparel</li>
+		</thingCategories>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PlateArmor" or defName="Apparel_FlakVest" or defName="Apparel_FlakPants" or defName="Apparel_FlakJacket" or defName="Apparel_PowerArmor" or defName="Apparel_WarMask" or defName="Apparel_WarVeil" or defName="Apparel_SimpleHelmet" or defName="Apparel_AdvancedHelmet" or defName="Apparel_PowerArmorHelmet"]/thingCategories</xpath><value>
+		<thingCategories>
+			<li>Thal_ArmorApparel</li>
+		</thingCategories>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat" or defName="Apparel_TribalHeaddress" or defName="Apparel_PsychicFoilHelmet"]/thingCategories</xpath><value>
+		<thingCategories>
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/equippedStatOffsets</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
 		<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/costStuffCount</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/costStuffCount</xpath><value>
 		<costStuffCount>25</costStuffCount>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
 		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
 		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_Tuque"]/statBases/WorkToMake</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Tuque"]/statBases/WorkToMake</xpath><value>
 		<WorkToMake>1800</WorkToMake>
-    </value></Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_Tuque"]/statBases/Mass</xpath><value>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Tuque"]/statBases/Mass</xpath><value>
 		<Mass>14</Mass>
-    </value></Operation>
-    
+	</value></Operation>
+	
 </Patch>

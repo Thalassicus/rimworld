@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="Foods"]/label</xpath><value>
+			<label>biological</label>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="Drugs"]/parent</xpath><value>
+			<parent>Foods</parent>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/parent</xpath><value>
+			<parent>Foods</parent>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="MortarShells"]/parent</xpath><value>
+			<parent>Weapons</parent>
+    </value></Operation>
+    <Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="StoneChunks"]/parent</xpath><value>
+			<parent>ResourcesRaw</parent>
+    </value></Operation>
+</Patch>

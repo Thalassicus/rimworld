@@ -4,7 +4,7 @@
     <!-- ##### Industrial ##### -->
     <!-- +++++ Scarf +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_Scarf</defName>
+		<defName>Thal_Headgear_Scarf</defName>
 		<label>scarf</label>
 		<description>A warm and long piece of fabric protecting the neck from exposure to cold.</description>
 		<graphicData>
@@ -27,6 +27,9 @@
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_ClothingApparel</li>
+		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>Teeth</li>
@@ -55,7 +58,7 @@
 
     <!-- +++++ Beret +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_Beret</defName>
+		<defName>Thal_Headgear_Beret</defName>
 		<label>beret</label>
 		<description>A soft, flat crowned hat. Often worn by the military as a symbol of valor.</description>
 		<graphicData>
@@ -77,10 +80,13 @@
       		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<NegotiationAbility>0.1</NegotiationAbility>
-			<TradePriceImprovement>0.1</TradePriceImprovement>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -110,7 +116,7 @@
 
     <!-- +++++ Chefs Toque +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_PoofyHat</defName>
+		<defName>Thal_Headgear_PoofyHat</defName>
 		<label>Poofy Hat</label>
 		<description>An extravagantly large and poofy hat.</description>
 		<graphicData>
@@ -132,10 +138,13 @@
       		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<NegotiationAbility>0.1</NegotiationAbility>
-			<TradePriceImprovement>0.1</TradePriceImprovement>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -164,7 +173,7 @@
 
     <!-- +++++ Baseball Cap +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_BaseballCap</defName>
+		<defName>Thal_Headgear_BaseballCap</defName>
 		<label>Baseball Cap</label>
 		<description>A type of soft cap with a rounded crown and a stiff peak protecting the front.</description>
 		<graphicData>
@@ -187,6 +196,9 @@
             <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_ClothingApparel</li>
+		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -214,7 +226,7 @@
 
     <!-- +++++ Trapper Hat +++++ -->
 	<ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_TrapperHat</defName>
+		<defName>Thal_Headgear_TrapperHat</defName>
 		<label>Trapper Hat</label>
 		<description>An extremely warm hat with ear coverings, perfect for long cold exposure in winter times.</description>
 		<graphicData>
@@ -236,6 +248,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_ClothingApparel</li>
+		</thingCategories>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
 		</thingCategories>
@@ -262,7 +277,7 @@
 
     <!-- +++++ Summer Hat +++++ -->
 	<ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_SummerHat</defName>
+		<defName>Thal_Headgear_SummerHat</defName>
 		<label>Summer Hat</label>
 		<description>A light straw or fabric hat which serves as a protection against sun rays.</description>
 		<graphicData>
@@ -283,6 +298,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_ClothingApparel</li>
+		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -306,7 +324,7 @@
 
     <!-- +++++ Sterile Mask +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_SterileMask</defName>
+		<defName>Thal_Headgear_SterileMask</defName>
 		<label>Sterile Cover</label>
 		<description>Sanitary hairnet and mask for medical, culinary, or research work.</description>
 		<graphicData>
@@ -330,6 +348,9 @@
  			<Insulation_Heat>2</Insulation_Heat>
             <EquipDelay>0.8</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
 			<!-- poor design prevents this simple solution
 			<Medicine>5</Medicine>
@@ -368,7 +389,7 @@
 
     <!-- +++++ Gas Mask +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_GasMask</defName>
+		<defName>Thal_Headgear_GasMask</defName>
 		<label>Gas Mask</label>
 		<description>A full face isolating mask with basic air filtration systems, providing some degree of toxic immunity.</description>
 		<graphicData>
@@ -392,6 +413,9 @@
  			<Insulation_Heat>2</Insulation_Heat>
             <EquipDelay>2.5</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
 			<ToxicSensitivity>-1</ToxicSensitivity>
 		</equippedStatOffsets>
@@ -427,7 +451,7 @@
 
     <!-- +++++ Sunglasses +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_Sunglasses</defName>
+		<defName>Thal_Headgear_Sunglasses</defName>
 		<label>Sunglasses</label>
 		<description>A pair of wrap-around sunglasses protecting the eyes from sunlight and minor injuries.</description>
 		<graphicData>
@@ -450,10 +474,13 @@
  			<Insulation_Heat>0</Insulation_Heat>
             <EquipDelay>0.2</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<NegotiationAbility>0.1</NegotiationAbility>
-			<TradePriceImprovement>0.1</TradePriceImprovement>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.15</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -484,7 +511,7 @@
 
     <!-- +++++ Glasses +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_Glasses</defName>
+		<defName>Thal_Headgear_Glasses</defName>
 		<label>Glasses</label>
 		<description>A pair of lensed glasses, improving eyesight.</description>
 		<graphicData>
@@ -507,6 +534,9 @@
  			<Insulation_Heat>0</Insulation_Heat>
             <EquipDelay>0.2</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_ClothingApparel</li>
+		</thingCategories>
 		<equippedStatOffsets>
 			<!-- poor design prevents the ideal solution
 			<Sight>0.1</Sight>
@@ -542,7 +572,7 @@
 
     <!-- +++++ Ballistic Goggles +++++ -->
     <ThingDef ParentName="HatMakeableBase">
-		<defName>VAE_Headgear_BallisticGoggles</defName>
+		<defName>Thal_Headgear_BallisticGoggles</defName>
 		<label>ballistic goggles</label>
 		<description>A pair of reinforced goggles capable of stopping a bullet.</description>
 		<graphicData>
@@ -565,6 +595,9 @@
  			<Insulation_Heat>2</Insulation_Heat>
             <EquipDelay>0.2</EquipDelay>
 		</statBases>
+		<thingCategories Inherit="False">
+			<li>Thal_ArmorApparel</li>
+		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
 				<li>Eyes</li>
