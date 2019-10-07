@@ -33,7 +33,7 @@
         <basePowerConsumption>20</basePowerConsumption>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>30</glowRadius>
+        <glowRadius>20</glowRadius>
         <glowColor>(217,217,208,0)</glowColor>
       </li>
     </comps>
