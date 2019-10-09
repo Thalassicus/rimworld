@@ -22,21 +22,21 @@
 	
 	<TerrainDef ParentName="ThalBasicMetalFloor">
 		<defName>Concrete</defName>
-		<label>concrete</label>
+		<label>cheap concrete</label>
 		<texturePath>Terrain/Surfaces/Concrete</texturePath>
 		<designatorDropdown>ThalFloorBasic1</designatorDropdown>
 	</TerrainDef>
 	
 	<TerrainDef ParentName="ThalBasicMetalFloor">
 		<defName>PavedTile</defName>
-		<label>concrete tile</label>
+		<label>cheap concrete tile</label>
 		<texturePath>Terrain/Surfaces/PavedTile</texturePath>
-		<designatorDropdown>ThalFloorBasic2</designatorDropdown>
+		<designatorDropdown>ThalFloorBasic1</designatorDropdown>
 	</TerrainDef>
 	
 	<TerrainDef ParentName="ThalBasicMetalFloor">
 		<defName>ThalMetalSheets</defName>
-		<label>metal sheets</label>
+		<label>cheap metal sheets</label>
 		<texturePath>Terrain/Surfaces/Metal/MetalSheets</texturePath>
     <color>(0.369, 0.369, 0.369)</color>
     <constructEffect>ConstructMetal</constructEffect>	
@@ -45,10 +45,10 @@
 	
 	<TerrainDef ParentName="ThalBasicMetalFloor">
 		<defName>ThalStripedMetalTile</defName>
-		<label>striped metal</label>
+		<label>cheap striped metal</label>
 		<texturePath>Terrain/Surfaces/Metal/StripedMetalTile</texturePath>
     <constructEffect>ConstructMetal</constructEffect>	
-		<designatorDropdown>ThalFloorBasic2</designatorDropdown>
+		<designatorDropdown>ThalFloorBasic1</designatorDropdown>
 	</TerrainDef>
 
 	<!-- ================= Fancy Metal Floor ================= --> 
@@ -77,7 +77,7 @@
 		<label>patterned metal tile</label>
 		<texturePath>Terrain/Surfaces/Metal/PatternedMetalTile</texturePath>
 		<color>(0.369, 0.369, 0.369)</color>
-		<designatorDropdown>ThalFloorPattern1</designatorDropdown>
+		<!--<designatorDropdown>ThalFloorPattern1</designatorDropdown>-->
 	</TerrainDef>
 	
 	<TerrainDef ParentName="ThalFancyMetalFloor">
@@ -85,7 +85,7 @@
 		<label>hexagonal metal floor</label>
 		<texturePath>Terrain/Surfaces/Metal/HexMetalFloor</texturePath>
     <color>(0.369, 0.369, 0.369)</color>
-		<designatorDropdown>ThalFloorPattern2</designatorDropdown>
+		<!--<designatorDropdown>ThalFloorPattern1</designatorDropdown>-->
 	</TerrainDef>
 	
 	<TerrainDef ParentName="ThalFancyMetalFloor">
@@ -98,10 +98,10 @@
 	
 	<TerrainDef ParentName="ThalFancyMetalFloor">
 		<defName>ThalMetalCheckTile</defName>
-		<label>metal small tile</label>
+		<label>small metal tile</label>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
 		<color>(0.369, 0.369, 0.369)</color>
-		<designatorDropdown>ThalFloorCheck</designatorDropdown>
+		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef>
 	
 	<!-- ================= Gold ================= -->
@@ -132,7 +132,7 @@
 	
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalGoldCheckTile</defName>
-		<label>gold small tile</label>
+		<label>small gold tile</label>
 		<renderPrecedence>261</renderPrecedence>
 		<description>For overbearing extravagance, nothing beats check gold tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
@@ -150,7 +150,7 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<designatorDropdown>ThalFloorCheck</designatorDropdown>
+		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef>	
 
 	<!-- ================= Plasteel ================= -->	
@@ -180,7 +180,7 @@
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalPlasteelCheckTile</defName>
-		<label>plasteel small tile</label>
+		<label>small plasteel tile</label>
 		<renderPrecedence>263</renderPrecedence>
 		<description>- Very clean\n- Medium beauty\n- High cost\n- Medium build speed</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
@@ -198,7 +198,7 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<designatorDropdown>ThalFloorCheck</designatorDropdown>
+		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef>
 	
 	<!-- ================= Silver ================= -->	
@@ -229,7 +229,7 @@
  
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalSilverCheckTile</defName>
-		<label>silver small tile</label>
+		<label>small silver tile</label>
 		<renderPrecedence>260</renderPrecedence>
 		<description>- Antiseptic\n- Very high beauty\n- Very high cost\n- Slow build speed\n\nExtra-clean rooms improve outcomes in hospitals and research labs.</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
@@ -247,7 +247,7 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<designatorDropdown>ThalFloorCheck</designatorDropdown>
+		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef> 
  
 	<!-- ================= Sterile ================= --> 
@@ -298,7 +298,7 @@
 		<researchPrerequisites>
 			<li>SterileMaterials</li>
 		</researchPrerequisites>
-		<designatorDropdown>ThalFloorCheck</designatorDropdown>
+		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef>
 
 </Defs>	

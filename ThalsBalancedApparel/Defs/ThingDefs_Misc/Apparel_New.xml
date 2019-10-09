@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_HeavyCoat</defName>
 		<label>heavy coat</label>
 		<description>A heavy coat with insulated layers for keeping warm.</description>
@@ -18,10 +18,10 @@
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>3.8</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>2.5</EquipDelay>
+	  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+	  <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
@@ -29,7 +29,7 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-        		<li>Neck</li>
+				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
@@ -38,13 +38,13 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-                <li>IndustrialBasic</li>
+				<li>IndustrialBasic</li>
 				<li>Neolithic</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
@@ -54,10 +54,10 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
-    <!-- +++++ Tribal Poncho +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- +++++ Tribal Poncho +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_TribalPoncho</defName>
 		<label>Tribal Poncho</label>
 		<description>A poncho crafted using neolithic tools. While it may look primitive, it is effective at insulating the wearer.</description>
@@ -66,7 +66,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
-        <generateCommonality>1</generateCommonality>
+		<generateCommonality>1</generateCommonality>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -76,10 +76,10 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>900</WorkToMake>
 			<Mass>0.2</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>0.75</EquipDelay>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.75</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
@@ -119,10 +119,10 @@
 				</li>
 			</options>
 		</colorGenerator>
-    </ThingDef>
+	</ThingDef>
 
-    <!-- +++++ Tribal Kilt +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- +++++ Tribal Kilt +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_TribalKilt</defName>
 		<label>Tribal Kilt</label>
 		<description>A kilt crafted using neolithic tools. While it may look primitive, it is effective at insulating the wearer.</description>
@@ -131,7 +131,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
-        <generateCommonality>1</generateCommonality>
+		<generateCommonality>1</generateCommonality>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -141,17 +141,17 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>900</WorkToMake>
 			<Mass>0.2</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>0.75</EquipDelay>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.75</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-                <li>Legs</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/TribalKilt/TribalKilt</wornGraphicPath>
 			<layers>
@@ -184,9 +184,9 @@
 				</li>
 			</options>
 		</colorGenerator>
-    </ThingDef>
+	</ThingDef>
 
-    <!-- +++++ Apron +++++ -->
+	<!-- +++++ Apron +++++ -->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_Apron</defName>
 		<label>apron</label>
@@ -196,7 +196,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>0.5</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<costStuffCount>55</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -209,7 +209,7 @@
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
-      		<EquipDelay>5</EquipDelay>
+	  		<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
@@ -247,8 +247,8 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
-    <!-- +++++ Chefs Uniform +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- +++++ Chefs Uniform +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_ChefsUniform</defName>
 		<label>Buttoned Uniform</label>
 		<description>A fancy button-down shirt.</description>
@@ -257,7 +257,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -266,10 +266,10 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>3600</WorkToMake>
 			<Mass>1.8</Mass>
-            <StuffEffectMultiplierArmor>0.28</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.28</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
@@ -289,7 +289,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
@@ -299,22 +299,22 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
 
 
-    <!-- +++++ Military Jacket +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- +++++ Military Jacket +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_MilitaryJacket</defName>
 		<label>Military Jacket</label>
 		<description>A thick fabric military formal jacket used for certain ceremonies, receptions and celebrations. It contains orders, medals insignia and campaign ribbons. It is considered a symbol of courage and valor.</description>
 		<graphicData>
 			<texPath>Things/Apparel/MilitaryJacket/MilitaryJacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>0.1</generateCommonality>
+		<generateCommonality>0.1</generateCommonality>
 		<costStuffCount>80</costStuffCount>
 		<costList>
 			<Gold>5</Gold>
@@ -327,10 +327,10 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>2.4</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
@@ -355,7 +355,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
@@ -368,10 +368,10 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
-    <!-- +++++ Lab Coat +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- +++++ Lab Coat +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_SterileCoat</defName>
 		<label>Sterile Coat</label>
 		<description>A light coat worn to protect clothing from substances used in kitchens, medical wards, or laboratories.</description>
@@ -380,20 +380,19 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>0.05</generateCommonality>
-		<costList>
-			<Cloth>80</Cloth>
-		</costList>
+		<generateCommonality>0.05</generateCommonality>
+	<costStuffCount>80</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	</stuffCategories>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>7000</WorkToMake>
-			<Mass>0.8</Mass>
-			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.1</ArmorRating_Heat>
-			<Insulation_Cold>12</Insulation_Cold>
- 			<Insulation_Heat>6</Insulation_Heat>
-            <EquipDelay>1</EquipDelay>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+	  <Mass>2.2</Mass>
+	  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+	  <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<!-- poor design prevents this simple solution
@@ -401,9 +400,9 @@
 			<Cooking>5</Cooking>
 			<Intelligence>5</Intelligence>
 			-->
+			<ResearchSpeed>0.1</ResearchSpeed>
 			<MedicalTendQuality>0.1</MedicalTendQuality>
 			<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
-			<ResearchSpeed>0.1</ResearchSpeed>
 			<FoodPoisonChance>-0.02</FoodPoisonChance>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
@@ -424,9 +423,7 @@
 			<tags>
 				<li>IndustrialAdvanced</li>
 			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-            </defaultOutfitTags>
+			<defaultOutfitTags/>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>SterileMaterials</researchPrerequisite>
@@ -435,9 +432,10 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-    </ThingDef>
-    <!-- +++++ Shirt and Tie +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	</ThingDef>
+		
+	<!-- +++++ Shirt and Tie +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_ShirtandTie</defName>
 		<label>Shirt and Tie</label>
 		<description>A nice looking collared shirt with buttons and a tie.</description>
@@ -446,7 +444,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -456,17 +454,17 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.3</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.4</EquipDelay>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.4</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-                <li>Neck</li>
+				<li>Neck</li>
 				<li>Torso</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
@@ -480,7 +478,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
@@ -493,10 +491,10 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
-    <!-- +++++ Tank Top +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- +++++ Tank Top +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_TankTop</defName>
 		<label>Tank Top</label>
 		<description>A sleeveless type of T-shirt, useful during prolonged exercise.</description>
@@ -505,7 +503,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>1</generateCommonality>
+		<generateCommonality>1</generateCommonality>
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -515,10 +513,10 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1200</WorkToMake>
 			<Mass>0.25</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1</EquipDelay>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>0.10</MeleeDodgeChance>
@@ -540,7 +538,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
@@ -549,9 +547,9 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
-    </ThingDef>
-    <!-- +++++ Suit Jacket +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	</ThingDef>
+	<!-- +++++ Suit Jacket +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_SuitJacket</defName>
 		<label>Suit jacket</label>
 		<description>A nice looking suit jacket.</description>
@@ -560,7 +558,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-        <generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -570,17 +568,17 @@
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>2</Mass>
-            <StuffEffectMultiplierArmor>0.23</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.4</EquipDelay>
+			<StuffEffectMultiplierArmor>0.23</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.4</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Headgear</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-                <li>Neck</li>
+				<li>Neck</li>
 				<li>Torso</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
@@ -594,7 +592,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
@@ -607,5 +605,5 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 </Defs>

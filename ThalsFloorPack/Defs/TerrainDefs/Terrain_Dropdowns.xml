@@ -10,7 +10,7 @@
 		<defName>ThalFloorTile</defName>
 	</DesignatorDropdownGroupDef>
 	<DesignatorDropdownGroupDef>
-		<defName>ThalFloorCheck</defName>
+		<defName>ThalSmallTile</defName>
 	</DesignatorDropdownGroupDef>
 	<DesignatorDropdownGroupDef>
 		<defName>ThalFloorPattern1</defName>
