@@ -36,7 +36,7 @@
 	
 	<TerrainDef ParentName="ThalBasicMetalFloor">
 		<defName>ThalMetalSheets</defName>
-		<label>cheap metal sheets</label>
+		<label>cheap metal floor</label>
 		<texturePath>Terrain/Surfaces/Metal/MetalSheets</texturePath>
     <color>(0.369, 0.369, 0.369)</color>
     <constructEffect>ConstructMetal</constructEffect>	
@@ -103,6 +103,54 @@
 		<color>(0.369, 0.369, 0.369)</color>
 		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef>
+
+	<!-- ================= Plasteel ================= -->	
+	
+	<TerrainDef ParentName="FloorBase">
+		<defName>ThalPlasteelTile</defName>
+		<label>plasteel tile</label>
+		<renderPrecedence>262</renderPrecedence>
+		<description>- Very clean\n- Medium beauty\n- High cost\n- Medium build speed</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(135, 172, 175)</color> 
+		<statBases>
+			<WorkToBuild>1600</WorkToBuild>
+			<Beauty>5</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designatorDropdown>ThalFloorTile</designatorDropdown>
+	</TerrainDef> 
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>ThalPlasteelCheckTile</defName>
+		<label>small plasteel tile</label>
+		<renderPrecedence>263</renderPrecedence>
+		<description>- Very clean\n- Medium beauty\n- High cost\n- Medium build speed</description>
+		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
+		<color>(146, 174, 176)</color>
+		<statBases>
+			<WorkToBuild>1600</WorkToBuild>
+			<Beauty>5</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+		</statBases>
+		<costList>
+			<Plasteel>1</Plasteel>
+		</costList>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designatorDropdown>ThalSmallTile</designatorDropdown>
+	</TerrainDef>
 	
 	<!-- ================= Gold ================= -->
 	
@@ -152,54 +200,6 @@
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designatorDropdown>ThalSmallTile</designatorDropdown>
 	</TerrainDef>	
-
-	<!-- ================= Plasteel ================= -->	
-	
-	<TerrainDef ParentName="FloorBase">
-		<defName>ThalPlasteelTile</defName>
-		<label>plasteel tile</label>
-		<renderPrecedence>262</renderPrecedence>
-		<description>- Very clean\n- Medium beauty\n- High cost\n- Medium build speed</description>
-		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
-		<color>(135, 172, 175)</color> 
-		<statBases>
-			<WorkToBuild>1600</WorkToBuild>
-			<Beauty>5</Beauty>
-			<Cleanliness>0.4</Cleanliness>
-		</statBases>
-		<costList>
-			<Plasteel>1</Plasteel>
-		</costList>
-		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites>
-			<li>Smithing</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<designatorDropdown>ThalFloorTile</designatorDropdown>
-	</TerrainDef> 
-
-	<TerrainDef ParentName="FloorBase">
-		<defName>ThalPlasteelCheckTile</defName>
-		<label>small plasteel tile</label>
-		<renderPrecedence>263</renderPrecedence>
-		<description>- Very clean\n- Medium beauty\n- High cost\n- Medium build speed</description>
-		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>
-		<color>(146, 174, 176)</color>
-		<statBases>
-			<WorkToBuild>1600</WorkToBuild>
-			<Beauty>5</Beauty>
-			<Cleanliness>0.4</Cleanliness>
-		</statBases>
-		<costList>
-			<Plasteel>1</Plasteel>
-		</costList>
-		<constructEffect>ConstructMetal</constructEffect>
-		<researchPrerequisites>
-			<li>Smithing</li>
-		</researchPrerequisites>
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<designatorDropdown>ThalSmallTile</designatorDropdown>
-	</TerrainDef>
 	
 	<!-- ================= Silver ================= -->	
  
@@ -278,8 +278,8 @@
 	</TerrainDef> 
 
 	<TerrainDef ParentName="FloorBase">
-		<defName>ThalCheckSterileTile</defName>
-		<label>check sterile tile</label>
+		<defName>ThalSmallSterileTile</defName>
+		<label>small sterile tile</label>
 		<renderPrecedence>244</renderPrecedence>
 		<description>- Antiseptic\n- Medium beauty\n- High cost\n- Slow build speed\n\nExtra-clean rooms improve outcomes in hospitals and research labs.</description>
 		<texturePath>Terrain/Surfaces/Metal/CheckTile</texturePath>

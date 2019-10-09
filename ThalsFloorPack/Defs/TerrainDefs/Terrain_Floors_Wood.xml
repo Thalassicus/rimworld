@@ -3,7 +3,7 @@
 
 	<TerrainDef ParentName="FloorBase">
 		<defName>ThalPlywoodFloor</defName>
-		<label>plywood floor</label>
+		<label>cheap wood floor</label>
 		<renderPrecedence>250</renderPrecedence>
 		<description>- Flammable\n- No beauty\n- Low cost\n- Fast build speed</description>
 		<texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
@@ -34,41 +34,43 @@
 		</statBases>
 		<constructEffect>ConstructWood</constructEffect>
 	</TerrainDef>
-	
-	<TerrainDef  ParentName="ThalWoodFloorBase">
-		<defName>WoodPlankFloor</defName>
-		<label>wood floor</label>
-		<texturePath>Terrain/Surfaces/Wooden/WoodFloor</texturePath>
-		<burnedDef>BurnedWoodPlankFloor</burnedDef>
-	</TerrainDef>
   
+	<!--
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalWidePlanksFloor</defName>
 		<label>wide wooden boards</label>
 		<texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
 		<burnedDef>ThalBurnedWidePlanks</burnedDef>
-		<!--<designatorDropdown>ThalFloorPattern1</designatorDropdown>-->
 	</TerrainDef>
-  
+	-->
+	
 	<TerrainDef  ParentName="ThalWoodFloorBase">
-		<defName>ThalCheckWoodenFloor</defName>
-		<label>small wooden boards</label>
-		<texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
-		<burnedDef>ThalBurnedCheckWoodenFloor</burnedDef>
-		<!--<designatorDropdown>ThalSmallTile</designatorDropdown>-->
+		<defName>WoodPlankFloor</defName>
+		<label>wide wooden boards</label>
+		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(108,78,55)</color>
 	</TerrainDef>
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalParquet</defName>
-		<label>parquet wooden floor</label>
+		<label>narrow wooden boards</label>
 		<texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
 		<burnedDef>ThalBurnedParquet</burnedDef>
 		<!--<designatorDropdown>ThalFloorPattern2</designatorDropdown>-->
 	</TerrainDef>
   
 	<TerrainDef  ParentName="ThalWoodFloorBase">
+		<defName>ThalCheckWoodenFloor</defName>
+		<label>alternating wooden tiles</label>
+		<texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
+		<burnedDef>ThalBurnedCheckWoodenFloor</burnedDef>
+		<!--<designatorDropdown>ThalSmallTile</designatorDropdown>-->
+	</TerrainDef>
+  
+	<TerrainDef  ParentName="ThalWoodFloorBase">
 		<defName>ThalMosaicWoodenFloor</defName>
-		<label>wood tile</label>
+		<label>aligned wooden tiles</label>
 		<texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
 		<burnedDef>ThalBurnedMosaicWoodenFloor</burnedDef>
 		<!--<designatorDropdown>ThalFloorTile</designatorDropdown>-->

@@ -100,14 +100,14 @@
   
   <TerrainDef ParentName="WDJadeFloorBase">
     <defName>ThalJadeFloor</defName>
-    <label>jade floor</label>
+    <label>polished jade floor</label>
     <texturePath>Terrain/Surfaces/Misc/JadeFloor</texturePath>
 		<designatorDropdown>ThalPolishedStoneFloor</designatorDropdown>
   </TerrainDef>  
   
   <TerrainDef ParentName="WDJadeFloorBase">
     <defName>ThalSmoothJadeFloor</defName>
-    <label>smooth jade floor</label>
+    <label>natural jade floor</label>
     <texturePath>Terrain/Surfaces/Misc/SmoothJadeFloor</texturePath>
 		<!--<designatorDropdown>ThalFloorPattern1</designatorDropdown>-->
   </TerrainDef>   
