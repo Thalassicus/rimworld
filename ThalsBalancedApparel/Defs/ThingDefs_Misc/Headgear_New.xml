@@ -340,7 +340,7 @@
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>0.8</EquipDelay
+			<EquipDelay>0.8</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
 			<li>Thal_SpecialApparel</li>
