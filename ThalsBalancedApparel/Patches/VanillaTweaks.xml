@@ -62,12 +62,12 @@
 	</value></Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/generateCommonality</xpath><value>
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/generateCommonality</xpath><value>
 		<generateCommonality>1</generateCommonality>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/generateCommonality</xpath><value>
-		<generateCommonality>1</generateCommonality>
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/generateCommonality</xpath><value>
+		<generateCommonality>2</generateCommonality>
 	</value></Operation>
 
 

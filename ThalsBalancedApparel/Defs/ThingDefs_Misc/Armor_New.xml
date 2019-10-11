@@ -380,7 +380,7 @@
 		<label>heavy marine helmet</label>
 		<description>A heavy marine armor helmet, with double-layered plasteel plating and a built-in camera with a display HUD to get rid of the weakpoints like visors.\n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
 		<techLevel>Spacer</techLevel>
-		<generateCommonality>0.2</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<graphicData>
 			<texPath>Things/Headgear/HeavyMarineHelmet/HeavyMarineHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass> 
@@ -388,10 +388,10 @@
 		</graphicData>
 		<costList>
 			<ComponentSpacer>2</ComponentSpacer>
-			<Plasteel>50</Plasteel>
+			<Plasteel>80</Plasteel>
 		</costList>
 		<statBases>
-			<WorkToMake>26000</WorkToMake>
+			<WorkToMake>40000</WorkToMake>
 			<MaxHitPoints>160</MaxHitPoints>
 			<Mass>3.6</Mass>
 			<Flammability>0.2</Flammability>
@@ -469,7 +469,7 @@
 			<drawSize>1.20</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
-		<generateCommonality>0.2</generateCommonality>
+		<generateCommonality>1</generateCommonality>
 		<costList>
 			<ComponentSpacer>6</ComponentSpacer>
 			<Plasteel>160</Plasteel>

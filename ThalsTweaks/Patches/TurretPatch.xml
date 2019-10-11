@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[thingClass="Building_TurretGun"]</xpath><value>
+	  <tradeTags><li>Turret</li></tradeTags>
+  </value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_MiniTurret"]</xpath><value>
+		<generateCommonality>5</generateCommonality>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_Tag">
+			<tradeTag>Turret</tradeTag>
+			<thingDefCountRange>
+				<min>4</min>
+				<max>5</max>
+			</thingDefCountRange>
+			<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
+		</li>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_Tag">
+			<tradeTag>Turret</tradeTag>
+			<thingDefCountRange>
+				<min>2</min>
+				<max>3</max>
+			</thingDefCountRange>
+			<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
+		</li>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_Tag">
+			<tradeTag>Turret</tradeTag>
+			<thingDefCountRange>
+				<min>2</min>
+				<max>3</max>
+			</thingDefCountRange>
+			<countRange>
+				<min>1</min>
+				<max>1</max>
+			</countRange>
+		</li>
+	</value></Operation>
+</Patch>
