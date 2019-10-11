@@ -314,7 +314,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
-		<generateCommonality>0.1</generateCommonality>
+		<generateCommonality>0.2</generateCommonality>
 		<costStuffCount>80</costStuffCount>
 		<costList>
 			<Gold>5</Gold>

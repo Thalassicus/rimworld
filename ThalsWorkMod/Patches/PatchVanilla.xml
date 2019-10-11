@@ -13,6 +13,10 @@
         <value><naturalPriority>700</naturalPriority></value>
     </Operation>
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/WorkTypeDef[defName="Research"]/naturalPriority</xpath>
+        <value><naturalPriority>350</naturalPriority></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/WorkGiverDef[workType="Smithing"]/workType</xpath>
         <value><workType>Tailoring</workType></value>
     </Operation>

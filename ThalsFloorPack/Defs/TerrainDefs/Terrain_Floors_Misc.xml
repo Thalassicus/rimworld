@@ -1,5 +1,159 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+<Defs>  
+  <!-- ================= Dirt ================= -->   
+	<DesignatorDropdownGroupDef>
+		<defName>ThalFloorDirt</defName>
+	</DesignatorDropdownGroupDef>
+  
+	<TerrainDef Name="ThalDirtBase" ParentName="FloorBase" Abstract="True">
+		<edgeType>FadeRough</edgeType>
+		<pathCost>2</pathCost>
+		<scatterType>Rocky</scatterType>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>	  
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+    <acceptFilth>true</acceptFilth>
+		<takeFootprints>True</takeFootprints>
+		<designatorDropdown>ThalFloorDirt</designatorDropdown>
+    <acceptTerrainSourceFilth>False</acceptTerrainSourceFilth>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+  </TerrainDef> 
+  
+  <TerrainDef ParentName="ThalDirtBase">
+    <defName>ThalPackedDirt</defName>
+    <label>packed ground</label>
+    <description>Hard-packed ground allows people to walk faster than natural soil, and prevents plant growth.</description>		
+    <texturePath>Terrain/Surfaces/PackedDirt</texturePath>
+    <renderPrecedence>360</renderPrecedence>
+    <pathCost>1</pathCost>
+    <fertility>0</fertility>
+    <statBases>
+      <WorkToBuild>250</WorkToBuild>	  
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="ThalDirtBase">
+    <defName>ThalStonySoil</defName>
+    <label>salted ground</label>
+    <description>Salting the ground prevents plant growth, perfect for fire breaks.</description>		
+    <texturePath>Terrain/Surfaces/Misc/DrySoil</texturePath>
+    <renderPrecedence>360</renderPrecedence>
+    <pathCost>2</pathCost>
+    <fertility>0</fertility>
+    <statBases>
+      <WorkToBuild>250</WorkToBuild>	  
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="ThalDirtBase">
+    <defName>ThalMarshyGround</defName>
+    <label>marshy ground</label>
+    <description>Dig out a pit for water to pool, creating marshy ground. Marsh slows people down more than mud, but allows plant growth.</description>		
+    <texturePath>Terrain/Surfaces/MarshyTerrain</texturePath>
+    <renderPrecedence>338</renderPrecedence>
+    <pathCost>15</pathCost>	
+    <fertility>1</fertility>
+    <avoidWander>true</avoidWander>
+    <traversedThought>SoakingWet</traversedThought>
+    <tools>
+      <li>
+        <label>mud</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>MudInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="ThalDirtBase">
+    <defName>ThalMuddyGround</defName>
+    <label>muddy ground</label>
+    <description>Dig out a pit for water to pool, then salt it, creating infertile muddy ground. Mud slows people down less than marsh, but prevents plant growth.</description>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <renderPrecedence>331</renderPrecedence>
+    <pathCost>12</pathCost>	
+    <fertility>0</fertility>
+    <avoidWander>true</avoidWander>
+    <tools>
+      <li>
+        <label>mud</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>MudInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+
+	<TerrainDef Name="ThalFarmlandBase" Abstract="True" ParentName="ThalDirtBase">
+		<pathCost>5</pathCost>
+		<affordances Inherit="False">
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>1.4</fertility>
+		<avoidWander>true</avoidWander>
+	</TerrainDef> 
+
+	<TerrainDef ParentName="ThalFarmlandBase">
+		<defName>ThalImportedSoil</defName>
+		<label>imported soil</label>
+		<description>Import soil to place on stone, then till it to plant crops. This is a very slow process.</description>
+		<texturePath>Terrain/Surfaces/Misc/SoilTilled</texturePath>
+		<renderPrecedence>335</renderPrecedence>
+		<layerable>false</layerable>
+		<statBases Inherit="False">
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+			<WorkToBuild>4000</WorkToBuild>
+		</statBases>
+		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
+	</TerrainDef>
+
+	<TerrainDef ParentName="ThalFarmlandBase" Name="TS_Tilled">
+		<defName>GT_SoilTilled</defName>
+		<label>plowed soil</label>
+		<description>Plow the ground to plant crops.</description>
+		<texturePath>Terrain/Surfaces/Misc/SoilTilled</texturePath>
+		<renderPrecedence>334</renderPrecedence>
+		<statBases Inherit="False">
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+	</TerrainDef>
+  
+  <!-- ================= Straw ================= -->   
 
   <TerrainDef ParentName="FloorBase">
     <defName>ThalStrawFloor</defName>
@@ -11,68 +165,12 @@
 	  <burnedDef>ThalBurnedStrawFloor</burnedDef>	
     <statBases>
       <WorkToBuild>60</WorkToBuild>
-	  <Flammability>1</Flammability>	  
+	    <Flammability>1</Flammability>	  
     </statBases>
     <costList>
-      <Hay>8</Hay>
+      <Hay>10</Hay>
     </costList>
-    <constructEffect>ConstructDirt</constructEffect>
-  </TerrainDef>   
-  
-  <TerrainDef>
-    <defName>ThalPackedDirtFloor</defName>
-    <label>packed dirt</label>
-    <layerable>true</layerable>	
-    <description>Simple smoothened dirt. Looks better and less dirty than normal soil.</description>		
-    <texturePath>Terrain/Surfaces/PackedDirt</texturePath>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>360</renderPrecedence>
-    <pathCost>1</pathCost>	
-    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-    <statBases>
-      <Beauty>-1</Beauty>
-      <WorkToBuild>180</WorkToBuild>	  
-      <Cleanliness>-0.4</Cleanliness>
-    </statBases>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>Diggable</li>	  
-    </affordances>
-    <designationCategory>Floors</designationCategory>
-    <fertility>0</fertility>
-    <constructEffect>ConstructDirt</constructEffect>
-	<generatedFilth>Filth_Dirt</generatedFilth>
-    <terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>		
-  </TerrainDef>   
-  
-  <TerrainDef>
-    <defName>ThalStonySoil</defName>
-    <label>dry soil</label>
-    <layerable>true</layerable>	
-    <description>Dry soil that prevents the growth of plants, perfect for fire breaks.</description>		
-    <texturePath>Terrain/Surfaces/Misc/DrySoil</texturePath>
-    <edgeType>FadeRough</edgeType>
-    <renderPrecedence>360</renderPrecedence>
-    <pathCost>1</pathCost>	
-    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-    <statBases>
-      <Beauty>-1</Beauty>
-      <WorkToBuild>180</WorkToBuild>	  
-      <Cleanliness>-0.4</Cleanliness>
-    </statBases>
-    <affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-      <li>Diggable</li>	  
-    </affordances>
-    <designationCategory>Floors</designationCategory>
-    <fertility>0</fertility>
-    <constructEffect>ConstructDirt</constructEffect>
-	  <generatedFilth>Filth_Dirt</generatedFilth>
-  </TerrainDef>  
+  </TerrainDef>
   
   <!-- ================= Jade ================= -->   
   

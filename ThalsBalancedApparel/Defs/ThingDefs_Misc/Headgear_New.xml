@@ -124,7 +124,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
-		<generateCommonality>0.05</generateCommonality>
+		<generateCommonality>0.1</generateCommonality>
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>

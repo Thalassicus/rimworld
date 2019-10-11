@@ -13,7 +13,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.1</generateCommonality>
+        <generateCommonality>0.25</generateCommonality>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -71,7 +71,7 @@
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.1</generateCommonality>
+        <generateCommonality>0.25</generateCommonality>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>

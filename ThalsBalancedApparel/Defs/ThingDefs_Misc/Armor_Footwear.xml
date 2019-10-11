@@ -12,7 +12,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.1</generateCommonality>
+        <generateCommonality>0.5</generateCommonality>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -72,7 +72,7 @@
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.1</generateCommonality>
+        <generateCommonality>0.2</generateCommonality>
 		<costList>
 			<Hyperweave>5</Hyperweave>
 			<Plasteel>20</Plasteel>

@@ -23,6 +23,10 @@
         <value><tradeTags><li>SpacerTech</li></tradeTags></value>
     </Operation>
     <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]</xpath>
+        <value><tradeTags><li>SpacerTech</li></tradeTags></value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="OrbitalTargeterBombardment"]</xpath>
         <value><tradeTags><li>SpacerTech</li></tradeTags></value>
     </Operation>

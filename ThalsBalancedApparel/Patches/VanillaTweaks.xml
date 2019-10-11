@@ -31,6 +31,10 @@
 		<xpath>Defs/ThingDef[defName="Apparel_FlakPants"]/apparel/layers</xpath><value>
 		<layers><li>Shell</li></layers>
 	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/apparel/bodyPartGroups</xpath><value>
+		<bodyPartGroups><li>UpperHead</li><li>Teeth</li></bodyPartGroups>
+	</value></Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
@@ -57,8 +61,19 @@
 		<Mass>14</Mass>
 	</value></Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/generateCommonality</xpath><value>
+		<generateCommonality>1</generateCommonality>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/generateCommonality</xpath><value>
+		<generateCommonality>1</generateCommonality>
+	</value></Operation>
 
-	<!-- Apparel Categories -->
+
+
+	<!-- ===================== Apparel Categories ===================== -->
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="Headgear"]/label</xpath><value>
 		<label>clothing</label>

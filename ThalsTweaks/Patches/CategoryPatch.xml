@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	<!--
+			Item Categories
+	-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="Foods"]/label</xpath><value>
 		<label>edible</label>
@@ -10,7 +13,7 @@
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="CorpsesMechanoid"]/parent</xpath><value>
-		<parent>ResourcesRaw</parent>
+		<parent>Manufactured</parent>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="Drugs"]/parent</xpath><value>
@@ -18,13 +21,29 @@
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/parent</xpath><value>
-		<parent>Foods</parent>
+		<parent>Drugs</parent>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/label</xpath><value>
 		<label>drug ingredients</label>
 	</value></Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingCategoryDef[defName="PlantMatter"]/resourceReadoutRoot</xpath>		
+	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="ButcherCorpseMechanoid"]/ingredients</xpath><value>
+		<ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesMechanoid</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+	</value></Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="ResourcesRaw"]/label</xpath><value>
@@ -56,4 +75,105 @@
 		<xpath>Defs/ThingDef[defName="Wort"]/thingCategories</xpath><value>
 		<thingCategories><li>PlantMatter</li></thingCategories>
 	</value></Operation>
+
+	<!--
+			Architect Categories
+	-->
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses//li[.="Designator_PlanAdd"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_PlanAdd</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses//li[.="Designator_PlanRemove"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_PlanRemove</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaHomeExpand"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_AreaHomeExpand</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaHomeClear"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_AreaHomeClear</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaBuildRoof"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_AreaBuildRoof</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaNoRoof"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_AreaNoRoof</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaIgnoreRoof"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_AreaIgnoreRoof</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Bridge"]/designationCategory</xpath><value>
+		<designationCategory>Floors</designationCategory>
+	</value></Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses//li[.="Designator_RemoveBridge"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Floors"]/specialDesignatorClasses</xpath><value>
+		<li>Designator_RemoveBridge</li>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MultiAnalyzer"]/designationCategory</xpath><value>
+		<designationCategory>Production</designationCategory>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VitalsMonitor"]/designationCategory</xpath><value>
+		<designationCategory>Furniture</designationCategory>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="ToolCabinet"]/designationCategory</xpath><value>
+		<designationCategory>Production</designationCategory>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="LampBase"]/designationCategory</xpath><value>
+		<designationCategory>Power</designationCategory>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="MURWallLightVIIBase"]/designationCategory</xpath><value>
+		<designationCategory>Power</designationCategory>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_CeilingLight"]/designationCategory</xpath><value>
+		<designationCategory>Power</designationCategory>
+	</value></Operation>
+
 </Patch>
