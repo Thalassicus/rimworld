@@ -76,13 +76,13 @@
 			<WorkToMake>4200</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>6</Mass>
-			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.2</MoveSpeed>
+			<MoveSpeed>-0.12</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Thal_ArmorApparel</li>
@@ -145,12 +145,15 @@
 			<MaxHitPoints>290</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
 			<Mass>2.8</Mass>
-			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.34</ArmorRating_Heat>
 			<Insulation_Cold>1</Insulation_Cold>
-            <EquipDelay>5</EquipDelay>
+      <EquipDelay>5</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.12</MoveSpeed>
+		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Thal_ArmorApparel</li>
 		</thingCategories>

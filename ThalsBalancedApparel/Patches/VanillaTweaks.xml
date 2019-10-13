@@ -1,24 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
+	<!-- shifting some impact on trade prices to social clothing -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress"]/equippedStatOffsets</xpath><value>
-		<equippedStatOffsets>
-			<SocialImpact>0.15</SocialImpact>
-			<NegotiationAbility>0.15</NegotiationAbility>
-			<TradePriceImprovement>0.15</TradePriceImprovement>
-		</equippedStatOffsets>
+		<xpath>Defs/StatDef[defName="SellPriceFactor"]/defaultBaseValue</xpath><value>
+		<defaultBaseValue>0.9</defaultBaseValue>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/equippedStatOffsets</xpath><value>
-		<equippedStatOffsets>
-			<SocialImpact>0.15</SocialImpact>
-			<NegotiationAbility>0.15</NegotiationAbility>
-			<TradePriceImprovement>0.15</TradePriceImprovement>
-		</equippedStatOffsets>
+		<xpath>Defs/StatDef[defName="TradePriceImprovement"]/skillNeedFactors/li[@Class="SkillNeed_BaseBonus"]/bonusPerLevel</xpath><value>
+		<bonusPerLevel>0.01</bonusPerLevel>
 	</value></Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/equippedStatOffsets</xpath>
-	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>Hyperweave</thingDef>
+			<countRange>
+				<min>100</min>
+				<max>200</max>
+			</countRange>
+		</li>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>Hyperweave</thingDef>
+			<countRange>
+				<min>150</min>
+				<max>300</max>
+			</countRange>
+		</li>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>Hyperweave</thingDef>
+			<countRange>
+				<min>300</min>
+				<max>600</max>
+			</countRange>
+		</li>
+	</value></Operation>
+
+
+	<!-- ==================== Misc ==================== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/generateCommonality</xpath><value>
+		<generateCommonality>1</generateCommonality>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/generateCommonality</xpath><value>
+		<generateCommonality>2</generateCommonality>
+	</value></Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName = "Tribal_ChiefMelee"]/apparelRequired</xpath><value>
@@ -32,14 +65,81 @@
 		<layers><li>Shell</li></layers>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_FlakVest"]/statBases/ArmorRating_Sharp</xpath><value>
+		<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/apparel/bodyPartGroups</xpath><value>
 		<bodyPartGroups><li>UpperHead</li><li>Teeth</li></bodyPartGroups>
+	</value></Operation>
+	
+
+	<!-- ==================== Social & Temp ==================== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress"]/equippedStatOffsets</xpath><value>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+			<TradePriceImprovement>0.1</TradePriceImprovement>
+		</equippedStatOffsets>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/equippedStatOffsets</xpath><value>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+			<TradePriceImprovement>0.1</TradePriceImprovement>
+		</equippedStatOffsets>
+	</value></Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/equippedStatOffsets</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Parka"]/statBases/WorkToMake</xpath><value>
+		<WorkToMake>10000</WorkToMake>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Parka"]/statBases/StuffEffectMultiplierArmor</xpath><value>
+		<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Parka"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
+		<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Parka"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
+		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Duster"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
+		<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Duster"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
+		<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Jacket"]/statBases/WorkToMake</xpath><value>
+		<WorkToMake>5000</WorkToMake>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Jacket"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
+		<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Apparel_Jacket"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
+		<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 	</value></Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/statBases/StuffEffectMultiplierInsulation_Cold</xpath><value>
 		<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
 	</value></Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/costStuffCount</xpath><value>
 		<costStuffCount>25</costStuffCount>
@@ -52,24 +152,15 @@
 		<xpath>Defs/ThingDef[defName="Apparel_BowlerHat"]/statBases/StuffEffectMultiplierInsulation_Heat</xpath><value>
 		<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 	</value></Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_Tuque"]/statBases/WorkToMake</xpath><value>
 		<WorkToMake>1800</WorkToMake>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_Tuque"]/statBases/Mass</xpath><value>
-		<Mass>14</Mass>
+		<Mass>1.4</Mass>
 	</value></Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/generateCommonality</xpath><value>
-		<generateCommonality>1</generateCommonality>
-	</value></Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/generateCommonality</xpath><value>
-		<generateCommonality>2</generateCommonality>
-	</value></Operation>
-
 
 
 	<!-- ===================== Apparel Categories ===================== -->

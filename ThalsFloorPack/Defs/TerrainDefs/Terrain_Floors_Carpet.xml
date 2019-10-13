@@ -8,7 +8,7 @@
 	</DesignatorDropdownGroupDef>
   
   <TerrainDef Name="CarpetBase" ParentName="FloorBase" Abstract="True">
-		<description>- Flammable\n- High beauty\n- Medium cost\n- Medium build speed</description>
+		<description>- Flammable\n- High beauty\n- Medium cost\n- Fast build speed</description>
     <texturePath>Terrain/Surfaces/Carpet</texturePath>
     <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
     <burnedDef>BurnedCarpet</burnedDef>
@@ -17,7 +17,7 @@
     </costList>
 		<statBases>
 			<Beauty>10</Beauty>
-			<WorkToBuild>800</WorkToBuild>
+			<WorkToBuild>400</WorkToBuild>
 			<Flammability>0.25</Flammability>
 		</statBases>
 		<designatorDropdown>ThalBasicCarpetFloor</designatorDropdown>
@@ -137,7 +137,7 @@
 	</DesignatorDropdownGroupDef> 
 	
   <TerrainDef Name="WDCheckCarpetBase" ParentName="FloorBase" Abstract="True">
-		<description>- Flammable\n- High beauty\n- Medium cost\n- Medium build speed</description>
+		<description>- Flammable\n- High beauty\n- Medium cost\n- Fast build speed</description>
     <texturePath>Terrain/Surfaces/Carpet/CheckCarpet</texturePath>
     <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
     <burnedDef>BurnedCarpet</burnedDef>
@@ -146,7 +146,7 @@
     </costList>
 		<statBases>
 			<Beauty>10</Beauty>
-			<WorkToBuild>800</WorkToBuild>
+			<WorkToBuild>400</WorkToBuild>
 			<Flammability>0.25</Flammability>
 		</statBases>
 		<designatorDropdown>ThalCheckCarpetFloor</designatorDropdown>

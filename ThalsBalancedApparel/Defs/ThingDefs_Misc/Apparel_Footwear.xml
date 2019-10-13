@@ -24,7 +24,7 @@
 			<Mass>0.25</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -82,13 +82,13 @@
 			<Mass>0.25</Mass>
 			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.15</SocialImpact>
-			<NegotiationAbility>0.15</NegotiationAbility>
-			<TradePriceImprovement>0.15</TradePriceImprovement>
+			<SocialImpact>0.1</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+			<TradePriceImprovement>0.1</TradePriceImprovement>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Thal_SpecialApparel</li>

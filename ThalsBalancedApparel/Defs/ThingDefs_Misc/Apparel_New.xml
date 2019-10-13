@@ -16,11 +16,11 @@
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>10000</WorkToMake>
 			<Mass>3.8</Mass>
-	  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-	  <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
-	  <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+	  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 	  <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
@@ -77,8 +77,8 @@
 			<WorkToMake>900</WorkToMake>
 			<Mass>0.2</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.75</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
@@ -142,8 +142,8 @@
 			<WorkToMake>900</WorkToMake>
 			<Mass>0.2</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>0.75</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
@@ -206,10 +206,10 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>3400</WorkToMake>
 			<Mass>0.8</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
-	  		<EquipDelay>5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+	  	<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.10</WorkSpeedGlobal>
@@ -266,9 +266,9 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>3600</WorkToMake>
 			<Mass>1.8</Mass>
-			<StuffEffectMultiplierArmor>0.28</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<thingCategories Inherit="False">
@@ -303,72 +303,6 @@
 
 
 
-	<!-- +++++ Military Jacket +++++ -->
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>Thal_Apparel_MilitaryJacket</defName>
-		<label>Military Jacket</label>
-		<description>A thick fabric military formal jacket used for certain ceremonies, receptions and celebrations. It contains orders, medals insignia and campaign ribbons. It is considered a symbol of courage and valor.</description>
-		<graphicData>
-			<texPath>Things/Apparel/MilitaryJacket/MilitaryJacket</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<techLevel>Industrial</techLevel>
-		<generateCommonality>0.2</generateCommonality>
-		<costStuffCount>80</costStuffCount>
-		<costList>
-			<Gold>5</Gold>
-		</costList>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>2.4</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2.5</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MentalBreakThreshold>-0.10</MentalBreakThreshold>
-		</equippedStatOffsets>
-		<thingCategories Inherit="False">
-			<li>Headgear</li>
-		</thingCategories>
-		<apparel>
-			<bodyPartGroups>
-				<li>Neck</li>
-				<li>Torso</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Apparel/MilitaryJacket/MilitaryJacket</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>IndustrialBasic</li>
-				<li>IndustrialMilitary</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-		<recipeMaker>
-			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
-	</ThingDef>
 
 	<!-- +++++ Lab Coat +++++ -->
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -390,8 +324,8 @@
 			<WorkToMake>15000</WorkToMake>
 	  <Mass>2.2</Mass>
 	  <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-	  <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
-	  <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+	  <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 	  <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -455,7 +389,7 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>0.3</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.4</EquipDelay>
 		</statBases>
@@ -515,7 +449,7 @@
 			<Mass>0.25</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -548,6 +482,8 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+
+
 	<!-- +++++ Suit Jacket +++++ -->
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Apparel_SuitJacket</defName>
@@ -566,15 +502,20 @@
 		</stuffCategories>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>2</Mass>
-			<StuffEffectMultiplierArmor>0.23</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.4</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
+		</equippedStatOffsets>
 		<thingCategories Inherit="False">
-			<li>Headgear</li>
+			<li>Thal_SpecialApparel</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -592,6 +533,75 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>AdvancedClothing</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<!-- +++++ Military Jacket +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Thal_Apparel_MilitaryJacket</defName>
+		<label>Military Jacket</label>
+		<description>A thick fabric military formal jacket used for certain ceremonies, receptions and celebrations. It contains orders, medals insignia and campaign ribbons.</description>
+		<graphicData>
+			<texPath>Things/Apparel/MilitaryJacket/MilitaryJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<generateCommonality>0.2</generateCommonality>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Gold>5</Gold>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>2.4</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+			<NegotiationAbility>0.1</NegotiationAbility>
+			<TradePriceImprovement>0.15</TradePriceImprovement>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>Thal_SpecialApparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MilitaryJacket/MilitaryJacket</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+				<li>IndustrialMilitary</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>

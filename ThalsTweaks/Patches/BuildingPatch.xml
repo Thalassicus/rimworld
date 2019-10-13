@@ -4,4 +4,8 @@
 			<xpath>Defs/ThingDef[defName="WindTurbine"]/terrainAffordanceNeeded</xpath><value>
 			<terrainAffordanceNeeded Inherit="False"/>
 		</value></Operation>
+    <Operation Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="HospitalBed"]/statBases</xpath><value>
+			<Cleanliness>5</Cleanliness>
+		</value></Operation>
 </Patch>
