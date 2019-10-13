@@ -422,12 +422,12 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Things/VWE_Shot_ChargeMinigun</clipFolderPath>
+            <clipFolderPath>Things/Thal_ChargeMinigun</clipFolderPath>
           </li>
         </grains>      
         <pitchRange>
-          <min>0.8082353</min>        
-          <max>1.245882</max>
+          <min>0.5</min>        
+          <max>0.8</max>
         </pitchRange>      
         <sustainLoop>False</sustainLoop>
       </li>

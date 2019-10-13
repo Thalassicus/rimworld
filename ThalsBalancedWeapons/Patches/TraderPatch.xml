@@ -131,4 +131,52 @@
 			</countRange>
 		</li>
 	</value></Operation>
+
+
+	<!-- Flamethrower -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath><value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>VWE_Gun_Flamethrower</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>1</max>
+				</countRange>
+			</li>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>VWE_Gun_Flamethrower</thingDef>
+			<countRange>
+				<min>0</min>
+				<max>1</max>
+			</countRange>
+		</li>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>VWE_Gun_Flamethrower</thingDef>
+			<countRange>
+				<min>0</min>
+				<max>1</max>
+			</countRange>
+		</li>
+	</value></Operation>
+
+
+	<!-- Fire Extinguisher -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>VWE_Gun_FireExtinguisher</thingDef>
+			<countRange>
+				<min>1</min>
+				<max>2</max>
+			</countRange>
+		</li>
+	</value></Operation>
 </Patch>

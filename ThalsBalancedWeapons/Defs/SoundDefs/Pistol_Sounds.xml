@@ -8,63 +8,14 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>Weapon/StunGun</clipPath>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/Thal_StunGun</clipFolderPath>
           </li>
         </grains>      
         <pitchRange>
-          <min>0.936413</min>        
-          <max>1.042391</max>
-        </pitchRange>      
-        <paramMappings>
-          <li>
-            <inParam Class="SoundParamSource_CameraAltitude" />          
-            <outParam Class="SoundParamTarget_PropertyLowPass">
-              <filterProperty>Cutoff</filterProperty>
-            </outParam>          
-            <paramUpdateMode>Constant</paramUpdateMode>          
-            <curve>
-              <points>
-                <li>
-                  <loc>
-                    <x>17.08957</x>                  
-                    <y>21001.8</y>
-                  </loc>
-                </li>              
-                <li>
-                  <loc>
-                    <x>24.77761</x>                  
-                    <y>12701.95</y>
-                  </loc>
-                </li>              
-                <li>
-                  <loc>
-                    <x>32.786</x>                  
-                    <y>7168.717</y>
-                  </loc>
-                </li>              
-                <li>
-                  <loc>
-                    <x>45.91975</x>                  
-                    <y>4270.358</y>
-                  </loc>
-                </li>              
-                <li>
-                  <loc>
-                    <x>66.10088</x>                  
-                    <y>2557.69</y>
-                  </loc>
-                </li>
-              </points>
-            </curve>
-          </li>
-        </paramMappings>      
-        <filters>
-          <li Class="SoundFilterLowPass">
-            <cutoffFrequency>10000</cutoffFrequency>          
-            <lowpassResonaceQ>1</lowpassResonaceQ>
-          </li>
-        </filters>      
+          <min>0.9</min>        
+          <max>1.1</max>
+        </pitchRange>    
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>

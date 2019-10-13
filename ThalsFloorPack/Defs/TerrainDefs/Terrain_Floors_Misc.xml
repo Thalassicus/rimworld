@@ -22,10 +22,9 @@
 			<li>Diggable</li>
 		</affordances>
 		<generatedFilth>Filth_Dirt</generatedFilth>
-    <acceptFilth>true</acceptFilth>
 		<takeFootprints>True</takeFootprints>
-		<designatorDropdown>ThalFloorDirt</designatorDropdown>
     <acceptTerrainSourceFilth>False</acceptTerrainSourceFilth>
+		<designatorDropdown>ThalFloorDirt</designatorDropdown>
 		<tools>
 			<li>
 				<label>dirt</label>
@@ -111,7 +110,13 @@
     </tools>
   </TerrainDef>
 
-	<TerrainDef Name="ThalFarmlandBase" Abstract="True" ParentName="ThalDirtBase">
+	<TerrainDef ParentName="ThalDirtBase">
+		<defName>GT_SoilTilled</defName>
+		<label>plowed soil</label>
+		<description>Plow the ground to plant crops.</description>
+		<texturePath>Terrain/Surfaces/Misc/SoilTilled</texturePath>
+		<renderPrecedence>334</renderPrecedence>
+		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
 		<pathCost>5</pathCost>
 		<affordances Inherit="False">
 			<li>Light</li>
@@ -122,36 +127,53 @@
 		</affordances>
 		<fertility>1.4</fertility>
 		<avoidWander>true</avoidWander>
-	</TerrainDef> 
-
-	<TerrainDef ParentName="ThalFarmlandBase">
-		<defName>ThalImportedSoil</defName>
-		<label>imported soil</label>
-		<description>Import soil to place on stone, then till it to plant crops. This is a very slow process.</description>
-		<texturePath>Terrain/Surfaces/Misc/SoilTilled</texturePath>
-		<renderPrecedence>335</renderPrecedence>
-		<layerable>false</layerable>
-		<statBases Inherit="False">
-			<Beauty>-1</Beauty>
-			<Cleanliness>-1</Cleanliness>
-			<WorkToBuild>4000</WorkToBuild>
-		</statBases>
-		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
 	</TerrainDef>
 
-	<TerrainDef ParentName="ThalFarmlandBase" Name="TS_Tilled">
-		<defName>GT_SoilTilled</defName>
-		<label>plowed soil</label>
-		<description>Plow the ground to plant crops.</description>
-		<texturePath>Terrain/Surfaces/Misc/SoilTilled</texturePath>
-		<renderPrecedence>334</renderPrecedence>
+  <!-- ============== Terraforming ============= -->
+	<DesignatorDropdownGroupDef>
+		<defName>ThalTerraforming</defName>
+	</DesignatorDropdownGroupDef>
+
+  <TerrainDef>
+		<defName>ThalRockToSoil</defName>
+		<label>soil</label>
+		<description>Permanently dump soil on rock, allowing plants to grow.</description>
+		<texturePath>Terrain/Surfaces/Soil</texturePath>
 		<statBases Inherit="False">
 			<Beauty>-1</Beauty>
 			<Cleanliness>-1</Cleanliness>
 			<WorkToBuild>2000</WorkToBuild>
 		</statBases>
-		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
-	</TerrainDef>
+    <designationCategory>Floors</designationCategory>
+    <constructEffect>ConstructDirt</constructEffect>
+		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
+		<designatorDropdown>ThalTerraforming</designatorDropdown>
+
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
   
   <!-- ================= Straw ================= -->   
 

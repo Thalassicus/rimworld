@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!--
-			Item Categories
-	-->
+
+	<!-- ==========================================================	-->
+	<!-- ====================	Item  Categories ====================	-->
+	<!-- ==========================================================	-->
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="Foods"]/label</xpath><value>
 		<label>edible</label>
@@ -56,7 +58,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="MortarShells"]/parent</xpath><value>
-		<parent>Weapons</parent>
+		<parent>WeaponsRanged</parent>
 	</value></Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingCategoryDef[defName="StoneChunks"]/parent</xpath><value>
@@ -76,10 +78,12 @@
 		<thingCategories><li>PlantMatter</li></thingCategories>
 	</value></Operation>
 
-	<!--
-			Architect Categories
-	-->
 
+	<!-- ==============================================================	-->
+	<!-- ====================	Architect Categories ====================	-->
+	<!-- ==============================================================	-->
+
+	<!--
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/DesignationCategoryDef[defName="Orders"]/specialDesignatorClasses//li[.="Designator_PlanAdd"]</xpath>
 	</Operation>
@@ -95,7 +99,7 @@
 		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath><value>
 		<li>Designator_PlanRemove</li>
 	</value></Operation>
-
+	
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaHomeExpand"]</xpath>
 	</Operation>
@@ -111,6 +115,7 @@
 		<xpath>Defs/DesignationCategoryDef[defName="Structure"]/specialDesignatorClasses</xpath><value>
 		<li>Designator_AreaHomeClear</li>
 	</value></Operation>
+	-->
 
 	<Operation Class="PatchOperationRemove">
 		<xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses//li[.="Designator_AreaBuildRoof"]</xpath>

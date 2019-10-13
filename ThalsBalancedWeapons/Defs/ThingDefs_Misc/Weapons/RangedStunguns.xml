@@ -9,9 +9,10 @@
 		<graphicData>
 			<texPath>Things/Projectile/StunBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-      		<damageDef>Stun</damageDef>
+      <damageDef>Stun</damageDef>
 			<damageAmountBase>2</damageAmountBase>
 			<stoppingPower>5</stoppingPower>
 			<speed>70</speed>
@@ -28,7 +29,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>StunGun</defName>
 		<label>Stun Gun</label>
-		<description>A less-lethal pistol that disrupts neurological function in the target.</description>
+		<description>A less-lethal pistol that disrupts neurological function in the target. Bypasses energy shields.</description>
 		<graphicData>
 			<texPath>Things/WeaponRanged/StunGun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +101,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>StunRifle</defName>
 		<label>Stun Rifle</label>
-		<description>A less-lethal rifle that disrupts neurological function in the target.</description>
+		<description>A less-lethal rifle that disrupts neurological function in the target. Bypasses energy shields.</description>
 		<graphicData>
 			<texPath>Things/WeaponRanged/StunRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

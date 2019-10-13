@@ -24,49 +24,49 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
-	<defName>VWE_Gun_GrenadeLauncher</defName>
-	<label>grenade launcher</label>
-    <description>A military issue grenade launcher intended for anti-infantry use.</description>
-	<graphicData>
-		<texPath>Things/WeaponRanged/GrenadeLauncher</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<soundInteract>Interact_Rifle</soundInteract>
-	<generateCommonality>0.3</generateCommonality>
-	<statBases>
-		<WorkToMake>10000</WorkToMake>
-		<Mass>3.4</Mass>
-		<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
-	</statBases>
-	<costList>
-		<Steel>75</Steel>
-		<ComponentIndustrial>4</ComponentIndustrial>
-	</costList>
-    <recipeMaker>
-	<recipeUsers>
-		<li>TableMachining</li>
-	</recipeUsers>
+		<defName>VWE_Gun_GrenadeLauncher</defName>
+		<label>grenade launcher</label>
+			<description>A military issue grenade launcher intended for anti-infantry use.</description>
+		<graphicData>
+			<texPath>Things/WeaponRanged/GrenadeLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<generateCommonality>0.3</generateCommonality>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>3.4</Mass>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+			<recipeMaker>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
     <verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>VWE_Bullet_GrenadeLauncher</defaultProjectile>
-			<warmupTime>3.5</warmupTime>
-			<range>31.1</range>
-			<forcedMissRadius>1.9</forcedMissRadius>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>VWE_Shot_GrenadeLauncher</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>14</muzzleFlashScale>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
-		</li>
-	</verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>VWE_Bullet_GrenadeLauncher</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>31.1</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>VWE_Shot_GrenadeLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
     <weaponTags>
       <li>GunHeavy</li>
     </weaponTags>
@@ -93,63 +93,66 @@
   
     <!-- Flamethrower -->
   <ThingDef ParentName="BaseHumanMakeableGun">
-	<defName>VWE_Gun_Flamethrower</defName>
-	<label>flamethrower</label>
-    <description>Mechanical incendiary device designed to release a controllable stream of burning chemfuel.</description>
-	<graphicData>
-		<texPath>Things/WeaponRanged/Flamethrower</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>1.12</drawSize>
-    </graphicData>
-	<soundInteract>Interact_Rifle</soundInteract>
-	<tickerType>Normal</tickerType>
-	<generateCommonality>0.1</generateCommonality>
-	<statBases>
-		<WorkToMake>10000</WorkToMake>
-		<Mass>5.4</Mass>
-		<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
-	</statBases>
-	<costList>
-		<Steel>75</Steel>
-		<ComponentIndustrial>4</ComponentIndustrial>
-		<Chemfuel>40</Chemfuel>
-	</costList>
-    <recipeMaker>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
-	  <recipeUsers>
-		<li>TableMachining</li>
-		</recipeUsers>
-	  <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
-    </recipeMaker>
-    <verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>VWE_Bullet_Flamethrower</defaultProjectile>
-			<warmupTime>1.5</warmupTime>
-			<range>12.9</range>
-			<forcedMissRadius>2.9</forcedMissRadius>
-			<burstShotCount>20</burstShotCount>
-			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-			<soundCast>VWE_Shot_Flamethrower</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>14</muzzleFlashScale>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
-		</li>
-	</verbs>
-	<comps>
-		<li Class="CompProperties_Explosive">
-				<explosiveRadius>4.66</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-		</li>
-		<li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-		</li>
-	</comps>
+		<defName>VWE_Gun_Flamethrower</defName>
+		<label>flamethrower</label>
+			<description>Mechanical incendiary device designed to release a controllable stream of burning chemfuel.</description>
+		<graphicData>
+			<texPath>Things/WeaponRanged/Flamethrower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.12</drawSize>
+			</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tickerType>Normal</tickerType>
+		<generateCommonality>0.2</generateCommonality>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>5.4</Mass>
+			<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Chemfuel>40</Chemfuel>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+			<li>TableMachining</li>
+			</recipeUsers>
+			<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>VWE_Bullet_Flamethrower</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>12.9</range>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>VWE_Shot_Flamethrower</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+					<explosiveRadius>4.66</explosiveRadius>
+					<explosiveDamageType>Flame</explosiveDamageType>
+					<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+			<li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			</li>
+		</comps>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
     <tools>
       <li>
         <label>stock</label>
@@ -202,7 +205,7 @@
 	</graphicData>
 	<soundInteract>Metal_Drop</soundInteract>
 	<tickerType>Normal</tickerType>
-    <generateCommonality>0.005</generateCommonality>
+    <generateCommonality>0</generateCommonality>
 	<statBases>
 		<WorkToMake>10000</WorkToMake>
 		<Mass>4.6</Mass>

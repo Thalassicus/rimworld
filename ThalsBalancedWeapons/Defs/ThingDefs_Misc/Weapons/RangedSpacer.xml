@@ -39,6 +39,9 @@
       <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
       <WorkToMake>10000</WorkToMake>
     </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+    </equippedStatOffsets>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
@@ -123,6 +126,9 @@
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
       <WorkToMake>46000</WorkToMake>
     </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+    </equippedStatOffsets>
     <recipeMaker>
       <recipeUsers Inherit="False"/>
     </recipeMaker>
@@ -198,6 +204,9 @@
       <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
       <WorkToMake>36000</WorkToMake>
     </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
     <recipeMaker>
       <recipeUsers Inherit="False"/>
     </recipeMaker>
@@ -276,6 +285,9 @@
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
       <WorkToMake>51000</WorkToMake>
     </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
     <recipeMaker>
       <recipeUsers Inherit="False"/>
     </recipeMaker>
@@ -357,6 +369,9 @@
       <AccuracyLong>0.25</AccuracyLong>
       <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
     <recipeMaker>
       <recipeUsers Inherit="False"/>
     </recipeMaker>
