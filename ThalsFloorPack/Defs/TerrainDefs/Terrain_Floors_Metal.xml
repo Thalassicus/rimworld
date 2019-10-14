@@ -6,7 +6,7 @@
 	<TerrainDef Name="ThalBasicMetalFloor" ParentName="FloorBase" Abstract="True">
 		<description>- Easy to clean\n- No beauty\n- Low cost\n- Fast build speed</description>
 		<edgeType>Hard</edgeType>
-		<renderPrecedence>70</renderPrecedence>
+		<renderPrecedence>230</renderPrecedence>
 		<costList>	
 			<Steel>1</Steel>
 		</costList>
@@ -25,6 +25,7 @@
 		<label>cheap concrete</label>
 		<texturePath>Terrain/Surfaces/Concrete</texturePath>
 		<designatorDropdown>ThalFloorBasic1</designatorDropdown>
+		<renderPrecedence>70</renderPrecedence>
 	</TerrainDef>
 	
 	<TerrainDef ParentName="ThalBasicMetalFloor">
@@ -56,7 +57,7 @@
 	<TerrainDef Name="ThalFancyMetalFloor" ParentName="FloorBase" Abstract="True">
 		<description>- Easy to clean\n- Medium beauty\n- Medium cost\n- Medium build speed</description>
 		<edgeType>Hard</edgeType>
-		<renderPrecedence>70</renderPrecedence>
+		<renderPrecedence>240</renderPrecedence>
 		<costList>	
 			<Steel>5</Steel>
 		</costList>

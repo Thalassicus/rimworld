@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>ThalPlantingCircle</defName>
+    <label>planting circle</label>
+    <description>Build a barrier around a circular area, then fill it with garden soil to plant trees or crops.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <minifiedDef Inherit="False"/>
+    <thingCategories Inherit="False"/>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PlantCircle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0</fillPercent>
+    <statBases>
+      <WorkToBuild>250</WorkToBuild>
+      <Mass>20</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <fertility>1.4</fertility>
+    <designationHotKey>Misc9</designationHotKey>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>Plant_Wildflower</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+    </building>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+  </ThingDef>
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>ThalPlantingBox</defName>
+    <label>planting box</label>
+    <description>Build a barrier around a square area, then fill it with garden soil to plant trees or crops.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <minifiedDef Inherit="False"/>
+    <thingCategories Inherit="False"/>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PlantBox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0</fillPercent>
+    <statBases>
+      <WorkToBuild>250</WorkToBuild>
+      <Mass>20</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <fertility>1.4</fertility>
+    <designationHotKey>Misc9</designationHotKey>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>Plant_Wildflower</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+    </building>
+    <rotatable>false</rotatable>
+    <uiIconOffset>(0, -0.05)</uiIconOffset>
+  </ThingDef>
+</Defs>

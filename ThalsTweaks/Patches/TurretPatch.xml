@@ -5,7 +5,7 @@
 	  <tradeTags><li>Turret</li></tradeTags>
   </value></Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Building_TurretGun"]</xpath><value>
+		<xpath>Defs/ThingDef[defName="Gun_MiniTurret"]</xpath><value>
 		<generateCommonality>5</generateCommonality>
 	</value></Operation>
 

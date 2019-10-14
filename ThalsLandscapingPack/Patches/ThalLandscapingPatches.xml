@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BiomeDef[defName="TemperateForest"]/plantDensity</xpath><value>
+		<plantDensity>1</plantDensity>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Grass"]/plant/visualSizeRange</xpath><value>
+			<visualSizeRange>
+				<min>0.7</min>
+				<max>0.85</max>
+			</visualSizeRange>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_TallGrass"]/plant/visualSizeRange</xpath><value>
+			<visualSizeRange>
+				<min>0.85</min>
+				<max>1.1</max>
+			</visualSizeRange>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="TreeBase"]/plant/visualSizeRange</xpath><value>
+		<visualSizeRange>
+			<min>1.3</min>
+			<max>2.5</max>
+		</visualSizeRange>
+	</value></Operation>
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="TreeBase"]/graphicData</xpath><value>
+		<offset>(0,0, 0.2)</offset>
+	</value></Operation>
+	-->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="TreeBase"]/plant/blockAdjacentSow</xpath><value>
+		<blockAdjacentSow>false</blockAdjacentSow>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_TreeOak"]/plant/wildClusterWeight</xpath><value>
+			<wildClusterWeight>250</wildClusterWeight>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_TreePoplar"]/plant/wildClusterWeight</xpath><value>
+			<wildClusterWeight>250</wildClusterWeight>
+	</value></Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/BiomeDef[defName="TemperateForest"]/wildPlants</xpath><value>
+		<wildPlants>
+			<Plant_Grass>10.0</Plant_Grass>
+			<Plant_TallGrass>2.0</Plant_TallGrass>
+			<Plant_Brambles>1.0</Plant_Brambles>
+			<Plant_Dandelion>1.0</Plant_Dandelion>
+			<Plant_Bush>0.6</Plant_Bush>
+			<Plant_TreeOak>1</Plant_TreeOak>
+			<Plant_TreePoplar>1</Plant_TreePoplar>
+			<Plant_Berry>0.035</Plant_Berry>
+			<Plant_HealrootWild>0.035</Plant_HealrootWild>
+		</wildPlants>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Soil"]/renderPrecedence</xpath><value>
+		<renderPrecedence>140</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="MossyTerrain"]/renderPrecedence</xpath><value>
+		<renderPrecedence>115</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="MarshyTerrain"]/renderPrecedence</xpath><value>
+		<renderPrecedence>137</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="SoilRich"]/renderPrecedence</xpath><value>
+		<renderPrecedence>135</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Gravel"]/renderPrecedence</xpath><value>
+		<renderPrecedence>120</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Sand"]/renderPrecedence</xpath><value>
+		<renderPrecedence>150</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="SoftSand"]/renderPrecedence</xpath><value>
+		<renderPrecedence>152</renderPrecedence>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[defName="Mud"]/renderPrecedence</xpath><value>
+		<renderPrecedence>130</renderPrecedence>
+	</value></Operation>
+	<!--
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TerrainDef[costList/WoodLog > 0]/designatorDropdown</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/TerrainDef[costList/WoodLog > 0]</xpath>
+			<value><designatorDropdown>ThalWoodFloors</designatorDropdown></value>
+		</nomatch>
+	</Operation>
+	-->
+</Patch>

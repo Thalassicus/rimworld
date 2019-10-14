@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="WindTurbine"]/terrainAffordanceNeeded</xpath><value>
-			<terrainAffordanceNeeded Inherit="False"/>
-		</value></Operation>
-    <Operation Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="HospitalBed"]/statBases</xpath><value>
-			<Cleanliness>5</Cleanliness>
-		</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="WindTurbine"]/terrainAffordanceNeeded</xpath><value>
+		<terrainAffordanceNeeded Inherit="False"/>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HospitalBed"]/statBases</xpath><value>
+		<Cleanliness>5</Cleanliness>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@ParentName="WoodenFenceBase" or @ParentName="MetalFenceBase" or @ParentName="StoneFenceBase"]/graphicData/linkType</xpath><value>
+		<linkType>None</linkType>
+	</value></Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Closeboard" or defName="Solid" or defName="Picket" or defName="Farm" or defName="Bar" or defName="TallChainLink" or defName="ShortBrick" or defName="TallBrick"]/graphicData/linkFlags</xpath><value>
+		<linkFlags>
+			<li>Custom7</li>
+		</linkFlags>
+	</value></Operation>
 </Patch>

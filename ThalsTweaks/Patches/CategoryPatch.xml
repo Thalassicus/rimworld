@@ -77,6 +77,10 @@
 		<xpath>Defs/ThingDef[defName="Wort"]/thingCategories</xpath><value>
 		<thingCategories><li>PlantMatter</li></thingCategories>
 	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Chocolate"]/thingCategories</xpath><value>
+		<thingCategories><li>Drugs</li></thingCategories>
+	</value></Operation>
 
 
 	<!-- ==============================================================	-->

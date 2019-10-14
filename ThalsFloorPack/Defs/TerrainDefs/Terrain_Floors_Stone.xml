@@ -7,9 +7,10 @@
 	</DesignatorDropdownGroupDef>
 
 	<TerrainDef Abstract="True" ParentName="FloorBase" Name="ThalFlagStoneBase">
-		<renderPrecedence>266</renderPrecedence>
+		<renderPrecedence>160</renderPrecedence>
 		<description>- Easy to clean\n- No beauty\n- Low cost\n- Fast build speed</description>
 		<texturePath>Terrain/Surfaces/Flagstone</texturePath>
+    <edgeType>FadeRough</edgeType>
 		<statBases>
 			<WorkToBuild>120</WorkToBuild>
 			<Beauty>0</Beauty>
