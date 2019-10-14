@@ -508,7 +508,6 @@
 				<li>Neck</li>
 				<li>Torso</li>
 				<li>Shoulders</li>
-				<li>Waist</li>
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
@@ -516,7 +515,6 @@
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
-				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>SpacerMilitary</li>

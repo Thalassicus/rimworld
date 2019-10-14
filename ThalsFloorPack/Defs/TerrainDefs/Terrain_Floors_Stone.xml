@@ -18,9 +18,8 @@
       <li>Road</li>
     </tags>
 		<designatorDropdown>ThalFlagStoneFloor</designatorDropdown>
-		<generatedFilth>Filth_Dirt</generatedFilth>
-		<takeFootprints>True</takeFootprints>
-    <acceptTerrainSourceFilth>False</acceptTerrainSourceFilth>
+		<!--<generatedFilth>Filth_Dirt</generatedFilth>
+    <acceptTerrainSourceFilth>False</acceptTerrainSourceFilth>-->
 	</TerrainDef>
 
 	<TerrainDef ParentName="ThalFlagStoneBase">
