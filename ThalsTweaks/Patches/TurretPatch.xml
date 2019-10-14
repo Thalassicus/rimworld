@@ -5,8 +5,19 @@
 	  <tradeTags><li>Turret</li></tradeTags>
   </value></Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Gun_MiniTurret"]</xpath><value>
+		<xpath>Defs/ThingDef[defName="Building_TurretGun"]</xpath><value>
 		<generateCommonality>5</generateCommonality>
+	</value></Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath><value>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>Uranium</thingDef>
+			<countRange>
+				<min>100</min>
+				<max>400</max>
+			</countRange>
+		</li>
 	</value></Operation>
 	
 	<Operation Class="PatchOperationAdd">
