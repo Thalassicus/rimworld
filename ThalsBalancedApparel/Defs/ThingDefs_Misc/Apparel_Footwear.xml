@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- ##### Medieval ##### -->
-    <!-- +++++ Boots +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- ##### Medieval ##### -->
+	<!-- +++++ Boots +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Footwear_Boots</defName>
 		<label>boots</label>
 		<description>A simple pair of leather boots.</description>
@@ -13,7 +13,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -25,7 +25,7 @@
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.0</EquipDelay>
+			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.1</MoveSpeed>
@@ -46,7 +46,7 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -56,12 +56,12 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 	
   <!-- ##### Industrial ##### -->
-    <!-- +++++ Shoes +++++ -->
+	<!-- +++++ Shoes +++++ -->
 	
-    <ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Footwear_Shoes</defName>
 		<label>shoes</label>
 		<description>A fancy pair of leather shoes.</description>
@@ -71,7 +71,7 @@
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.25</generateCommonality>
+		<generateCommonality>0.25</generateCommonality>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -106,7 +106,7 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
-      </defaultOutfitTags>
+	  </defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -116,7 +116,7 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
 
 </Defs>

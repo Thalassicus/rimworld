@@ -3,14 +3,14 @@
 
   <!-- Martial Arts -->
   <JoyKindDef>
-    <defName>Gaming_MartialArts</defName>
-    <label>martial arts</label>
+	<defName>Gaming_MartialArts</defName>
+	<label>martial arts</label>
   </JoyKindDef>
 
   <!-- Shooting (Arrows, Weapon) -->
   <JoyKindDef>
-    <defName>Gaming_Shooting</defName>
-    <label>shooting</label>
+	<defName>Gaming_Shooting</defName>
+	<label>shooting</label>
   </JoyKindDef>
 
 

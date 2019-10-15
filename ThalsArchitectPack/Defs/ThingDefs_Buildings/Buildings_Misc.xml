@@ -2,235 +2,235 @@
 <Defs>
  
  <ThingDef ParentName="BuildingBase" Name="DoorBaseWithoutMaterials" Abstract="True">
-    <thingClass>Building_Door</thingClass>
-    <category>Building</category>
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <fillPercent>1</fillPercent>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MaxHitPoints>160</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <selectable>true</selectable>
-    <tickerType>Normal</tickerType>
-    <rotatable>false</rotatable>
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Structure</designationCategory>
-    <holdsRoof>true</holdsRoof>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <drawerType>RealtimeOnly</drawerType>
-    <building>
+	<thingClass>Building_Door</thingClass>
+	<category>Building</category>
+	<altitudeLayer>DoorMoveable</altitudeLayer>
+	<fillPercent>1</fillPercent>
+	<useHitPoints>true</useHitPoints>
+	<statBases>
+	  <MaxHitPoints>160</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+	</statBases>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	<selectable>true</selectable>
+	<tickerType>Normal</tickerType>
+	<rotatable>false</rotatable>
+	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<designationCategory>Structure</designationCategory>
+	<holdsRoof>true</holdsRoof>
+	<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	<blockLight>true</blockLight>
+	<drawerType>RealtimeOnly</drawerType>
+	<building>
 			<isInert>true</isInert>
 			<canPlaceOverWall>true</canPlaceOverWall>
-      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
-      <blueprintClass>Blueprint_Door</blueprintClass>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Door/Door_Blueprint</texPath>
-      </blueprintGraphicData>
-      <ai_chillDestination>false</ai_chillDestination>
-    </building>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-    </comps>
+	  <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+	  <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+	  <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+	  <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+	  <blueprintClass>Blueprint_Door</blueprintClass>
+	  <blueprintGraphicData>
+		<texPath>Things/Building/Door/Door_Blueprint</texPath>
+	  </blueprintGraphicData>
+	  <ai_chillDestination>false</ai_chillDestination>
+	</building>
+	<comps>
+	  <li Class="CompProperties_Forbiddable"/>
+	</comps>
 		<placeWorkers>
 			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
 		</placeWorkers>
   </ThingDef> 
   
   <ThingDef ParentName="DoorBaseWithoutMaterials">
-    <defName>HiddenDoorSmooth</defName>
-    <label>hidden door (metallic)</label>
-    <description>A door that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls.</description>	
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <useHitPoints>true</useHitPoints>
+	<defName>HiddenDoorSmooth</defName>
+	<label>hidden door (metallic)</label>
+	<description>A door that blends in with smooth walls. Put a wall link in the same tile to make it link to adjacent walls.</description>	
+	<altitudeLayer>DoorMoveable</altitudeLayer>
+	<useHitPoints>true</useHitPoints>
 	<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 	</costList>	
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
-      <Flammability>1.0</Flammability>	  
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Linked/SecretPassageSmooth_Mover</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+	<statBases>
+	  <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToBuild>1500</WorkToBuild>
+	  <Flammability>1.0</Flammability>	  
+	</statBases>
+	<graphicData>
+	  <texPath>Things/Building/Linked/SecretPassageSmooth_Mover</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
 	  <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/SecretPassageSmooth_MenuIcon</uiIconPath>
-    <costStuffCount>25</costStuffCount>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<enabled>false</enabled>
+	  </damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/Linked/SecretPassageSmooth_MenuIcon</uiIconPath>
+	<costStuffCount>25</costStuffCount>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	<rotatable>false</rotatable>
 	<stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
+	  <li>Metallic</li>
+	</stuffCategories>
   </ThingDef>
   
   <ThingDef ParentName="DoorBaseWithoutMaterials">
-    <defName>HiddenDoorBricks</defName>
-    <label>hidden door (bricks)</label>
-    <description>A door that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls.</description>	
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <useHitPoints>true</useHitPoints>
+	<defName>HiddenDoorBricks</defName>
+	<label>hidden door (bricks)</label>
+	<description>A door that blends in with brick walls. Put a wall link in the same tile to make it link to adjacent walls.</description>	
+	<altitudeLayer>DoorMoveable</altitudeLayer>
+	<useHitPoints>true</useHitPoints>
 	<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 	</costList>	
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
-      <Flammability>1.0</Flammability>	  
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Linked/SecretPassageBricks_Mover</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+	<statBases>
+	  <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToBuild>1500</WorkToBuild>
+	  <Flammability>1.0</Flammability>	  
+	</statBases>
+	<graphicData>
+	  <texPath>Things/Building/Linked/SecretPassageBricks_Mover</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
 	  <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/SecretPassageBricks_MenuIcon</uiIconPath>
-    <costStuffCount>25</costStuffCount>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<enabled>false</enabled>
+	  </damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/Linked/SecretPassageBricks_MenuIcon</uiIconPath>
+	<costStuffCount>25</costStuffCount>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	<rotatable>false</rotatable>
 	<stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
+	  <li>Stony</li>
+	</stuffCategories>
   </ThingDef>
   
   <ThingDef ParentName="DoorBaseWithoutMaterials">
-    <defName>HiddenDoorPlanks</defName>
-    <label>hidden door (planks)</label>
-    <description>A door that blends in with wooden walls. Put a wall link in the same tile to make it link to adjacent walls.</description>	
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <useHitPoints>true</useHitPoints>
+	<defName>HiddenDoorPlanks</defName>
+	<label>hidden door (planks)</label>
+	<description>A door that blends in with wooden walls. Put a wall link in the same tile to make it link to adjacent walls.</description>	
+	<altitudeLayer>DoorMoveable</altitudeLayer>
+	<useHitPoints>true</useHitPoints>
 	<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 	</costList>	
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
-      <Flammability>1.0</Flammability>	  
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Linked/SecretPassagePlanks_Mover</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+	<statBases>
+	  <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToBuild>1500</WorkToBuild>
+	  <Flammability>1.0</Flammability>	  
+	</statBases>
+	<graphicData>
+	  <texPath>Things/Building/Linked/SecretPassagePlanks_Mover</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
 	  <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/SecretPassagePlanks_MenuIcon</uiIconPath>
-    <costStuffCount>25</costStuffCount>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<enabled>false</enabled>
+	  </damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/Linked/SecretPassagePlanks_MenuIcon</uiIconPath>
+	<costStuffCount>25</costStuffCount>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	<rotatable>false</rotatable>
 	<stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
+	  <li>Woody</li>
+	</stuffCategories>
   </ThingDef>
   
   <ThingDef ParentName="DoorBaseWithoutMaterials">
-    <defName>HiddenDoorRock</defName>
-    <label>hidden door (rock)</label>
-    <description>A door that blends in with rock. Put a wall link in the same tile to make it link to adjacent walls.</description>	
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <useHitPoints>true</useHitPoints>
+	<defName>HiddenDoorRock</defName>
+	<label>hidden door (rock)</label>
+	<description>A door that blends in with rock. Put a wall link in the same tile to make it link to adjacent walls.</description>	
+	<altitudeLayer>DoorMoveable</altitudeLayer>
+	<useHitPoints>true</useHitPoints>
 	<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 	</costList>	
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
-      <Flammability>1.0</Flammability>	  
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Linked/SecretPassageRock_Mover</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+	<statBases>
+	  <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToBuild>1500</WorkToBuild>
+	  <Flammability>1.0</Flammability>	  
+	</statBases>
+	<graphicData>
+	  <texPath>Things/Building/Linked/SecretPassageRock_Mover</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
 	  <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/SecretPassageRock_MenuIcon</uiIconPath>
-    <costStuffCount>25</costStuffCount>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<enabled>false</enabled>
+	  </damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/Linked/SecretPassageRock_MenuIcon</uiIconPath>
+	<costStuffCount>25</costStuffCount>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	<rotatable>false</rotatable>
 	<stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
+	  <li>Stony</li>
+	</stuffCategories>
   </ThingDef>
   
   <ThingDef ParentName="DoorBaseWithoutMaterials">
-    <defName>HiddenDoorRocksmooth</defName>
-    <label>hidden door (smoothed rock)</label>
-    <description>A door that blends in with smoothed rock. Put a wall link in the same tile to make it link to adjacent walls.</description>	
-    <altitudeLayer>DoorMoveable</altitudeLayer>
-    <useHitPoints>true</useHitPoints>
+	<defName>HiddenDoorRocksmooth</defName>
+	<label>hidden door (smoothed rock)</label>
+	<description>A door that blends in with smoothed rock. Put a wall link in the same tile to make it link to adjacent walls.</description>	
+	<altitudeLayer>DoorMoveable</altitudeLayer>
+	<useHitPoints>true</useHitPoints>
 	<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 	</costList>	
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
-      <Flammability>1.0</Flammability>	  
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Linked/SecretPassageRockSmooth_Mover</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+	<statBases>
+	  <MaxHitPoints>350</MaxHitPoints>
+	  <WorkToBuild>1500</WorkToBuild>
+	  <Flammability>1.0</Flammability>	  
+	</statBases>
+	<graphicData>
+	  <texPath>Things/Building/Linked/SecretPassageRockSmooth_Mover</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
 	  <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/SecretPassageRockSmooth_MenuIcon</uiIconPath>
-    <costStuffCount>25</costStuffCount>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<enabled>false</enabled>
+	  </damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/Linked/SecretPassageRockSmooth_MenuIcon</uiIconPath>
+	<costStuffCount>25</costStuffCount>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	<rotatable>false</rotatable>
 	<stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
+	  <li>Stony</li>
+	</stuffCategories>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase" Name="WallLink">
-    <defName>WallLink</defName>
-    <label>wall link</label>
-    <description>Place in the same tile as a secret passage door to make walls link to it.</description>
-    <thingClass>Building</thingClass>
-    <category>Building</category>
-    <graphicData>
-      <texPath>Things/Building/Linked/AlmostBlank</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>CornerFiller</linkType>
-      <linkFlags>
-        <li>Wall</li>
-        <li>Rock</li>
-      </linkFlags>
+	<defName>WallLink</defName>
+	<label>wall link</label>
+	<description>Place in the same tile as a secret passage door to make walls link to it.</description>
+	<thingClass>Building</thingClass>
+	<category>Building</category>
+	<graphicData>
+	  <texPath>Things/Building/Linked/AlmostBlank</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <linkType>CornerFiller</linkType>
+	  <linkFlags>
+		<li>Wall</li>
+		<li>Rock</li>
+	  </linkFlags>
 	  <damageData>
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/WallLink_MenuIcon</uiIconPath>
-    <building>
+		<enabled>false</enabled>
+	  </damageData>
+	</graphicData>
+	<uiIconPath>Things/Building/Linked/WallLink_MenuIcon</uiIconPath>
+	<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<isInert>true</isInert>
-      <isEdifice>false</isEdifice>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-      </blueprintGraphicData>
-    </building>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
-    <passability>Standable</passability>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <statBases>
-      <WorkToBuild>0</WorkToBuild>
-    </statBases>
+	  <isEdifice>false</isEdifice>
+	  <blueprintGraphicData>
+		<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+	  </blueprintGraphicData>
+	</building>
+	<altitudeLayer>FloorEmplacement</altitudeLayer>
+	<passability>Standable</passability>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	<statBases>
+	  <WorkToBuild>0</WorkToBuild>
+	</statBases>
 	<useHitPoints>false</useHitPoints>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <designationCategory>Structure</designationCategory>
-    <clearBuildingArea>false</clearBuildingArea>
+	<rotatable>false</rotatable>
+	<selectable>true</selectable>
+	<designationCategory>Structure</designationCategory>
+	<clearBuildingArea>false</clearBuildingArea>
   </ThingDef>
   
  </Defs>

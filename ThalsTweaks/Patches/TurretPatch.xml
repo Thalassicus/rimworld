@@ -4,6 +4,9 @@
 		<xpath>Defs/ThingDef[thingClass="Building_TurretGun"]</xpath><value>
 	  <tradeTags><li>Turret</li></tradeTags>
   </value></Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Turret_Autocannon"]/tradeTags</xpath>
+	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Gun_MiniTurret"]</xpath><value>
 		<generateCommonality>5</generateCommonality>

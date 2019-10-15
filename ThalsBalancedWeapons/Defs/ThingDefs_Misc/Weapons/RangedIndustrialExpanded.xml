@@ -103,7 +103,7 @@
 			</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<tickerType>Normal</tickerType>
-		<generateCommonality>0.2</generateCommonality>
+		<generateCommonality>0.3</generateCommonality>
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>5.4</Mass>

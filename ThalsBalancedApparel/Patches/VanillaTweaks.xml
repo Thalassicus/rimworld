@@ -48,9 +48,24 @@
 		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/generateCommonality</xpath><value>
 		<generateCommonality>1</generateCommonality>
 	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]</xpath><value>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.5</ToxicSensitivity>
+		</equippedStatOffsets>
+	</value></Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/generateCommonality</xpath><value>
 		<generateCommonality>2</generateCommonality>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/equippedStatOffsets</xpath><value>
+			<ToxicSensitivity>-0.5</ToxicSensitivity>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/equippedStatOffsets</xpath><value>
+		<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 	</value></Operation>
 	
 	<Operation Class="PatchOperationReplace">

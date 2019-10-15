@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- ##### Medieval ##### -->
-    <!-- +++++ Plate Gloves +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- ##### Medieval ##### -->
+	<!-- +++++ Plate Gloves +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Handwear_PlateGloves</defName>
 		<label>plate gloves</label>
 		<description>A pair of simple metal gloves. Due to the thickness of the material, they reduce general work speed of the wearer.</description>
@@ -13,7 +13,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.5</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -26,7 +26,7 @@
 			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
+			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal> 
@@ -46,7 +46,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -59,11 +59,11 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 	
-    <!-- ##### Spacer ##### -->
-    <!-- +++++ Marine Gloves +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- ##### Spacer ##### -->
+	<!-- +++++ Marine Gloves +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Handwear_MarineGloves</defName>
 		<label>marine gloves</label>
 		<description>A pair of marine gloves with enhanced grip assistance and set of embedded recoil stabilisers.</description>
@@ -73,7 +73,7 @@
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.2</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<costList>
 			<Plasteel>20</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
@@ -82,20 +82,20 @@
 			<MaxHitPoints>160</MaxHitPoints>
 			<WorkToMake>16000</WorkToMake>
 			<Mass>2</Mass>
-			<Flammability>0.4</Flammability>
+			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>0.74</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.7</ArmorRating_Heat>
 			<Insulation_Cold>2</Insulation_Cold>
  			<Insulation_Heat>4</Insulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
-		</statBases>	
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
-		</equippedStatOffsets>
+	  	<EquipDelay>2.5</EquipDelay>
+		</statBases>
 		<thingCategories Inherit="False">
 			<li>Thal_ArmorApparel</li>
 		</thingCategories>
+		<tradeTags>
+			<li>SpacerTech</li>
+		</tradeTags>
 		<apparel>
 			<bodyPartGroups>
 				<li>Hands</li>
@@ -108,7 +108,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -141,6 +141,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-    </ThingDef>
+	</ThingDef>
 
 </Defs>

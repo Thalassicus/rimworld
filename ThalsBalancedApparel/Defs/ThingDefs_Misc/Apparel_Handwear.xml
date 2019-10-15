@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- ##### Industrial ##### -->
-    <!-- +++++ Gloves +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- ##### Industrial ##### -->
+	<!-- +++++ Gloves +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Handwear_Gloves</defName>
 		<label>gloves</label>
 		<description>A simple pair of gloves.</description>
@@ -13,7 +13,7 @@
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.5</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
@@ -26,7 +26,7 @@
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.0</EquipDelay>
+			<EquipDelay>2.0</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<ComfyTemperatureMin>-2</ComfyTemperatureMin> 
@@ -47,7 +47,7 @@
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -57,6 +57,6 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
 </Defs>

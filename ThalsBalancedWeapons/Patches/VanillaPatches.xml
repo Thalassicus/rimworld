@@ -28,6 +28,7 @@
         <xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/description</xpath><value>
         <description>Build advanced recurve and great bows.</description>
     </value></Operation>
+    <!--
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/label</xpath><value>
         <label>Charge Pistols</label>
@@ -36,6 +37,7 @@
         <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath><value>
         <description>Build simple civilian-grade pulse charged pistols.\n\nMore advanced military weapons require manufacturing infrastructure found only on glitterworlds. Buying them is highly illegal, but you may find black-market merchants willing to sell them.</description>
     </value></Operation>
+    -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="Bow_Great"]/recipeMaker/researchPrerequisite</xpath><value>
         <researchPrerequisite>RecurveBow</researchPrerequisite>

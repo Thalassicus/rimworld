@@ -380,8 +380,8 @@
     <!-- +++++ Heavy Marine Helmet +++++ -->
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>Thal_Headgear_HeavyMarineHelmet</defName>
-		<label>heavy marine helmet</label>
-		<description>A heavy marine armor helmet, with double-layered plasteel plating and a built-in camera with a display HUD to get rid of the weakpoints like visors.\n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
+		<label>shock trooper helmet</label>
+		<description>Nano-layered plasteel weave, AI-assisted threat detection and targeting, and a brain-machine interface makes this the ultimate helmet.\n\n Biometrically keyed for a specific user upon fabrication, black-market sets of this armor are extremely rare.</description>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0.5</generateCommonality>
 		<graphicData>
@@ -397,7 +397,7 @@
 			<WorkToMake>40000</WorkToMake>
 			<MaxHitPoints>160</MaxHitPoints>
 			<Mass>3.6</Mass>
-			<Flammability>0.2</Flammability>
+			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
 			<ArmorRating_Heat>1.1</ArmorRating_Heat>
@@ -405,6 +405,12 @@
 			<Insulation_Heat>2</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+			<MeleeHitChance>5</MeleeHitChance>
+			<ToxicSensitivity>-0.5</ToxicSensitivity>
+			<PsychicSensitivity>-0.5</PsychicSensitivity>
+    </equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Thal_ArmorApparel</li>
 		</thingCategories>
@@ -464,8 +470,8 @@
     <!-- +++++ Heavy Marine Armor +++++ -->
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Thal_Apparel_HeavyMarineArmor</defName>
-		<label>heavy marine armor</label>
-		<description>A suit of heavy powered armor. Double layers of plasteel-weave plates are incredibly effective at both projectiles and explosions. Neuro-memetic assistors allow a human to wear the armor and still move easily. \n\nArmor like this is often used by imperial heavy stormtroopers during mechanoid conflicts, as it transforms a soldier into a humanoid tank.</description>
+		<label>shock trooper armor</label>
+		<description>The ultimate suit of powered armor, transforming the wearer into a humanoid tank. Double layers of plasteel-weave plates are incredibly effective at resisting projectiles and explosions. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\n Biometrically keyed for a specific user upon fabrication, black-market sets of this armor are extremely rare.</description>
 		<graphicData>
 			<texPath>Things/Apparel/HeavyMarineArmor/HeavyMarineArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -474,25 +480,28 @@
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>1</generateCommonality>
 		<costList>
-			<ComponentSpacer>6</ComponentSpacer>
-			<Plasteel>160</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<Plasteel>200</Plasteel>
 			<Uranium>40</Uranium>
 		</costList>
 		<tickerType>Normal</tickerType>
 		<statBases>
-			<MaxHitPoints>340</MaxHitPoints>
-			<WorkToMake>75000</WorkToMake>
-			<Mass>25</Mass>
-			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>1.34</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+			<WorkToMake>80000</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>15</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.7</ArmorRating_Heat>
 			<Insulation_Cold>46</Insulation_Cold>
 			<Insulation_Heat>12</Insulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+      <MeleeDodgeChance>5</MeleeDodgeChance>
+			<ToxicSensitivity>-0.5</ToxicSensitivity>
+			<CarryingCapacity>15</CarryingCapacity>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
 		<thingCategories Inherit="False">
 			<li>Thal_ArmorApparel</li>

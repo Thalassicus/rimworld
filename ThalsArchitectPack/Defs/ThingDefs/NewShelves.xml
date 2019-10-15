@@ -2,68 +2,68 @@
 <Defs>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
-    <defName>SmallShelf</defName>
-    <label>Small Shelf</label>
-    <description>Items stored in this will not deteriorate, even if outside.</description>
-    <thingClass>Building_Storage</thingClass>
-    <graphicData>
-      <texPath>SmallShelf</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.4</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>5</costStuffCount>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>4</Mass>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <size>(1,1)</size>
-    <defaultPlacingRot>South</defaultPlacingRot>
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-      </defaultStorageSettings>
-    </building>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
-    <canOverlapZones>false</canOverlapZones>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
+	<defName>SmallShelf</defName>
+	<label>Small Shelf</label>
+	<description>Items stored in this will not deteriorate, even if outside.</description>
+	<thingClass>Building_Storage</thingClass>
+	<graphicData>
+	  <texPath>SmallShelf</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2,2)</drawSize>
+	  <damageData>
+		<cornerTL>Damage/Corner</cornerTL>
+		<cornerTR>Damage/Corner</cornerTR>
+		<cornerBL>Damage/Corner</cornerBL>
+		<cornerBR>Damage/Corner</cornerBR>
+	  </damageData>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<fillPercent>0.4</fillPercent>
+	<castEdgeShadows>true</castEdgeShadows>
+	<stuffCategories>
+	  <li>Metallic</li>
+	  <li>Woody</li>
+	  <li>Stony</li>
+	</stuffCategories>
+	<costStuffCount>5</costStuffCount>
+	<statBases>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>4</Mass>
+	  <Flammability>1.0</Flammability>
+	</statBases>
+	<size>(1,1)</size>
+	<defaultPlacingRot>South</defaultPlacingRot>
+	<building>
+	  <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+	  <defaultStorageSettings>
+		<priority>Important</priority>
+	  </defaultStorageSettings>
+	</building>
+	<inspectorTabs>
+	  <li>ITab_Storage</li>
+	</inspectorTabs>
+	<staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<surfaceType>Item</surfaceType>
+	<canOverlapZones>false</canOverlapZones>
+	<researchPrerequisites>
+	  <li>ComplexFurniture</li>
+	</researchPrerequisites>
   </ThingDef>
   <ThingDef ParentName="FurnitureBase">
 		<defName>InwallShelf_SingleShelf</defName>
 		<label>Wall Single Shelf</label>
 		<description>Single-tile shelf that can be installed on a walls</description>
 		<thingClass>Building_Storage</thingClass>
-      <designationCategory>Furniture</designationCategory>
+	  <designationCategory>Furniture</designationCategory>
 		<graphicData>
 			<texPath>WallShelf</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.76,1.76)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
-      <clearBuildingArea>false</clearBuildingArea>
+	  <clearBuildingArea>false</clearBuildingArea>
 		<fillPercent>1</fillPercent>
 		<coversFloor>true</coversFloor>
 		<passability>Impassable</passability>
@@ -72,36 +72,36 @@
 		<canOverlapZones>false</canOverlapZones>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
-      <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-      </stuffCategories>
-      <costStuffCount>5</costStuffCount>
+	  <stuffCategories>
+		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
+	  </stuffCategories>
+	  <costStuffCount>5</costStuffCount>
 		<statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>8</Mass>
-      <Flammability>1.0</Flammability>
-    </statBases>
+	  <MaxHitPoints>100</MaxHitPoints>
+	  <Mass>8</Mass>
+	  <Flammability>1.0</Flammability>
+	</statBases>
 		<size>(1,1)</size>
-      <defaultPlacingRot>South</defaultPlacingRot>
-      <researchPrerequisites>
-        <li>ComplexFurniture</li>
-      </researchPrerequisites>
+	  <defaultPlacingRot>South</defaultPlacingRot>
+	  <researchPrerequisites>
+		<li>ComplexFurniture</li>
+	  </researchPrerequisites>
 		<building>
-      <preventDeteriorationInside>true</preventDeteriorationInside>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+	  <preventDeteriorationInside>true</preventDeteriorationInside>
+	  <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+	  <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
 			<canPlaceOverWall>true</canPlaceOverWall>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-      </defaultStorageSettings>
+	  <defaultStorageSettings>
+		<priority>Important</priority>
+	  </defaultStorageSettings>
 		</building>
 		<inspectorTabs>
 			<li>ITab_Storage</li>
 		</inspectorTabs>
-      <designationHotKey>Misc12</designationHotKey>
-      <surfaceType>Item</surfaceType>
+	  <designationHotKey>Misc12</designationHotKey>
+	  <surfaceType>Item</surfaceType>
 	</ThingDef>
 
 </Defs>

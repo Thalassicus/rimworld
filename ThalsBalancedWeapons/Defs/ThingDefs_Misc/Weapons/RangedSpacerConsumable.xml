@@ -25,9 +25,6 @@
       <ComponentSpacer>2</ComponentSpacer>
       <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
     </costList>
-    <weaponTags>
-      <li>GunHeavy</li>
-    </weaponTags>
 		<tradeTags>
 			<li>SpacerTech</li>
 		</tradeTags>

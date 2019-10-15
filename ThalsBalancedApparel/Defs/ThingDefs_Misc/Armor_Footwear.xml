@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- ##### Medieval ##### -->
-    <!-- +++++ Plate Boots +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- ##### Medieval ##### -->
+	<!-- +++++ Plate Boots +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Footwear_PlateBoots</defName>
 		<label>plate boots</label>
 		<description>A pair of simple plate boots. Due to their weight, they slow down the wearer.</description>
@@ -12,7 +12,7 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.5</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -25,7 +25,7 @@
 			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
+			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
@@ -45,7 +45,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -58,11 +58,11 @@
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
-    </ThingDef>
+	</ThingDef>
 
-    <!-- ##### Spacer ##### -->
-    <!-- +++++ Marine Boots +++++ -->
-    <ThingDef ParentName="ApparelMakeableBase">
+	<!-- ##### Spacer ##### -->
+	<!-- +++++ Marine Boots +++++ -->
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>Thal_Footwear_MarineBoots</defName>
 		<label>marine boots</label>
 		<description>A pair of marine boots with layered plasteel plates and enhanced servomotors.</description>
@@ -72,7 +72,7 @@
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<tradeability>Sellable</tradeability>
-        <generateCommonality>0.2</generateCommonality>
+		<generateCommonality>0.5</generateCommonality>
 		<costList>
 			<Hyperweave>5</Hyperweave>
 			<Plasteel>20</Plasteel>
@@ -82,13 +82,13 @@
 			<MaxHitPoints>160</MaxHitPoints>
 			<WorkToMake>16000</WorkToMake>
 			<Mass>2</Mass>
-			<Flammability>0.4</Flammability>
+			<Flammability>0</Flammability>
 			<ArmorRating_Sharp>0.74</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.7</ArmorRating_Heat>
 			<Insulation_Cold>2</Insulation_Cold>
  			<Insulation_Heat>4</Insulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
+			<EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>0.1</MoveSpeed>
@@ -96,6 +96,9 @@
 		<thingCategories Inherit="False">
 			<li>Thal_ArmorApparel</li>
 		</thingCategories>
+		<tradeTags>
+			<li>SpacerTech</li>
+		</tradeTags>
 		<apparel>
 			<bodyPartGroups>
 				<li>Feet</li>
@@ -108,7 +111,7 @@
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
-            </defaultOutfitTags>
+			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>PoweredArmor</researchPrerequisite>
@@ -140,6 +143,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-    </ThingDef>
+	</ThingDef>
 
 </Defs>

@@ -45,7 +45,7 @@
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
-        <Crafting>9</Crafting>
+        <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
@@ -57,6 +57,7 @@
     </costList>
     <weaponTags>
       <li>SpacerGun</li>
+      <li>GunHeavy</li>
     </weaponTags>
 		<tradeTags>
 			<li>SpacerTech</li>
@@ -130,7 +131,13 @@
       <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
     </equippedStatOffsets>
     <recipeMaker>
-      <recipeUsers Inherit="False"/>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -208,7 +215,13 @@
       <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
     </equippedStatOffsets>
     <recipeMaker>
-      <recipeUsers Inherit="False"/>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>75</Plasteel>
@@ -289,7 +302,13 @@
       <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
     </equippedStatOffsets>
     <recipeMaker>
-      <recipeUsers Inherit="False"/>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>75</Plasteel>
@@ -382,9 +401,9 @@
     <weaponTags>
       <li>SpacerGun</li>
     </weaponTags>
-		<tradeTags>
-			<li>SpacerTech</li>
-		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

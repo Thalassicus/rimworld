@@ -42,7 +42,7 @@
     <label>packed ground</label>
     <description>Hard-packed ground allows people to walk faster than natural soil, and prevents plant growth.</description>		
     <texturePath>Terrain/Surfaces/PackedDirt</texturePath>
-    <renderPrecedence>151</renderPrecedence>
+    <renderPrecedence>111</renderPrecedence>
     <pathCost>1</pathCost>
     <fertility>0</fertility>
     <statBases>
