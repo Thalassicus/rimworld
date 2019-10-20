@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Warg"]/race/lifeStageAges//li[def="AnimalAdult"]/soundCall</xpath><value>
+		<soundCall/>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Cat"]/race/lifeStageAges//li[def="AnimalAdult"]/soundCall</xpath><value>
+		<soundCall/>
+	</value></Operation>
+</Patch>

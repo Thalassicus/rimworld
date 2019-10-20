@@ -28,6 +28,20 @@
 			<max>2.5</max>
 		</visualSizeRange>
 	</value></Operation>
+	
+	<!-- Make roses and daylilies identical -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Rose"]/statBases/Beauty</xpath><value>
+		<Beauty>15</Beauty>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Daylily"]/statBases/Beauty</xpath><value>
+		<Beauty>15</Beauty>
+	</value></Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Plant_Daylily"]/plant/lifespanDaysPerGrowDays</xpath><value>
+		<lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+	</value></Operation>
 	<!--
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="TreeBase"]/graphicData</xpath><value>

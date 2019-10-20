@@ -355,6 +355,7 @@
 			<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
 			<ResearchSpeed>0.1</ResearchSpeed>
 			<FoodPoisonChance>-0.02</FoodPoisonChance>
+			<ToxicSensitivity>-0.25</ToxicSensitivity>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

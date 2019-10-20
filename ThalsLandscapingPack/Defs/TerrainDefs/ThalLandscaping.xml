@@ -8,7 +8,6 @@
 	<TerrainDef Name="ThalDirtBase" ParentName="FloorBase" Abstract="True">
 		<edgeType>FadeRough</edgeType>
 		<pathCost>2</pathCost>
-		<scatterType>Rocky</scatterType>
 		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>	  
@@ -60,6 +59,7 @@
     <renderPrecedence>121</renderPrecedence>
     <pathCost>2</pathCost>
     <fertility>0</fertility>
+		<scatterType>Rocky</scatterType>
     <statBases>
       <WorkToBuild>250</WorkToBuild>	  
       <Beauty>-1</Beauty>
@@ -98,6 +98,7 @@
     <pathCost>12</pathCost>	
     <fertility>0</fertility>
     <avoidWander>true</avoidWander>
+		<scatterType>Rocky</scatterType>
     <tools>
       <li>
         <label>mud</label>
@@ -118,6 +119,7 @@
     <renderPrecedence>141</renderPrecedence>
     <fertility>1</fertility>
 		<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+		<scatterType>Rocky</scatterType>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <Beauty>-1</Beauty>
@@ -155,6 +157,7 @@
 		<label>soil</label>
 		<description>Permanently dump soil on rock, allowing plants to grow.</description>
 		<texturePath>Terrain/Surfaces/Soil</texturePath>
+		<scatterType>Rocky</scatterType>
 		<statBases Inherit="False">
 			<Beauty>-1</Beauty>
 			<Cleanliness>-1</Cleanliness>
@@ -168,7 +171,6 @@
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>141</renderPrecedence>
     <pathCost>2</pathCost>
-    <scatterType>Rocky</scatterType>
     <affordances>
       <li>Light</li>
       <li>Medium</li>
