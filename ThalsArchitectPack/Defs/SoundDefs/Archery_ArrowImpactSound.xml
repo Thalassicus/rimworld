@@ -12,13 +12,13 @@
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>Interact/Joy/ArrowImpact</clipFolderPath>
 					</li>
-				</grains>	  
+				</grains>      
 				<volumeRange>
 					<min>7</min>
 					<max>16</max>
-				</volumeRange>	  
+				</volumeRange>      
 				<pitchRange>
-					<min>0.9</min>		
+					<min>0.9</min>        
 					<max>1.2</max>
 				</pitchRange>
 			</li>

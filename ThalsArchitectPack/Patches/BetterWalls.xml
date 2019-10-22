@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SmoothedSandstone"]/graphicData</xpath><value>
+		<color>(125,103,94)</color>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SmoothedGranite"]/graphicData</xpath><value>
+		<color>(104,94,96)</color>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SmoothedLimestone"]/graphicData</xpath><value>
+		<color>(158,151,135)</color>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SmoothedSlate"]/graphicData</xpath><value>
+		<color>(69,69,69)</color>
+	</value></Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="SmoothedMarble"]/graphicData</xpath><value>
+		<color>(131,134,131)</color>
+	</value></Operation>
+<!--
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Wall"]/graphicData/texPath</xpath><value>
+		<texPath>Things/Building/Linked/BetterWall</texPath>
+	</value></Operation>
+-->
+</Patch>	

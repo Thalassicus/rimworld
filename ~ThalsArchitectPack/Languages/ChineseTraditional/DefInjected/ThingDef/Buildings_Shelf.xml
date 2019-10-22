@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmallShelf.label>小儲物櫃</SmallShelf.label>
+  <SmallShelf.description>儲存在此的物品能夠避免衰壞，無論室內室外。</SmallShelf.description>
+  <Blueprint_SmallShelf.label>小儲物櫃藍圖</Blueprint_SmallShelf.label>
+  <Blueprint_Install_SmallShelf.label>小儲物櫃預定地</Blueprint_Install_SmallShelf.label>
+  <Frame_SmallShelf.label>小儲物櫃框架</Frame_SmallShelf.label>
+  <Frame_SmallShelf.description>儲存在此的物品能夠避免衰壞，無論室內室外。</Frame_SmallShelf.description>
+
+
+</LanguageData>
