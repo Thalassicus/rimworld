@@ -18,9 +18,5 @@
 	  </li>
 	</value>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-	<xpath>Defs/WorkTypeDef[defName="Growing"]/naturalPriority</xpath>
-	<value><naturalPriority>1025</naturalPriority></value>
-  </Operation>
 
 </Patch>

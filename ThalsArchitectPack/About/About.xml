@@ -7,40 +7,39 @@
 		<li>1.1</li>
 	</supportedVersions>
 	<description>
-	My goal with this mod pack is to provide more interesting building options.
+My goal with this mod pack is to provide more interesting building options. Many of these ideas are based on work by other creators, in the credits.
 
-	- Shelves cost less and build faster. Added single-tile and wall shelves.
-	- Adjusted impressiveness, space, and beauty for more realistic room scores.
-	- Improved color saturation of workbenches.
-	- Wall, ceiling, and outdoor lights.
-	- Tool to deconstruct power conduits.
-	- Door mats to wipe your feet on.
-	- Wall embrasures you can shoot through.
-	- Melee and ranged training dummies.
-	- Opening and closing doors makes no sound.
-	- Removed rock clutter from smoothed floors.
-	- Reduced room size requirements (Realistic Rooms by ).
-	- Replace Stuff by Uuugggg
-	- [KV] RimFridge - 1.0 by Kiame Vivacity
-	- Roof Support 1.0 by Match
-	- Secret Passage Doors by Blake
-	- Subsurface Conduit by Murmur
-	- Tables+ by Barksalot
-	- [KV] Trading Spot - 1.0 by Kiame Vivacity
+• Adjusted impressiveness, space, and beauty for more realistic room scores.
+• Shelves cost less and build faster. Added single-tile and wall shelves.
+• Added wall, ceiling, and outdoor lights.
+• Improved color saturation of workbenches.
+• Tool to deconstruct power conduits.
+• Door mats to wipe your feet on.
+• Wall embrasures you can shoot through.
+• Melee and ranged training dummies.
+• Opening and closing doors makes no sound.
+• Removed rock clutter from smoothed floors.
+• Replace Stuff by Uuugggg
+• [KV] RimFridge • 1.0 by Kiame Vivacity
+• Roof Support 1.0 by Match
+• Secret Passage Doors by Blake
+• Subsurface Conduit by Murmur
+• Tables+ by Barksalot
+• [KV] Trading Spot • 1.0 by Kiame Vivacity
 
-	Credits
+Credits
 
-	Banana Cosplayer - inspiration for wall shelf (different art and stats).
-	Crlsniper - inspiration for room stat adjustments (Realistic Rooms).
-	Owlchemist - Better Vanilla Masking
-	Haplo - Misc Training
-	latta - Door Mats
-	Mittsies - Silent Doors
-	Murmur - Wall Lights, modified to 20% the power and light area of a standing lamp (original version is 33% power and 20% area).
-	Poma - inspiration for single-tile shelf (different art and stats).
-	Storm - No Debris
-	Syrchalis and Jaxxa - ED-Embrasures, retextured to match walls, and removed DLL dependencies to improve multiplayer compatibility.
-	TheWireLord - Conduit Deconstruction
+Banana Cosplayer - inspiration for wall shelf (different art and stats).
+Crlsniper - inspiration for room stat adjustments (Realistic Rooms).
+Owlchemist - Better Vanilla Masking
+Haplo - Misc Training
+latta - Door Mats
+Mittsies - Silent Doors
+Murmur - Wall Lights, modified to 20% the power and light area of a standing lamp (original version is 33% power and 20% area).
+Poma - inspiration for single-tile shelf (different art and stats).
+Storm - No Debris
+Syrchalis and Jaxxa - ED-Embrasures, retextured to match walls, and removed DLL dependencies to improve multiplayer compatibility.
+TheWireLord - Conduit Deconstruction
 
 	</description>
 </ModMetaData>

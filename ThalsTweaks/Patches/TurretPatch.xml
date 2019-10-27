@@ -8,9 +8,11 @@
 		<xpath>Defs/ThingDef[defName="Turret_Autocannon"]/tradeTags</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Turret_STRifleEmp"]/tradeTags</xpath>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Turret_STMGEmp"]/tradeTags</xpath>
 	</Operation>
 	<Operation Class="PatchOperationAdd">

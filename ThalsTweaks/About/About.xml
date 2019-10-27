@@ -6,5 +6,20 @@
 		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
-	<description>Re-organizes apparel.</description>
+	<description>
+A variety of small quality of life adjustments and balance changes to make the game more fun.
+
+• Reorganized item categories to make it easier to create stockpiles.
+  - "Edible" items include food, drugs, and corpses.
+  - "Indoor" items deteriorate, but are not edible.
+  - "Outdoor" items do not deteriorate.
+  - Moved mortar shells to weapons category.
+• Cats and wargs don't make constant noises.
+• Animals haul more often.
+• Sleep can be disturbed up to 10 times, making private rooms more desirable.
+• Wind turbines can be built on open water.
+• Hospital beds are cleaner than regular beds.
+• Combat traders sell turrets (anything based on Building_TurretGun).
+• Uranium is available from bulk good ships.
+	</description>
 </ModMetaData>
